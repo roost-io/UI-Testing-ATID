@@ -149,3 +149,38 @@ Each `tests/` folder contains a `test_summary.md` file that provides a concise o
 - **Quick Reference**: Fast overview of all available tests
 - **Tag-Based Filtering**: Easy identification of test types and coverage areas
 - **Priority Mapping**: Helps prioritize test execution and maintenance
+
+
+## 🚀 Test Execution
+
+### Prerequisites
+- Node.js (version 14 or higher)
+- npm or yarn package manager
+
+### Installation & Setup
+
+1. **Navigate to test folder**: Choose either `ai-generated-tests/` or `user-input-tests/`
+   ```bash
+   cd ai-generated-tests/
+   # OR
+   cd user-input-tests/
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Install Playwright browsers** (first time only):
+   ```bash
+   npx playwright install
+   ```
+
+### Running Tests
+
+#### Basic Test Execution
+```bash
+# Run all tests
+npx playwright test
+
+```
