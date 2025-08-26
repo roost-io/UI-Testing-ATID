@@ -1,0 +1,92 @@
+{
+  "test_name": "Verify Navigation to 'Return to Shop' from Empty Cart",
+  "description": "Ensure that users can navigate to the shop page from the empty cart page using the 'RETURN TO SHOP' button.",
+  "type": "navigation",
+  "pages": [
+    "https://atid.store/cart-2/",
+    "https://atid.store/store/"
+  ],
+  "steps": [
+    "Navigate to https://atid.store/cart-2/.",
+    "Verify the visibility of the message indicating the cart is empty.",
+    "Locate the 'RETURN TO SHOP' button.",
+    "Click on the 'RETURN TO SHOP' button.",
+    "Verify that the user is redirected to the shop page at https://atid.store/store/.",
+    "Confirm that the shop page displays a list of products for browsing."
+  ],
+  "selectors": [
+    {
+      "element_type": "a",
+      "selector": "//a[@href='https://atid.store/store/' and contains(@class, 'button')]",
+      "text": "RETURN TO SHOP",
+      "action": "click",
+      "url_on_page": "https://atid.store/cart-2/"
+    }
+  ],
+  "expected_results": [
+    "The 'RETURN TO SHOP' button is visible on the cart page.",
+    "Clicking the button redirects the user to the shop page.",
+    "The shop page correctly displays a list of products."
+  ],
+  "edge_cases": [
+    "The 'RETURN TO SHOP' button is not visible or clickable.",
+    "The redirection fails and the user remains on the cart page.",
+    "The shop page fails to load or displays an error.",
+    "The shop page loads partially or without product listings.",
+    "The user's browser blocks the redirection due to security settings."
+  ],
+  "data_requirements": [
+    "Access to the cart page URL.",
+    "The cart must be empty.",
+    "The 'RETURN TO SHOP' button must be enabled.",
+    "The shop page URL must be accessible.",
+    "Product data must be available for display on the shop page."
+  ],
+  "dependencies": [
+    "Cart page with an empty state.",
+    "Shop page with product listings.",
+    "Functional redirection from the cart page.",
+    "Stable internet connection.",
+    "Browser compatibility for the button click event."
+  ],
+  "complexity": "medium",
+  "api_interactions": [
+    "Verify no API calls are required for the redirection.",
+    "Ensure no API failures on the shop page loading.",
+    "Monitor potential API calls for fetching product data on the shop page."
+  ],
+  "performance_metrics": [
+    "Time taken for the redirection to complete.",
+    "Time taken to load the shop page.",
+    "Responsiveness of the 'RETURN TO SHOP' button."
+  ],
+  "accessibility_requirements": [
+    "The 'RETURN TO SHOP' button must have appropriate ARIA labels.",
+    "The empty cart message must be screen-reader friendly.",
+    "Keyboard navigation to the 'RETURN TO SHOP' button must be functional.",
+    "Contrast ratio for the button text and background must meet WCAG standards.",
+    "Ensure no motion-based triggers are required for interaction."
+  ],
+  "additional_data": {},
+  "metadata": {
+    "uuid": "a8d14cad-169c-456e-a442-10ac1ed0ce3b",
+    "created_at": "2025-08-25T08:22:10.444540Z",
+    "complexity": "high",
+    "risk_level": "high",
+    "priority": "high",
+    "tags": [
+      "accessibility",
+      "api-integration",
+      "auto-generated",
+      "cross-browser",
+      "error-handling",
+      "navigation",
+      "payment-flow",
+      "performance",
+      "security",
+      "ui-test"
+    ],
+    "estimated_execution_time": 30,
+    "flakiness_potential": "medium"
+  }
+}

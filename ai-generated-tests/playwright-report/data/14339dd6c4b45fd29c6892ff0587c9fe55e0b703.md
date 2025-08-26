@@ -1,0 +1,298 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2]:
+    - /url: "#content"
+  - navigation [ref=e3]:
+    - button "Open toolbar Accessibility Tools" [ref=e5]:
+      - generic [ref=e6]: Open toolbar
+      - img "Accessibility Tools" [ref=e7]
+    - generic [ref=e12]:
+      - paragraph [ref=e13]: Accessibility Tools
+      - list [ref=e14]:
+        - listitem [ref=e15]:
+          - button "Increase Text Increase Text" [ref=e16]:
+            - img "Increase Text" [ref=e18]
+            - generic [ref=e20]: Increase Text
+        - listitem [ref=e21]:
+          - button "Decrease Text Decrease Text" [ref=e22]:
+            - img "Decrease Text" [ref=e24]
+            - generic [ref=e26]: Decrease Text
+        - listitem [ref=e27]:
+          - button "Grayscale Grayscale" [ref=e28]:
+            - img "Grayscale" [ref=e30]
+            - generic [ref=e32]: Grayscale
+        - listitem [ref=e33]:
+          - button "High Contrast High Contrast" [ref=e34]:
+            - img "High Contrast" [ref=e36]
+            - generic [ref=e38]: High Contrast
+        - listitem [ref=e39]:
+          - button "Negative Contrast Negative Contrast" [ref=e40]:
+            - img "Negative Contrast" [ref=e42]
+            - generic [ref=e44]: Negative Contrast
+        - listitem [ref=e45]:
+          - button "Light Background Light Background" [ref=e46]:
+            - img "Light Background" [ref=e48]
+            - generic [ref=e50]: Light Background
+        - listitem [ref=e51]:
+          - button "Links Underline Links Underline" [ref=e52]:
+            - img "Links Underline" [ref=e54]
+            - generic [ref=e56]: Links Underline
+        - listitem [ref=e57]:
+          - button "Readable Font Readable Font" [ref=e58]:
+            - img "Readable Font" [ref=e60]
+            - generic [ref=e62]: Readable Font
+        - listitem [ref=e63]:
+          - button "Reset Reset" [ref=e64]:
+            - img "Reset" [ref=e66]
+            - generic [ref=e68]: Reset
+  - link "Skip to content" [ref=e69]:
+    - /url: "#content"
+  - generic [ref=e70]:
+    - banner [ref=e71]:
+      - generic [ref=e76]:
+        - link "ATID Demo Store" [ref=e81]:
+          - /url: https://atid.store/
+          - img "ATID Demo Store" [ref=e82]
+        - navigation "Site Navigation" [ref=e88]:
+          - list [ref=e90]:
+            - listitem [ref=e91]:
+              - link "Home" [ref=e92]:
+                - /url: https://atid.store/
+            - listitem [ref=e93]:
+              - link "Store" [ref=e94]:
+                - /url: https://atid.store/store/
+            - listitem [ref=e95]:
+              - link "Men" [ref=e96]:
+                - /url: https://atid.store/product-category/men/
+            - listitem [ref=e97]:
+              - link "Women" [ref=e98]:
+                - /url: https://atid.store/product-category/women/
+            - listitem [ref=e99]:
+              - link "Accessories" [ref=e100]:
+                - /url: https://atid.store/product-category/accessories/
+            - listitem [ref=e101]:
+              - link "About" [ref=e102]:
+                - /url: https://atid.store/about/
+            - listitem [ref=e103]:
+              - link "Contact Us" [ref=e104]:
+                - /url: https://atid.store/contact-us/
+        - generic [ref=e105]:
+          - link "Search icon link" [ref=e110]:
+            - /url: "#"
+            - text: 
+            - generic [ref=e111]: Search
+          - link "0.00 ₪ 0" [ref=e115]:
+            - /url: https://atid.store/cart-2/
+            - generic [ref=e119]:
+              - text: "0.00"
+              - generic [ref=e120]: ₪
+            - generic [ref=e122]: "0"
+    - main [ref=e126]:
+      - generic [ref=e128]:
+        - generic [ref=e129]: Sale!
+        - generic [ref=e130]:
+          - link "🔍" [ref=e131]:
+            - /url: "#"
+            - img "🔍" [ref=e132]
+          - link "sports-shoe1" [ref=e135]:
+            - /url: https://atid.store/wp-content/uploads/2021/03/sports-shoe1.jpg
+            - img "sports-shoe1" [ref=e136]
+        - generic [ref=e137]:
+          - navigation [ref=e138]:
+            - link "Home" [ref=e139]:
+              - /url: https://atid.store
+            - text: /
+            - link "Men" [ref=e140]:
+              - /url: https://atid.store/product-category/men/
+            - text: / ATID Blue Shoes
+          - heading "ATID Blue Shoes" [level=1] [ref=e141]
+          - generic [ref=e142]:
+            - img "Rated 4.00 out of 5" [ref=e143]:
+              - text: sssss
+              - generic [ref=e144]:
+                - text: SSSSS Rated
+                - strong [ref=e145]: "4.00"
+                - text: out of 5 based on
+                - generic [ref=e146]: SSSSS 7
+                - text: customer ratings
+            - link "(7 customer reviews)" [ref=e147]:
+              - /url: "#reviews"
+              - text: (
+              - generic [ref=e148]: "7"
+              - text: customer reviews)
+          - paragraph [ref=e149]:
+            - deletion [ref=e150]:
+              - generic [ref=e152]:
+                - text: "120.00"
+                - generic [ref=e153]: ₪
+            - insertion [ref=e154]:
+              - generic [ref=e156]:
+                - text: "80.00"
+                - generic [ref=e157]: ₪
+          - paragraph [ref=e159]: Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.
+          - generic [ref=e160]:
+            - generic [ref=e161]:
+              - generic [ref=e162]: ATID Blue Shoes quantity
+              - spinbutton "Product quantity" [ref=e163]: "1"
+            - button "Add to cart" [ref=e164] [cursor=pointer]
+          - generic [ref=e166]:
+            - text: "Category:"
+            - link "Men" [ref=e167]:
+              - /url: https://atid.store/product-category/men/
+        - generic [ref=e168]:
+          - tablist [ref=e169]:
+            - tab "Description" [ref=e170]:
+              - link "Description" [ref=e171]:
+                - /url: "#tab-description"
+            - tab "Reviews (7)" [ref=e172]:
+              - link "Reviews (7)" [ref=e173]:
+                - /url: "#tab-reviews"
+          - tabpanel "Description" [ref=e174]:
+            - paragraph [ref=e175]: Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.
+          - text: sssss SSSSS sssss SSSSS sssss SSSSS sssss SSSSS sssss SSSSS sssss SSSSS sssss SSSSS     
+        - generic [ref=e176]:
+          - heading "Related products" [level=2] [ref=e177]
+          - list [ref=e178]:
+            - listitem [ref=e179]:
+              - link [ref=e181]:
+                - /url: https://atid.store/product/dnk-cross-tshirt/
+              - generic [ref=e182]:
+                - link "Blue Tshirt" [ref=e183]:
+                  - /url: https://atid.store/product/dnk-cross-tshirt/
+                  - heading "Blue Tshirt" [level=2] [ref=e184]
+                - generic [ref=e185]: Men
+                - generic [ref=e188]:
+                  - text: "150.00"
+                  - generic [ref=e189]: ₪
+                - img "Rated 4.00 out of 5" [ref=e190]:
+                  - text: sssss
+                  - generic [ref=e191]:
+                    - text: SSSSS Rated
+                    - strong [ref=e192]: "4.00"
+                    - text: out of 5
+            - listitem [ref=e193]:
+              - generic [ref=e194]:
+                - generic [ref=e195]: Sale!
+                - link "Out of stock" [ref=e196]:
+                  - /url: https://atid.store/product/atid-red-shoes/
+                  - generic [ref=e197]: Out of stock
+              - generic [ref=e198]:
+                - link "ATID Red Shoes" [ref=e199]:
+                  - /url: https://atid.store/product/atid-red-shoes/
+                  - heading "ATID Red Shoes" [level=2] [ref=e200]
+                - generic [ref=e201]: Men
+                - generic [ref=e202]:
+                  - deletion [ref=e203]:
+                    - generic [ref=e205]:
+                      - text: "120.00"
+                      - generic [ref=e206]: ₪
+                  - insertion [ref=e207]:
+                    - generic [ref=e209]:
+                      - text: "80.00"
+                      - generic [ref=e210]: ₪
+                - img "Rated 3.07 out of 5" [ref=e211]:
+                  - text: sssss
+                  - generic [ref=e212]:
+                    - text: SSSSS Rated
+                    - strong [ref=e213]: "3.07"
+                    - text: out of 5
+            - listitem [ref=e214]:
+              - link [ref=e216]:
+                - /url: https://atid.store/product/red-hoodie/
+              - generic [ref=e217]:
+                - link "Red Hoodie" [ref=e218]:
+                  - /url: https://atid.store/product/red-hoodie/
+                  - heading "Red Hoodie" [level=2] [ref=e219]
+                - generic [ref=e220]: Men
+                - generic [ref=e223]:
+                  - text: "150.00"
+                  - generic [ref=e224]: ₪
+                - img "Rated 1.00 out of 5" [ref=e225]:
+                  - text: sssss
+                  - generic [ref=e226]:
+                    - text: SSSSS Rated
+                    - strong [ref=e227]: "1.00"
+                    - text: out of 5
+            - listitem [ref=e228]:
+              - link [ref=e230]:
+                - /url: https://atid.store/product/dark-brown-jeans/
+              - generic [ref=e231]:
+                - link "Dark Brown Jeans" [ref=e232]:
+                  - /url: https://atid.store/product/dark-brown-jeans/
+                  - heading "Dark Brown Jeans" [level=2] [ref=e233]
+                - generic [ref=e234]: Men
+                - generic [ref=e237]:
+                  - text: "150.00"
+                  - generic [ref=e238]: ₪
+                - img "Rated 4.00 out of 5" [ref=e239]:
+                  - text: sssss
+                  - generic [ref=e240]:
+                    - text: SSSSS Rated
+                    - strong [ref=e241]: "4.00"
+                    - text: out of 5
+    - contentinfo [ref=e242]:
+      - generic [ref=e245]:
+        - complementary "Footer Widget 1" [ref=e247]:
+          - generic [ref=e249]:
+            - heading "Quick Links" [level=2] [ref=e250]
+            - navigation "Quick Links" [ref=e251]:
+              - list [ref=e252]:
+                - listitem [ref=e253]:
+                  - link "Home" [ref=e254]:
+                    - /url: https://atid.store/
+                - listitem [ref=e255]:
+                  - link "About" [ref=e256]:
+                    - /url: https://atid.store/about/
+                - listitem [ref=e257]:
+                  - link "Cart" [ref=e258]:
+                    - /url: https://atid.store/cart-2/
+                - listitem [ref=e259]:
+                  - link "Contact Us" [ref=e260]:
+                    - /url: https://atid.store/contact-us/
+        - complementary "Footer Widget 2" [ref=e262]:
+          - generic [ref=e264]:
+            - heading "For Her" [level=2] [ref=e265]
+            - navigation "For Her" [ref=e266]:
+              - list [ref=e267]:
+                - listitem [ref=e268]:
+                  - link "Women Jeans" [ref=e269]:
+                    - /url: "#"
+                - listitem [ref=e270]:
+                  - link "Tops and Shirts" [ref=e271]:
+                    - /url: "#"
+                - listitem [ref=e272]:
+                  - link "Women Jackets" [ref=e273]:
+                    - /url: "#"
+                - listitem [ref=e274]:
+                  - link "Heels and Flats" [ref=e275]:
+                    - /url: "#"
+                - listitem [ref=e276]:
+                  - link "Women Accessories" [ref=e277]:
+                    - /url: "#"
+        - complementary "Footer Widget 3" [ref=e279]:
+          - generic [ref=e281]:
+            - heading "For Him" [level=2] [ref=e282]
+            - navigation "For Him" [ref=e283]:
+              - list [ref=e284]:
+                - listitem [ref=e285]:
+                  - link "Men Jeans" [ref=e286]:
+                    - /url: "#"
+                - listitem [ref=e287]:
+                  - link "Men Shirts" [ref=e288]:
+                    - /url: "#"
+                - listitem [ref=e289]:
+                  - link "Men Shoes" [ref=e290]:
+                    - /url: "#"
+                - listitem [ref=e291]:
+                  - link "Men Accessories" [ref=e292]:
+                    - /url: "#"
+                - listitem [ref=e293]:
+                  - link "Men Jackets" [ref=e294]:
+                    - /url: "#"
+        - complementary "Footer Widget 4" [ref=e296]
+      - generic [ref=e302]:
+        - paragraph [ref=e306]: Copyright © 2025 ATID Demo Store
+        - paragraph [ref=e311]: Powered by ATID College
+```

@@ -1,0 +1,93 @@
+{
+  "test_name": "Verify Pagination Functionality in Women Category",
+  "description": "Test the functionality of navigating through multiple pages of product listings in the Women category.",
+  "type": "navigation",
+  "pages": [
+    "https://atid.store/product-category/women/"
+  ],
+  "steps": [
+    "Navigate to the Women category page.",
+    "Locate the pagination links at the bottom of the page.",
+    "Click on the 'Page 2' link.",
+    "Wait for the page to refresh with the next set of product listings.",
+    "Verify that the products on page 2 are displayed.",
+    "Click on the 'Next' link to navigate to the next page.",
+    "Verify the correct navigation to the next set of product listings."
+  ],
+  "selectors": [
+    {
+      "element_type": "a",
+      "selector": "//a[@href='https://atid.store/product-category/women/page/2/' and contains(@class, 'page-numbers')]",
+      "text": "2",
+      "action": "click",
+      "url_on_page": "https://atid.store/product-category/women/"
+    },
+    {
+      "element_type": "a",
+      "selector": "//a[@href='https://atid.store/product-category/women/page/2/' and contains(@class, 'next')]",
+      "text": "\u2192",
+      "action": "click",
+      "url_on_page": "https://atid.store/product-category/women/"
+    }
+  ],
+  "expected_results": [
+    "Correct set of products is displayed for the selected page.",
+    "Pagination links are functional and responsive.",
+    "No duplicate products are shown across pages."
+  ],
+  "edge_cases": [
+    "Pagination links do not respond.",
+    "Wrong set of products is displayed for a selected page.",
+    "Products do not load for subsequent pages.",
+    "Page crashes during pagination navigation.",
+    "Pagination links are missing or disabled."
+  ],
+  "data_requirements": [
+    "A list of products distributed across multiple pages in the Women category.",
+    "Correct mapping of products to their respective pages.",
+    "Pagination algorithm implemented correctly.",
+    "No missing product data for any page.",
+    "Frontend and backend communication for pagination functionality."
+  ],
+  "dependencies": [
+    "Pagination links must be functional.",
+    "Products must load properly on the page.",
+    "Backend endpoint for pagination must be available.",
+    "Correct page data for all products.",
+    "JavaScript functionality for pagination link interaction."
+  ],
+  "complexity": "medium",
+  "api_interactions": [
+    "Verify API endpoint for fetching paginated product data.",
+    "Ensure pagination criteria are passed to the backend API.",
+    "Monitor responses for pagination requests."
+  ],
+  "performance_metrics": [
+    "Pagination operation should complete within 2 seconds.",
+    "Page should not experience lag during pagination.",
+    "Pagination link interaction should be seamless."
+  ],
+  "accessibility_requirements": [
+    "Pagination links must be accessible via keyboard navigation.",
+    "Pagination labels must have clear descriptions for screen readers.",
+    "Ensure no visual elements overlap or block the pagination links."
+  ],
+  "additional_data": {},
+  "metadata": {
+    "uuid": "40e5d6c6-c5a2-41ab-8f51-6bf395df6b37",
+    "created_at": "2025-08-25T08:22:10.444497Z",
+    "complexity": "high",
+    "risk_level": "high",
+    "priority": "high",
+    "tags": [
+      "accessibility",
+      "api-integration",
+      "auto-generated",
+      "navigation",
+      "performance",
+      "ui-test"
+    ],
+    "estimated_execution_time": 35,
+    "flakiness_potential": "medium"
+  }
+}

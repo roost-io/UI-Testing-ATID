@@ -1,0 +1,81 @@
+{
+  "test_name": "Navigate to Men Category",
+  "description": "Validates navigation to the Men category page and the correct display of products specific to this category.",
+  "type": "navigation",
+  "pages": [
+    "https://atid.store/store/",
+    "https://atid.store/product-category/men/"
+  ],
+  "steps": [
+    "Navigate to the Store page.",
+    "Locate the 'Men' category link.",
+    "Click on the 'Men' category link.",
+    "Verify navigation to the Men category page.",
+    "Ensure the product listing on the Men category page displays only items related to men.",
+    "Check the page title reflects the Men category."
+  ],
+  "selectors": [
+    {
+      "element_type": "link",
+      "selector": "//a[@href='https://atid.store/product-category/men/' and contains(@class, 'menu-link')]",
+      "text": "MEN",
+      "action": "click",
+      "url_on_page": "https://atid.store/store/"
+    }
+  ],
+  "expected_results": [
+    "Navigation to Men category page is successful.",
+    "Only products related to men are displayed.",
+    "Page title matches the Men category."
+  ],
+  "edge_cases": [
+    "Men category link is not clickable.",
+    "Products fail to load on the Men category page.",
+    "Incorrect products displayed.",
+    "Slow page load time.",
+    "Broken link to Men category."
+  ],
+  "data_requirements": [
+    "Products categorized under 'Men'.",
+    "Valid Men category page URL.",
+    "Accessible category link on the store page."
+  ],
+  "dependencies": [
+    "Men category page implemented and functional.",
+    "Product data loaded correctly.",
+    "UI elements fully interactive."
+  ],
+  "complexity": "low",
+  "api_interactions": [
+    "Verify API fetches products specific to Men category.",
+    "Ensure API handles category navigation errors."
+  ],
+  "performance_metrics": [
+    "Time taken to navigate to Men category page.",
+    "Page load time for Men category."
+  ],
+  "accessibility_requirements": [
+    "Category link is keyboard-navigable.",
+    "Screen-reader compatibility for the Men category link.",
+    "Color contrast meets accessibility standards."
+  ],
+  "additional_data": {},
+  "metadata": {
+    "uuid": "48493aa5-e11d-4824-bdb6-6892bdc0f7aa",
+    "created_at": "2025-08-25T08:22:10.444106Z",
+    "complexity": "high",
+    "risk_level": "high",
+    "priority": "high",
+    "tags": [
+      "accessibility",
+      "api-integration",
+      "auto-generated",
+      "data-validation",
+      "navigation",
+      "performance",
+      "ui-test"
+    ],
+    "estimated_execution_time": 30,
+    "flakiness_potential": "medium"
+  }
+}

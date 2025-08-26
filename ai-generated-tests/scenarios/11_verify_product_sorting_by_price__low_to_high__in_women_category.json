@@ -1,0 +1,87 @@
+{
+  "test_name": "Verify Product Sorting by Price (Low to High) in Women Category",
+  "description": "Test the functionality of sorting products by price from low to high in the Women category page.",
+  "type": "functionality",
+  "pages": [
+    "https://atid.store/product-category/women/"
+  ],
+  "steps": [
+    "Navigate to the Women category page.",
+    "Locate the sorting dropdown menu.",
+    "Click on the dropdown menu.",
+    "Select the 'Sort by price: low to high' option.",
+    "Wait for the page to refresh with updated product listing.",
+    "Verify that the products are displayed in ascending order of price."
+  ],
+  "selectors": [
+    {
+      "element_type": "select",
+      "selector": "select[aria-label=\"Shop order\"]",
+      "text": "Default sorting\nSort by popularity\nSort by average rating\nSort by latest\nSort by price: low to high\nSort by price: high to low",
+      "action": "select",
+      "url_on_page": "https://atid.store/product-category/women/"
+    }
+  ],
+  "expected_results": [
+    "Products are displayed in ascending order of price.",
+    "No duplicate products are shown in the listing.",
+    "Sorting option persists upon refreshing the page."
+  ],
+  "edge_cases": [
+    "Dropdown menu does not open.",
+    "Sorting option does not apply correctly.",
+    "Products appear in the wrong order.",
+    "Page crashes while sorting option is applied.",
+    "Dropdown menu is disabled or unresponsive."
+  ],
+  "data_requirements": [
+    "A list of products with varying prices in the Women category.",
+    "Correct mapping of products to their respective prices.",
+    "Sorting algorithm implemented correctly.",
+    "No missing price data for any product.",
+    "Frontend and backend communication for sorting functionality."
+  ],
+  "dependencies": [
+    "Sorting dropdown must be functional.",
+    "Products must load properly on the page.",
+    "Correct price data for all products.",
+    "Backend endpoint for sorting must be available.",
+    "JavaScript functionality for dropdown interaction."
+  ],
+  "complexity": "medium",
+  "api_interactions": [
+    "Verify API endpoint for fetching sorted product data.",
+    "Ensure sorting criteria are passed to the backend API.",
+    "Monitor responses for sorting requests."
+  ],
+  "performance_metrics": [
+    "Sorting operation should complete within 2 seconds.",
+    "Page should not experience lag during sorting.",
+    "Dropdown interaction should be seamless."
+  ],
+  "accessibility_requirements": [
+    "Dropdown menu must be accessible via keyboard navigation.",
+    "Sorting options must have clear labels for screen readers.",
+    "Ensure no visual elements overlap or block the dropdown menu."
+  ],
+  "additional_data": {},
+  "metadata": {
+    "uuid": "0c940e89-bed3-4c25-9f21-22c9e5d9b792",
+    "created_at": "2025-08-25T08:22:10.444411Z",
+    "complexity": "high",
+    "risk_level": "high",
+    "priority": "high",
+    "tags": [
+      "accessibility",
+      "api-integration",
+      "auto-generated",
+      "drag-and-drop",
+      "functionality",
+      "mobile",
+      "performance",
+      "ui-test"
+    ],
+    "estimated_execution_time": 30,
+    "flakiness_potential": "medium"
+  }
+}

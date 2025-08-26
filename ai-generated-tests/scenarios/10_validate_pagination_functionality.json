@@ -1,0 +1,89 @@
+{
+  "test_name": "Validate Pagination Functionality",
+  "description": "Tests the pagination controls to ensure users can navigate between pages of product listings in the 'Men' category.",
+  "type": "functional",
+  "pages": [
+    "https://atid.store/product-category/men/"
+  ],
+  "steps": [
+    "Navigate to the 'Men' category page.",
+    "Locate the 'Page 2' pagination link.",
+    "Click on the 'Page 2' link.",
+    "Verify that the product listing updates to show the second page of products.",
+    "Locate the 'Next' pagination link.",
+    "Click on the 'Next' link.",
+    "Verify that the product listing updates to show the next page of products.",
+    "Locate the 'Page 1' pagination link.",
+    "Click on the 'Page 1' link.",
+    "Verify that the product listing resets to the first page."
+  ],
+  "selectors": [
+    {
+      "element_type": "a",
+      "selector": "//a[@href='https://atid.store/product-category/men/page/2/' and contains(@class, 'page-numbers')]",
+      "text": "2",
+      "action": "click",
+      "url_on_page": "https://atid.store/product-category/men/"
+    },
+    {
+      "element_type": "a",
+      "selector": "//a[@href='https://atid.store/product-category/men/page/2/' and contains(@class, 'next')]",
+      "text": "\u2192",
+      "action": "click",
+      "url_on_page": "https://atid.store/product-category/men/"
+    }
+  ],
+  "expected_results": [
+    "Pagination controls correctly update the product listing.",
+    "Users can navigate between all pages."
+  ],
+  "edge_cases": [
+    "Pagination links are disabled.",
+    "Pagination does not update the product list.",
+    "Invalid page numbers are displayed.",
+    "Pagination does not reset to the first page correctly.",
+    "Next page link skips pages."
+  ],
+  "data_requirements": [
+    "Multiple pages of product listings.",
+    "Backend support for pagination.",
+    "Frontend integration with pagination controls."
+  ],
+  "dependencies": [
+    "Pagination component implemented.",
+    "Backend API for paginated product retrieval.",
+    "Frontend integration with pagination logic."
+  ],
+  "complexity": "medium",
+  "api_interactions": [
+    "GET request to retrieve paginated product data."
+  ],
+  "performance_metrics": [
+    "Time taken to update product list on pagination.",
+    "Responsiveness of pagination controls."
+  ],
+  "accessibility_requirements": [
+    "Ensure pagination links are keyboard-navigable.",
+    "Verify pagination controls are accessible via screen readers.",
+    "Ensure sufficient color contrast for pagination links."
+  ],
+  "additional_data": {},
+  "metadata": {
+    "uuid": "43239ea5-98bd-486c-a9df-92df8deb7252",
+    "created_at": "2025-08-25T08:22:10.444368Z",
+    "complexity": "high",
+    "risk_level": "high",
+    "priority": "high",
+    "tags": [
+      "accessibility",
+      "api-integration",
+      "auto-generated",
+      "error-handling",
+      "functional",
+      "performance",
+      "ui-test"
+    ],
+    "estimated_execution_time": 50,
+    "flakiness_potential": "medium"
+  }
+}

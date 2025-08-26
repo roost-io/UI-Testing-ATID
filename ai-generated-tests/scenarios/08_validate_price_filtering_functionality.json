@@ -1,0 +1,96 @@
+{
+  "test_name": "Validate Price Filtering Functionality",
+  "description": "Tests the price filter tool to ensure users can successfully filter products within a specific price range in the 'Men' category.",
+  "type": "functional",
+  "pages": [
+    "https://atid.store/product-category/men/"
+  ],
+  "steps": [
+    "Navigate to the 'Men' category page.",
+    "Locate the 'Min price' and 'Max price' labels.",
+    "Enter a minimum price value (e.g., 100\u20aa).",
+    "Enter a maximum price value (e.g., 150\u20aa).",
+    "Click the 'FILTER' button to apply the price range filter.",
+    "Verify that the product list updates to display only items within the specified price range.",
+    "Change the minimum price value to 80\u20aa and maximum price to 190\u20aa.",
+    "Click the 'FILTER' button again.",
+    "Verify that the product list updates to reflect the new price range.",
+    "Ensure that products outside the range are not displayed."
+  ],
+  "selectors": [
+    {
+      "element_type": "label",
+      "selector": "//div[@id='woocommerce_price_filter-2']/form/div/div[2]/label[1]",
+      "text": "Min price",
+      "action": "type",
+      "url_on_page": "https://atid.store/product-category/men/"
+    },
+    {
+      "element_type": "label",
+      "selector": "//div[@id='woocommerce_price_filter-2']/form/div/div[2]/label[2]",
+      "text": "Max price",
+      "action": "type",
+      "url_on_page": "https://atid.store/product-category/men/"
+    },
+    {
+      "element_type": "button",
+      "selector": "//button[normalize-space()=\"FILTER\"]",
+      "text": "FILTER",
+      "action": "click",
+      "url_on_page": "https://atid.store/product-category/men/"
+    }
+  ],
+  "expected_results": [
+    "Products within the specified price range are displayed.",
+    "Products outside the range are hidden."
+  ],
+  "edge_cases": [
+    "Price range inputs accept non-numeric values.",
+    "Filter button does not apply the range correctly.",
+    "Products within the range are not displayed.",
+    "Filter does not reset when new values are entered.",
+    "Filter does not handle edge cases like overlapping price ranges."
+  ],
+  "data_requirements": [
+    "Products with diverse price points.",
+    "Configuration for minimum and maximum price filtering.",
+    "Backend support for dynamic filtering."
+  ],
+  "dependencies": [
+    "Price filter tool implemented.",
+    "Backend API to retrieve filtered products.",
+    "Frontend integration with filtering logic."
+  ],
+  "complexity": "medium",
+  "api_interactions": [
+    "POST request to apply price filter and fetch results."
+  ],
+  "performance_metrics": [
+    "Time taken to apply filters and update product list.",
+    "Responsiveness of price input fields."
+  ],
+  "accessibility_requirements": [
+    "Ensure price range inputs are accessible via keyboard.",
+    "Labels for 'Min price' and 'Max price' should be readable by screen readers.",
+    "Verify filter button has sufficient color contrast."
+  ],
+  "additional_data": {},
+  "metadata": {
+    "uuid": "059822c6-33a4-4af3-a002-5c966624efb1",
+    "created_at": "2025-08-25T08:22:10.444272Z",
+    "complexity": "high",
+    "risk_level": "high",
+    "priority": "high",
+    "tags": [
+      "accessibility",
+      "api-integration",
+      "auto-generated",
+      "form-submission",
+      "functional",
+      "performance",
+      "ui-test"
+    ],
+    "estimated_execution_time": 50,
+    "flakiness_potential": "medium"
+  }
+}

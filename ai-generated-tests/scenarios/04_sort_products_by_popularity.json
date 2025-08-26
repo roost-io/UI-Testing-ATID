@@ -1,0 +1,82 @@
+{
+  "test_name": "Sort Products by Popularity",
+  "description": "Validates the ability to sort products by popularity using the sorting dropdown menu.",
+  "type": "functional",
+  "pages": [
+    "https://atid.store/store/"
+  ],
+  "steps": [
+    "Navigate to the Store page.",
+    "Locate the sorting dropdown menu.",
+    "Click on the dropdown menu to expand sorting options.",
+    "Select 'Sort by popularity' from the dropdown.",
+    "Verify that the product listing updates to display items sorted by popularity.",
+    "Check that the sorting option is reflected in the UI.",
+    "Reset sorting to 'Default sorting' and verify the product order resets."
+  ],
+  "selectors": [
+    {
+      "element_type": "select",
+      "selector": "select[aria-label=\"Shop order\"]",
+      "text": "Sort by popularity",
+      "action": "select",
+      "url_on_page": "https://atid.store/store/"
+    }
+  ],
+  "expected_results": [
+    "Products are displayed in descending order of popularity.",
+    "Selected sorting option is reflected in the dropdown menu.",
+    "Default sorting resets product display to original order."
+  ],
+  "edge_cases": [
+    "No products have popularity ratings.",
+    "Dropdown menu fails to expand.",
+    "Selecting unsupported sorting options.",
+    "Rapid changes between sorting options.",
+    "Slow API response when applying sorting."
+  ],
+  "data_requirements": [
+    "Products with popularity ratings.",
+    "Valid sorting criteria defined in the backend.",
+    "Accessible sorting dropdown menu."
+  ],
+  "dependencies": [
+    "Sorting feature implemented and functional.",
+    "Product data loaded correctly.",
+    "UI elements fully interactive."
+  ],
+  "complexity": "low",
+  "api_interactions": [
+    "Verify API updates product order based on sorting selection.",
+    "Ensure API handles unsupported sorting options gracefully."
+  ],
+  "performance_metrics": [
+    "Time taken to rearrange product listings after sorting.",
+    "Smoothness of dropdown menu interactions."
+  ],
+  "accessibility_requirements": [
+    "Dropdown menu is keyboard-navigable.",
+    "Sorting options are screen-reader accessible.",
+    "Color contrast for dropdown menu meets standards."
+  ],
+  "additional_data": {},
+  "metadata": {
+    "uuid": "debf5ff8-d245-4aa7-941f-8b8f085d40b9",
+    "created_at": "2025-08-25T08:22:10.444061Z",
+    "complexity": "high",
+    "risk_level": "high",
+    "priority": "high",
+    "tags": [
+      "accessibility",
+      "api-integration",
+      "auto-generated",
+      "data-validation",
+      "drag-and-drop",
+      "functional",
+      "performance",
+      "ui-test"
+    ],
+    "estimated_execution_time": 35,
+    "flakiness_potential": "medium"
+  }
+}

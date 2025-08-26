@@ -1,0 +1,85 @@
+{
+  "test_name": "Verify Product Sorting in 'Men' Category",
+  "description": "Tests the ability to sort products in the 'Men' category by different criteria such as popularity, average rating, price, and latest arrivals.",
+  "type": "functional",
+  "pages": [
+    "https://atid.store/product-category/men/"
+  ],
+  "steps": [
+    "Navigate to the 'Men' category page.",
+    "Locate the sorting dropdown menu.",
+    "Select the option to sort by 'Price: Low to High'.",
+    "Verify that the products are re-ordered by price in ascending order.",
+    "Select the option to sort by 'Price: High to Low'.",
+    "Verify that the products are re-ordered by price in descending order.",
+    "Select the option to sort by 'Popularity'.",
+    "Verify that the products are re-ordered based on popularity.",
+    "Select the option to sort by 'Average Rating'.",
+    "Verify that the products are re-ordered based on average customer ratings.",
+    "Select the option to sort by 'Latest'.",
+    "Verify that the products are re-ordered by newest arrivals.",
+    "Reset the sorting to 'Default sorting'.",
+    "Verify that the products return to the default order."
+  ],
+  "selectors": [
+    {
+      "element_type": "select",
+      "selector": "select[aria-label=\"Shop order\"]",
+      "text": "Default sorting\nSort by popularity\nSort by average rating\nSort by latest\nSort by price: low to high\nSort by price: high to low",
+      "action": "select",
+      "url_on_page": "https://atid.store/product-category/men/"
+    }
+  ],
+  "expected_results": [
+    "The products are correctly re-ordered based on the selected sorting criteria."
+  ],
+  "edge_cases": [
+    "Sorting dropdown is disabled.",
+    "Sorting option does not apply correctly.",
+    "Sorting results do not refresh dynamically.",
+    "Incorrect sorting order is displayed.",
+    "Sorting dropdown does not have all the specified options."
+  ],
+  "data_requirements": [
+    "Pre-populated product data in the 'Men' category.",
+    "Products with varying prices, ratings, and popularity.",
+    "Configuration for sorting options."
+  ],
+  "dependencies": [
+    "Full product catalog loaded.",
+    "Sorting functionality implemented.",
+    "Frontend dropdown component integrated with backend sorting logic."
+  ],
+  "complexity": "medium",
+  "api_interactions": [
+    "GET request to fetch sorted product data based on criteria."
+  ],
+  "performance_metrics": [
+    "Time taken to refresh product list on sorting.",
+    "Dropdown responsiveness."
+  ],
+  "accessibility_requirements": [
+    "Ensure dropdown is keyboard-navigable.",
+    "Verify dropdown labels are accessible via screen readers.",
+    "Ensure sorting labels have sufficient color contrast."
+  ],
+  "additional_data": {},
+  "metadata": {
+    "uuid": "542c275f-302a-479a-913a-091be3472c78",
+    "created_at": "2025-08-25T08:22:10.444209Z",
+    "complexity": "high",
+    "risk_level": "high",
+    "priority": "high",
+    "tags": [
+      "accessibility",
+      "api-integration",
+      "auto-generated",
+      "drag-and-drop",
+      "functional",
+      "performance",
+      "ui-test"
+    ],
+    "estimated_execution_time": 70,
+    "flakiness_potential": "medium"
+  }
+}

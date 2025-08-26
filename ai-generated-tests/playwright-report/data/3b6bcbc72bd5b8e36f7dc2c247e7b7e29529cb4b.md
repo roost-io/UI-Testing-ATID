@@ -1,0 +1,165 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - link "Skip to content" [ref=e2]:
+    - /url: "#content"
+  - navigation [ref=e3]:
+    - button "Open toolbar Accessibility Tools" [ref=e5]:
+      - generic [ref=e6]: Open toolbar
+      - img "Accessibility Tools" [ref=e7]
+    - generic [ref=e12]:
+      - paragraph [ref=e13]: Accessibility Tools
+      - list [ref=e14]:
+        - listitem [ref=e15]:
+          - button "Increase Text Increase Text" [active] [ref=e16]:
+            - img "Increase Text" [ref=e18]
+            - generic [ref=e20]: Increase Text
+        - listitem [ref=e21]:
+          - button "Decrease Text Decrease Text" [ref=e22]:
+            - img "Decrease Text" [ref=e24]
+            - generic [ref=e26]: Decrease Text
+        - listitem [ref=e27]:
+          - button "Grayscale Grayscale" [ref=e28]:
+            - img "Grayscale" [ref=e30]
+            - generic [ref=e32]: Grayscale
+        - listitem [ref=e33]:
+          - button "High Contrast High Contrast" [ref=e34]:
+            - img "High Contrast" [ref=e36]
+            - generic [ref=e38]: High Contrast
+        - listitem [ref=e39]:
+          - button "Negative Contrast Negative Contrast" [ref=e40]:
+            - img "Negative Contrast" [ref=e42]
+            - generic [ref=e44]: Negative Contrast
+        - listitem [ref=e45]:
+          - button "Light Background Light Background" [ref=e46]:
+            - img "Light Background" [ref=e48]
+            - generic [ref=e50]: Light Background
+        - listitem [ref=e51]:
+          - button "Links Underline Links Underline" [ref=e52]:
+            - img "Links Underline" [ref=e54]
+            - generic [ref=e56]: Links Underline
+        - listitem [ref=e57]:
+          - button "Readable Font Readable Font" [ref=e58]:
+            - img "Readable Font" [ref=e60]
+            - generic [ref=e62]: Readable Font
+        - listitem [ref=e63]:
+          - button "Reset Reset" [ref=e64]:
+            - img "Reset" [ref=e66]
+            - generic [ref=e68]: Reset
+  - link "Skip to content" [ref=e69]:
+    - /url: "#content"
+  - generic [ref=e70]:
+    - banner [ref=e71]:
+      - generic [ref=e76]:
+        - link "ATID Demo Store" [ref=e81]:
+          - /url: https://atid.store/
+          - img "ATID Demo Store" [ref=e82]
+        - navigation "Site Navigation" [ref=e88]:
+          - list [ref=e90]:
+            - listitem [ref=e91]:
+              - link "Home" [ref=e92]:
+                - /url: https://atid.store/
+            - listitem [ref=e93]:
+              - link "Store" [ref=e94]:
+                - /url: https://atid.store/store/
+            - listitem [ref=e95]:
+              - link "Men" [ref=e96]:
+                - /url: https://atid.store/product-category/men/
+            - listitem [ref=e97]:
+              - link "Women" [ref=e98]:
+                - /url: https://atid.store/product-category/women/
+            - listitem [ref=e99]:
+              - link "Accessories" [ref=e100]:
+                - /url: https://atid.store/product-category/accessories/
+            - listitem [ref=e101]:
+              - link "About" [ref=e102]:
+                - /url: https://atid.store/about/
+            - listitem [ref=e103]:
+              - link "Contact Us" [ref=e104]:
+                - /url: https://atid.store/contact-us/
+        - generic [ref=e105]:
+          - link "Search icon link" [ref=e110]:
+            - /url: "#"
+            - text: 
+            - generic [ref=e111]: Search
+          - link "0.00 ₪ 0" [ref=e115]:
+            - /url: https://atid.store/cart-2/
+            - generic [ref=e119]:
+              - text: "0.00"
+              - generic [ref=e120]: ₪
+            - generic [ref=e122]: "0"
+    - main [ref=e126]:
+      - article [ref=e127]:
+        - generic [ref=e129]:
+          - heading "Cart" [level=1] [ref=e136]
+          - generic [ref=e144]:
+            - generic [ref=e146]:  Your cart is currently empty.
+            - paragraph [ref=e147]:
+              - link "Return to shop" [ref=e148] [cursor=pointer]:
+                - /url: https://atid.store/store/
+    - contentinfo [ref=e149]:
+      - generic [ref=e152]:
+        - complementary "Footer Widget 1" [ref=e154]:
+          - generic [ref=e156]:
+            - heading "Quick Links" [level=2] [ref=e157]
+            - navigation "Quick Links" [ref=e158]:
+              - list [ref=e159]:
+                - listitem [ref=e160]:
+                  - link "Home" [ref=e161]:
+                    - /url: https://atid.store/
+                - listitem [ref=e162]:
+                  - link "About" [ref=e163]:
+                    - /url: https://atid.store/about/
+                - listitem [ref=e164]:
+                  - link "Cart" [ref=e165]:
+                    - /url: https://atid.store/cart-2/
+                - listitem [ref=e166]:
+                  - link "Contact Us" [ref=e167]:
+                    - /url: https://atid.store/contact-us/
+        - complementary "Footer Widget 2" [ref=e169]:
+          - generic [ref=e171]:
+            - heading "For Her" [level=2] [ref=e172]
+            - navigation "For Her" [ref=e173]:
+              - list [ref=e174]:
+                - listitem [ref=e175]:
+                  - link "Women Jeans" [ref=e176]:
+                    - /url: "#"
+                - listitem [ref=e177]:
+                  - link "Tops and Shirts" [ref=e178]:
+                    - /url: "#"
+                - listitem [ref=e179]:
+                  - link "Women Jackets" [ref=e180]:
+                    - /url: "#"
+                - listitem [ref=e181]:
+                  - link "Heels and Flats" [ref=e182]:
+                    - /url: "#"
+                - listitem [ref=e183]:
+                  - link "Women Accessories" [ref=e184]:
+                    - /url: "#"
+        - complementary "Footer Widget 3" [ref=e186]:
+          - generic [ref=e188]:
+            - heading "For Him" [level=2] [ref=e189]
+            - navigation "For Him" [ref=e190]:
+              - list [ref=e191]:
+                - listitem [ref=e192]:
+                  - link "Men Jeans" [ref=e193]:
+                    - /url: "#"
+                - listitem [ref=e194]:
+                  - link "Men Shirts" [ref=e195]:
+                    - /url: "#"
+                - listitem [ref=e196]:
+                  - link "Men Shoes" [ref=e197]:
+                    - /url: "#"
+                - listitem [ref=e198]:
+                  - link "Men Accessories" [ref=e199]:
+                    - /url: "#"
+                - listitem [ref=e200]:
+                  - link "Men Jackets" [ref=e201]:
+                    - /url: "#"
+        - complementary "Footer Widget 4" [ref=e203]
+      - generic [ref=e209]:
+        - paragraph [ref=e213]: Copyright © 2025 ATID Demo Store
+        - paragraph [ref=e218]: Powered by ATID College
+  - generic [ref=e219]: widescreen
+```

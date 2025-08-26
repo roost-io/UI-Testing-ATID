@@ -1,0 +1,95 @@
+{
+  "test_name": "Verify Accessibility Toolbar Functionality",
+  "description": "Validate the operation of the accessibility toolbar on the cart page, ensuring options like increasing text size and high contrast mode work as expected.",
+  "type": "accessibility",
+  "pages": [
+    "https://atid.store/cart-2/"
+  ],
+  "steps": [
+    "Navigate to https://atid.store/cart-2/.",
+    "Locate the accessibility toolbar link with the label 'Open toolbar'.",
+    "Click on the 'Open toolbar' link to reveal the accessibility options.",
+    "Click on the 'Increase Text' option and verify that the text size on the page increases.",
+    "Click on the 'High Contrast' option and validate that the page switches to a high-contrast mode.",
+    "Click on the 'Reset Changes' option and confirm that the page reverts to its default appearance."
+  ],
+  "selectors": [
+    {
+      "element_type": "a",
+      "selector": "//a[@href='javascript:void(0);' and contains(@class, 'pojo-a11y-toolbar-link')]",
+      "text": "Open toolbar",
+      "action": "click",
+      "url_on_page": "https://atid.store/cart-2/"
+    },
+    {
+      "element_type": "a",
+      "selector": "//a[@href='#' and contains(@class, 'pojo-a11y-toolbar-link')]",
+      "text": "Increase Text",
+      "action": "click",
+      "url_on_page": "https://atid.store/cart-2/"
+    }
+  ],
+  "expected_results": [
+    "The toolbar options are visible and clickable.",
+    "The text size increases after selecting 'Increase Text'.",
+    "The high contrast mode is applied after selecting 'High Contrast'.",
+    "The default appearance is restored after selecting 'Reset Changes'."
+  ],
+  "edge_cases": [
+    "The toolbar fails to open.",
+    "The 'Increase Text' option does not work.",
+    "The 'High Contrast' option does not apply changes.",
+    "The 'Reset Changes' option fails to restore defaults.",
+    "Keyboard navigation does not work for toolbar options."
+  ],
+  "data_requirements": [
+    "Accessibility toolbar must be integrated on the cart page.",
+    "Options for 'Increase Text', 'High Contrast', and 'Reset Changes' must be functional.",
+    "Default styles and text sizes must be defined.",
+    "Browser compatibility for toolbar interactions.",
+    "Keyboard and screen-reader support for toolbar elements."
+  ],
+  "dependencies": [
+    "Functional accessibility toolbar.",
+    "Stable CSS and JavaScript for applying visual changes.",
+    "Browser support for toolbar interactions.",
+    "Screen-reader compatibility.",
+    "Keyboard navigation support."
+  ],
+  "complexity": "high",
+  "api_interactions": [
+    "None directly related, but monitor for any asynchronous calls triggered by toolbar usage."
+  ],
+  "performance_metrics": [
+    "Time taken for changes to be applied.",
+    "Responsiveness of toolbar options.",
+    "Impact of accessibility changes on page load performance."
+  ],
+  "accessibility_requirements": [
+    "Toolbar must have appropriate ARIA roles.",
+    "All options must be accessible via keyboard navigation.",
+    "Options must be labeled for screen-readers.",
+    "Contrast ratios must meet WCAG standards.",
+    "Functional without reliance on mouse interactions."
+  ],
+  "additional_data": {},
+  "metadata": {
+    "uuid": "18d556c1-4686-42dd-868f-7dbc27e9605b",
+    "created_at": "2025-08-25T08:22:10.444585Z",
+    "complexity": "high",
+    "risk_level": "high",
+    "priority": "high",
+    "tags": [
+      "accessibility",
+      "api-integration",
+      "auto-generated",
+      "data-validation",
+      "keyboard-navigation",
+      "payment-flow",
+      "performance",
+      "ui-test"
+    ],
+    "estimated_execution_time": 30,
+    "flakiness_potential": "medium"
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "test_name": "Verify E-Commerce Checkout Process with Validation Errors",
+  "description": "This test scenario verifies the entire e-commerce checkout workflow from browsing products to placing an order, including handling validation errors during checkout.",
+  "type": "functional",
+  "pages": [
+    "https://atid.store/",
+    "https://atid.store/store/",
+    "https://atid.store/store/page/3/",
+    "https://atid.store/product/red-hoodie/",
+    "https://atid.store/cart-2/",
+    "https://atid.store/checkout-2/"
+  ],
+  "steps": [
+    "Navigate to the e-commerce website 'atid.store'.",
+    "Click on the 'SHOP NOW' button in the 'Latest Eyewear For You' category.",
+    "Verify navigation to the products page.",
+    "Navigate to page 3 by clicking on '3' or the next arrow.",
+    "Verify that page 2 products are visible.",
+    "Click on the 'Red Hoodie' product.",
+    "Verify navigation to the Red Hoodie product detail page.",
+    "Verify the price of the product is '150.00 \u20aa'.",
+    "Click on the 'ADD TO CART' button.",
+    "Verify confirmation message 'Red Hoodie has been added to your cart' is displayed.",
+    "Click on the 'VIEW CART' button.",
+    "Verify navigation to the cart page.",
+    "Select 'Local pickup' shipping option.",
+    "Select 'Delivery Express' shipping option.",
+    "Select 'Registered Mail' shipping option.",
+    "Click on the 'PROCEED TO CHECKOUT' button.",
+    "Verify navigation to the checkout page.",
+    "Fill in the billing details as specified in the table.",
+    "Click on the 'PLACE ORDER' button.",
+    "Verify error message 'Billing Postcode / ZIP is a required field' is displayed.",
+    "Fill in the 'Postcode / ZIP' field with '316547'.",
+    "Click on the 'PLACE ORDER' button again.",
+    "Verify error message 'Invalid payment method' is displayed."
+  ],
+  "selectors": [
+    {
+      "element_type": "span",
+      "selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(1) > div:nth-of-type(2) > div > div > div:nth-of-type(4) > div > div > a > span",
+      "text": "SHOP NOW",
+      "action": "click_element_by_index",
+      "url_on_page": "https://atid.store/"
+    },
+    {
+      "element_type": "a",
+      "selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div:nth-of-type(2) > main > div > nav:nth-of-type(2) > ul > li:nth-of-type(3) > a.page-numbers[href=\"https://atid.store/store/page/3/\"]",
+      "text": "3",
+      "action": "click_element_by_index",
+      "url_on_page": "https://atid.store/store/"
+    },
+    {
+      "element_type": "a",
+      "selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div:nth-of-type(2) > main > div > ul > li:nth-of-type(5) > div:nth-of-type(2) > a.ast-loop-product__link[href=\"https://atid.store/product/red-hoodie/\"]",
+      "text": "Red Hoodie",
+      "action": "click_element_by_index",
+      "url_on_page": "https://atid.store/store/page/3/"
+    },
+    {
+      "element_type": "button",
+      "selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > div > div:nth-of-type(2) > div:nth-of-type(2) > form > button.single_add_to_cart_button.button.alt[type=\"submit\"][name=\"add-to-cart\"]",
+      "text": "ADD TO CART",
+      "action": "click_element_by_index",
+      "url_on_page": "https://atid.store/product/red-hoodie/"
+    },
+    {
+      "element_type": "a",
+      "selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > div > div:nth-of-type(1) > div > a.button.wc-forward[href=\"https://atid.store/cart-2/\"]",
+      "text": "VIEW CART",
+      "action": "click_element_by_index",
+      "url_on_page": "https://atid.store/product/red-hoodie/"
+    },
+    {
+      "element_type": "input",
+      "selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > div:nth-of-type(2) > div > table > tbody > tr:nth-of-type(2) > td > ul > li:nth-of-type(1) > input.shipping_method[type=\"radio\"][name=\"shipping_method[0]\"][id=\"shipping_method_0_local_pickup1\"]",
+      "text": "Local pickup",
+      "action": "click_element_by_index",
+      "url_on_page": "https://atid.store/cart-2/"
+    },
+    {
+      "element_type": "input",
+      "selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > div:nth-of-type(2) > div > table > tbody > tr:nth-of-type(2) > td > ul > li:nth-of-type(2) > input.shipping_method[type=\"radio\"][name=\"shipping_method[0]\"][id=\"shipping_method_0_flat_rate3\"]",
+      "text": "Delivery Express",
+      "action": "click_element_by_index",
+      "url_on_page": "https://atid.store/cart-2/"
+    },
+    {
+      "element_type": "input",
+      "selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > div:nth-of-type(2) > div > table > tbody > tr:nth-of-type(2) > td > ul > li:nth-of-type(3) > input.shipping_method[type=\"radio\"][name=\"shipping_method[0]\"][id=\"shipping_method_0_flat_rate4\"]",
+      "text": "Registered Mail",
+      "action": "click_element_by_index",
+      "url_on_page": "https://atid.store/cart-2/"
+    },
+    {
+      "element_type": "a",
+      "selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > div:nth-of-type(2) > div > div > a.checkout-button.button.alt.wc-forward[href=\"https://atid.store/checkout-2/\"]",
+      "text": "PROCEED TO CHECKOUT",
+      "action": "click_element_by_index",
+      "url_on_page": "https://atid.store/cart-2/"
+    },
+    {
+      "element_type": "input",
+      "selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > form:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div > p:nth-of-type(1) > span > input.input-text[type=\"text\"][name=\"billing_first_name\"][id=\"billing_first_name\"][placeholder][autocomplete=\"given-name\"]",
+      "text": null,
+      "action": "input_text",
+      "url_on_page": "https://atid.store/checkout-2/"
+    },
+    {
+      "element_type": "button",
+      "selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > form:nth-of-type(3) > div:nth-of-type(2) > div > div > button.button.alt[type=\"submit\"][name=\"woocommerce_checkout_place_order\"][id=\"place_order\"]",
+      "text": "PLACE ORDER",
+      "action": "click_element_by_index",
+      "url_on_page": "https://atid.store/checkout-2/"
+    }
+  ],
+  "expected_results": [
+    "User should be able to navigate through the e-commerce site.",
+    "The product page should display the correct products.",
+    "The cart should reflect the selected product and shipping options.",
+    "The checkout form should validate required fields and reject invalid payment methods."
+  ],
+  "edge_cases": [
+    "What happens if a user tries to place an order without filling mandatory fields?",
+    "What happens if an invalid shipping method is selected?",
+    "What happens if internet connectivity is lost during the checkout process?"
+  ],
+  "data_requirements": [
+    "Billing details for the user.",
+    "Valid postcode/ZIP.",
+    "Valid product data (e.g., Red Hoodie)."
+  ],
+  "dependencies": [
+    "The e-commerce site should be functional.",
+    "The products page should render correctly.",
+    "The checkout form should have field validation rules."
+  ],
+  "complexity": "high",
+  "api_interactions": [
+    "Monitor API calls to validate shipping rates.",
+    "Track API calls for order creation."
+  ],
+  "performance_metrics": [
+    "Page load times for product and checkout pages.",
+    "Response time for shipping option selection."
+  ],
+  "accessibility_requirements": [
+    "Verify all buttons and input fields are accessible via keyboard navigation.",
+    "Ensure color contrast ratios meet accessibility standards."
+  ],
+  "additional_data": {},
+  "metadata": {
+    "uuid": "0da2849c-24fd-4685-aee9-37c24e952349",
+    "created_at": "2025-08-26T07:07:47.805010Z",
+    "complexity": "high",
+    "risk_level": "high",
+    "priority": "high",
+    "tags": [
+      "accessibility",
+      "api-integration",
+      "auto-generated",
+      "data-validation",
+      "error-handling",
+      "functional",
+      "keyboard-navigation",
+      "payment-flow",
+      "performance",
+      "ui-test"
+    ],
+    "estimated_execution_time": 115,
+    "flakiness_potential": "medium"
+  }
+}

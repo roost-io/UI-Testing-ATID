@@ -1,0 +1,90 @@
+{
+  "test_name": "Add Product to Shopping Cart",
+  "description": "Validates the ability to add a product to the shopping cart from the store page.",
+  "type": "functional",
+  "pages": [
+    "https://atid.store/store/",
+    "https://atid.store/cart-2/"
+  ],
+  "steps": [
+    "Navigate to the Store page.",
+    "Locate a product listing.",
+    "Click on the product to view its details.",
+    "Click the 'Add to Cart' button on the product detail page.",
+    "Verify the product is added to the shopping cart.",
+    "Navigate to the shopping cart page to confirm the added product.",
+    "Ensure the product quantity and price are displayed correctly in the cart."
+  ],
+  "selectors": [
+    {
+      "element_type": "link",
+      "selector": "//a[@href='https://atid.store/product/anchor-bracelet/' and contains(@class, 'woocommerce-LoopProduct-link')]",
+      "text": "",
+      "action": "click",
+      "url_on_page": "https://atid.store/store/"
+    },
+    {
+      "element_type": "link",
+      "selector": "//a[@href='https://atid.store/cart-2/' and contains(@class, 'cart-container')]",
+      "text": "Cart",
+      "action": "click",
+      "url_on_page": "https://atid.store/store/"
+    }
+  ],
+  "expected_results": [
+    "Product is successfully added to the shopping cart.",
+    "Shopping cart displays correct quantity and price.",
+    "Added product is reflected in the shopping cart page."
+  ],
+  "edge_cases": [
+    "Product fails to add to the cart.",
+    "Incorrect quantity or price displayed in the cart.",
+    "Shopping cart page fails to load.",
+    "Duplicate product entries in the cart.",
+    "Product is out of stock."
+  ],
+  "data_requirements": [
+    "Product listings with valid stock.",
+    "Accessible 'Add to Cart' button.",
+    "Shopping cart functionality enabled."
+  ],
+  "dependencies": [
+    "Product detail page implemented and functional.",
+    "Shopping cart page implemented and functional.",
+    "Product data loaded correctly."
+  ],
+  "complexity": "medium",
+  "api_interactions": [
+    "Verify API updates shopping cart data after product addition.",
+    "Ensure API handles stock validation."
+  ],
+  "performance_metrics": [
+    "Time taken to add product to cart.",
+    "Shopping cart page load time."
+  ],
+  "accessibility_requirements": [
+    "Add to Cart button is keyboard-navigable.",
+    "Screen-reader compatibility for Add to Cart button.",
+    "Cart page meets color contrast standards."
+  ],
+  "additional_data": {},
+  "metadata": {
+    "uuid": "4d76dd5e-2171-416f-b180-60ea8e423b05",
+    "created_at": "2025-08-25T08:22:10.444152Z",
+    "complexity": "high",
+    "risk_level": "high",
+    "priority": "high",
+    "tags": [
+      "accessibility",
+      "api-integration",
+      "auto-generated",
+      "data-validation",
+      "functional",
+      "payment-flow",
+      "performance",
+      "ui-test"
+    ],
+    "estimated_execution_time": 35,
+    "flakiness_potential": "medium"
+  }
+}

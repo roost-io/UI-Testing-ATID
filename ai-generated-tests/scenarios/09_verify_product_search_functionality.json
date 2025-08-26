@@ -1,0 +1,90 @@
+{
+  "test_name": "Verify Product Search Functionality",
+  "description": "Tests the search bar functionality to ensure users can find specific products in the 'Men' category.",
+  "type": "functional",
+  "pages": [
+    "https://atid.store/product-category/men/"
+  ],
+  "steps": [
+    "Navigate to the 'Men' category page.",
+    "Locate the search bar input field.",
+    "Type 'ATID Blue Shoes' into the search bar.",
+    "Click the 'Search' button to execute the query.",
+    "Verify that the search results display the correct product.",
+    "Clear the search input field.",
+    "Type 'Denim Jeans' into the search bar.",
+    "Click the 'Search' button again.",
+    "Verify that the search results display all relevant products containing 'Denim Jeans'.",
+    "Ensure no unrelated products are displayed."
+  ],
+  "selectors": [
+    {
+      "element_type": "input",
+      "selector": "#wc-block-search__input-1",
+      "text": "",
+      "action": "type",
+      "url_on_page": "https://atid.store/product-category/men/"
+    },
+    {
+      "element_type": "button",
+      "selector": "button[aria-label=\"Search\"]",
+      "text": "Search",
+      "action": "click",
+      "url_on_page": "https://atid.store/product-category/men/"
+    }
+  ],
+  "expected_results": [
+    "Search results match the entered query.",
+    "Unrelated products are excluded from search results."
+  ],
+  "edge_cases": [
+    "Search input accepts invalid characters.",
+    "Search button does not execute correctly.",
+    "No results are displayed for valid queries.",
+    "Partial matches are not included in the results.",
+    "Search bar does not reset after clearing input."
+  ],
+  "data_requirements": [
+    "Products with diverse names containing keywords.",
+    "Backend support for search functionality.",
+    "Configuration for partial and exact matches."
+  ],
+  "dependencies": [
+    "Search bar implemented.",
+    "Backend API for search queries.",
+    "Frontend integration with search functionality."
+  ],
+  "complexity": "medium",
+  "api_interactions": [
+    "GET request to fetch search results based on query."
+  ],
+  "performance_metrics": [
+    "Time taken to display search results.",
+    "Responsiveness of search input field."
+  ],
+  "accessibility_requirements": [
+    "Ensure search bar is keyboard-navigable.",
+    "Search button accessible via screen readers.",
+    "Verify input field has sufficient color contrast."
+  ],
+  "additional_data": {},
+  "metadata": {
+    "uuid": "77503deb-1a1b-4629-9196-abc20cf0a590",
+    "created_at": "2025-08-25T08:22:10.444321Z",
+    "complexity": "high",
+    "risk_level": "high",
+    "priority": "high",
+    "tags": [
+      "accessibility",
+      "api-integration",
+      "auto-generated",
+      "error-handling",
+      "form-submission",
+      "functional",
+      "performance",
+      "ui-test"
+    ],
+    "estimated_execution_time": 50,
+    "flakiness_potential": "medium"
+  }
+}

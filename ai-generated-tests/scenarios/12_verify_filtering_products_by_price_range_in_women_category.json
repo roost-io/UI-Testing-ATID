@@ -1,0 +1,101 @@
+{
+  "test_name": "Verify Filtering Products by Price Range in Women Category",
+  "description": "Test the functionality of filtering products by a specified price range in the Women category page.",
+  "type": "functionality",
+  "pages": [
+    "https://atid.store/product-category/women/"
+  ],
+  "steps": [
+    "Navigate to the Women category page.",
+    "Locate the 'Min price' and 'Max price' filter fields.",
+    "Input a minimum price value (e.g., 50).",
+    "Input a maximum price value (e.g., 150).",
+    "Click the 'FILTER' button.",
+    "Wait for the page to refresh with filtered product listing.",
+    "Verify that only products within the specified price range are displayed."
+  ],
+  "selectors": [
+    {
+      "element_type": "label",
+      "selector": "//div[@id='woocommerce_price_filter-2']/form/div/div[2]/label[1]",
+      "text": "Min price",
+      "action": "type",
+      "url_on_page": "https://atid.store/product-category/women/"
+    },
+    {
+      "element_type": "label",
+      "selector": "//div[@id='woocommerce_price_filter-2']/form/div/div[2]/label[2]",
+      "text": "Max price",
+      "action": "type",
+      "url_on_page": "https://atid.store/product-category/women/"
+    },
+    {
+      "element_type": "button",
+      "selector": "//button[normalize-space()=\"FILTER\"]",
+      "text": "FILTER",
+      "action": "click",
+      "url_on_page": "https://atid.store/product-category/women/"
+    }
+  ],
+  "expected_results": [
+    "Products within the specified price range are displayed.",
+    "No products outside the range are shown.",
+    "Filter criteria persist upon refreshing the page."
+  ],
+  "edge_cases": [
+    "Filter button does not respond.",
+    "Products outside the price range are displayed.",
+    "No products are displayed despite valid filter inputs.",
+    "Page crashes during filtering operation.",
+    "Filter inputs do not accept valid numbers."
+  ],
+  "data_requirements": [
+    "A list of products with varying prices in the Women category.",
+    "Correct mapping of products to their respective prices.",
+    "Filter algorithm implemented correctly.",
+    "No missing price data for any product.",
+    "Frontend and backend communication for filter functionality."
+  ],
+  "dependencies": [
+    "Filter fields must be functional.",
+    "Products must load properly on the page.",
+    "Backend endpoint for filtering must be available.",
+    "Correct price data for all products.",
+    "JavaScript functionality for filter button interaction."
+  ],
+  "complexity": "medium",
+  "api_interactions": [
+    "Verify API endpoint for fetching filtered product data.",
+    "Ensure filter criteria are passed to the backend API.",
+    "Monitor responses for filter requests."
+  ],
+  "performance_metrics": [
+    "Filtering operation should complete within 2 seconds.",
+    "Page should not experience lag during filtering.",
+    "Filter button interaction should be seamless."
+  ],
+  "accessibility_requirements": [
+    "Filter fields must be accessible via keyboard navigation.",
+    "Filter labels must have clear descriptions for screen readers.",
+    "Ensure no visual elements overlap or block the filter fields."
+  ],
+  "additional_data": {},
+  "metadata": {
+    "uuid": "4b23007e-448d-461f-9146-cb0ae9c8d2a7",
+    "created_at": "2025-08-25T08:22:10.444453Z",
+    "complexity": "high",
+    "risk_level": "high",
+    "priority": "high",
+    "tags": [
+      "accessibility",
+      "api-integration",
+      "auto-generated",
+      "form-submission",
+      "functionality",
+      "performance",
+      "ui-test"
+    ],
+    "estimated_execution_time": 35,
+    "flakiness_potential": "medium"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "test_name": "Verify Error Message When Submitting the Form with Empty Required Fields",
+  "description": "This test validates that the form displays appropriate error messages when required fields are left empty.",
+  "type": "form_validation",
+  "pages": [
+    "https://atid.store/contact-us/"
+  ],
+  "steps": [
+    "Navigate to the Contact Us page at 'https://atid.store/contact-us/'.",
+    "Locate the 'SEND MESSAGE' button using the provided stable selector.",
+    "Click the 'SEND MESSAGE' button without filling in any fields.",
+    "Verify that an error message is displayed under the 'Name' input field, indicating that it is required.",
+    "Verify that an error message is displayed under the 'Email' input field, indicating that it is required.",
+    "Verify that an error message is displayed under the 'Comment or Message' textarea, indicating that it is required."
+  ],
+  "selectors": [
+    {
+      "element_type": "button",
+      "selector": "#wpforms-submit-15",
+      "text": "SEND MESSAGE",
+      "action": "click",
+      "url_on_page": "https://atid.store/contact-us/"
+    },
+    {
+      "element_type": "input",
+      "selector": "#wpforms-15-field_0",
+      "text": "",
+      "action": "validate",
+      "url_on_page": "https://atid.store/contact-us/"
+    },
+    {
+      "element_type": "input",
+      "selector": "#wpforms-15-field_4",
+      "text": "",
+      "action": "validate",
+      "url_on_page": "https://atid.store/contact-us/"
+    },
+    {
+      "element_type": "textarea",
+      "selector": "#wpforms-15-field_2",
+      "text": "",
+      "action": "validate",
+      "url_on_page": "https://atid.store/contact-us/"
+    }
+  ],
+  "expected_results": [
+    "Error messages are displayed for all required fields that are left empty."
+  ],
+  "edge_cases": [
+    "Submitting the form with only one required field filled.",
+    "Leaving only one field empty while filling the others.",
+    "Submitting the form with invalid data formats in the fields.",
+    "Typing special characters in the 'Name' or 'Email' fields.",
+    "Typing an invalid email format in the 'Email' field."
+  ],
+  "data_requirements": [
+    "Access to the 'https://atid.store/contact-us/' page.",
+    "Error message text for empty required fields."
+  ],
+  "dependencies": [
+    "The Contact Us page must be accessible.",
+    "The form validation functionality must be implemented.",
+    "Error messages must be visible on the page."
+  ],
+  "complexity": "low",
+  "api_interactions": [],
+  "performance_metrics": [
+    "Form validation checks should execute within 100 ms."
+  ],
+  "accessibility_requirements": [
+    "Error messages should be screen-reader accessible.",
+    "Error messages should have proper contrast ratios."
+  ],
+  "additional_data": {},
+  "metadata": {
+    "uuid": "70b269ed-d05d-4258-ad6b-5957d2ef1b27",
+    "created_at": "2025-08-25T08:22:10.443895Z",
+    "complexity": "high",
+    "risk_level": "high",
+    "priority": "high",
+    "tags": [
+      "accessibility",
+      "auto-generated",
+      "data-validation",
+      "error-handling",
+      "form-submission",
+      "form_validation",
+      "keyboard-navigation",
+      "performance",
+      "ui-test"
+    ],
+    "estimated_execution_time": 30,
+    "flakiness_potential": "medium"
+  }
+}

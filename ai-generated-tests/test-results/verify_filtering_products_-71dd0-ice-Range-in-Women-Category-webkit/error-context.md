@@ -1,0 +1,551 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2]:
+    - /url: "#content"
+  - navigation [ref=e3]:
+    - button "Open toolbar Accessibility Tools" [ref=e5]:
+      - generic [ref=e6]: Open toolbar
+      - img "Accessibility Tools" [ref=e7]
+    - generic [ref=e12]:
+      - paragraph [ref=e13]: Accessibility Tools
+      - list [ref=e14]:
+        - listitem [ref=e15]:
+          - button "Increase Text Increase Text" [ref=e16]:
+            - img "Increase Text" [ref=e18]
+            - generic [ref=e20]: Increase Text
+        - listitem [ref=e21]:
+          - button "Decrease Text Decrease Text" [ref=e22]:
+            - img "Decrease Text" [ref=e24]
+            - generic [ref=e26]: Decrease Text
+        - listitem [ref=e27]:
+          - button "Grayscale Grayscale" [ref=e28]:
+            - img "Grayscale" [ref=e30]
+            - generic [ref=e32]: Grayscale
+        - listitem [ref=e33]:
+          - button "High Contrast High Contrast" [ref=e34]:
+            - img "High Contrast" [ref=e36]
+            - generic [ref=e38]: High Contrast
+        - listitem [ref=e39]:
+          - button "Negative Contrast Negative Contrast" [ref=e40]:
+            - img "Negative Contrast" [ref=e42]
+            - generic [ref=e44]: Negative Contrast
+        - listitem [ref=e45]:
+          - button "Light Background Light Background" [ref=e46]:
+            - img "Light Background" [ref=e48]
+            - generic [ref=e50]: Light Background
+        - listitem [ref=e51]:
+          - button "Links Underline Links Underline" [ref=e52]:
+            - img "Links Underline" [ref=e54]
+            - generic [ref=e56]: Links Underline
+        - listitem [ref=e57]:
+          - button "Readable Font Readable Font" [ref=e58]:
+            - img "Readable Font" [ref=e60]
+            - generic [ref=e62]: Readable Font
+        - listitem [ref=e63]:
+          - button "Reset Reset" [ref=e64]:
+            - img "Reset" [ref=e66]
+            - generic [ref=e68]: Reset
+  - link "Skip to content" [ref=e69]:
+    - /url: "#content"
+  - generic [ref=e70]:
+    - banner [ref=e71]:
+      - generic [ref=e76]:
+        - link "ATID Demo Store" [ref=e81]:
+          - /url: https://atid.store/
+          - img "ATID Demo Store" [ref=e82]
+        - navigation "Site Navigation" [ref=e88]:
+          - list [ref=e90]:
+            - listitem [ref=e91]:
+              - link "Home" [ref=e92]:
+                - /url: https://atid.store/
+            - listitem [ref=e93]:
+              - link "Store" [ref=e94]:
+                - /url: https://atid.store/store/
+            - listitem [ref=e95]:
+              - link "Men" [ref=e96]:
+                - /url: https://atid.store/product-category/men/
+            - listitem [ref=e97]:
+              - link "Women" [ref=e98]:
+                - /url: https://atid.store/product-category/women/
+            - listitem [ref=e99]:
+              - link "Accessories" [ref=e100]:
+                - /url: https://atid.store/product-category/accessories/
+            - listitem [ref=e101]:
+              - link "About" [ref=e102]:
+                - /url: https://atid.store/about/
+            - listitem [ref=e103]:
+              - link "Contact Us" [ref=e104]:
+                - /url: https://atid.store/contact-us/
+        - generic [ref=e105]:
+          - link "Search icon link" [ref=e110]:
+            - /url: "#"
+            - text: 
+            - generic [ref=e111]: Search
+          - link "0.00 ₪ 0" [ref=e115]:
+            - /url: https://atid.store/cart-2/
+            - generic [ref=e119]:
+              - text: "0.00"
+              - generic [ref=e120]: ₪
+            - generic [ref=e122]: "0"
+    - generic [ref=e124]:
+      - generic [ref=e126]:
+        - search [ref=e129]:
+          - generic [ref=e131]:
+            - searchbox [ref=e132]
+            - button "Search" [ref=e133] [cursor=pointer]:
+              - img [ref=e134] [cursor=pointer]
+        - generic [ref=e136]:
+          - heading "Filter by Price" [level=2] [ref=e137]
+          - generic [ref=e144]:
+            - generic [ref=e145]: Min price
+            - generic [ref=e146]: Max price
+            - button "Filter" [ref=e147] [cursor=pointer]
+            - generic [ref=e148]:
+              - text: "Price:"
+              - generic [ref=e149]: 30 ₪
+              - text: —
+              - generic [ref=e150]: 250 ₪
+        - generic [ref=e151]:
+          - heading "Categories" [level=2] [ref=e152]
+          - list [ref=e153]:
+            - listitem [ref=e154]:
+              - link "Accessories" [ref=e155]:
+                - /url: https://atid.store/product-category/accessories/
+              - generic [ref=e156]: (7)
+            - listitem [ref=e157]:
+              - link "Men" [ref=e158]:
+                - /url: https://atid.store/product-category/men/
+              - generic [ref=e159]: (14)
+            - listitem [ref=e160]:
+              - link "Women" [ref=e161]:
+                - /url: https://atid.store/product-category/women/
+              - generic [ref=e162]: (17)
+        - generic [ref=e163]:
+          - heading "Our Best Sellers" [level=2] [ref=e164]
+          - list [ref=e165]:
+            - listitem [ref=e166]:
+              - link "Boho Bangle Bracelet" [ref=e167]:
+                - /url: https://atid.store/product/boho-bangle-bracelet/
+                - generic [ref=e168]: Boho Bangle Bracelet
+              - img "Rated 5.00 out of 5" [ref=e169]:
+                - text: sssss
+                - generic [ref=e170]:
+                  - text: SSSSS Rated
+                  - strong [ref=e171]: "5.00"
+                  - text: out of 5
+              - generic [ref=e173]:
+                - text: "45.00"
+                - generic [ref=e174]: ₪
+            - listitem [ref=e175]:
+              - link "Buddha Bracelet" [ref=e176]:
+                - /url: https://atid.store/product/buddha-bracelet/
+                - generic [ref=e177]: Buddha Bracelet
+              - img "Rated 4.67 out of 5" [ref=e178]:
+                - text: sssss
+                - generic [ref=e179]:
+                  - text: SSSSS Rated
+                  - strong [ref=e180]: "4.67"
+                  - text: out of 5
+              - deletion [ref=e181]:
+                - generic [ref=e183]:
+                  - text: "45.00"
+                  - generic [ref=e184]: ₪
+              - insertion [ref=e185]:
+                - generic [ref=e187]:
+                  - text: "30.00"
+                  - generic [ref=e188]: ₪
+            - listitem [ref=e189]:
+              - link "Bright Gold Purse With Chain" [ref=e190]:
+                - /url: https://atid.store/product/bright-gold-purse-with-chain/
+                - generic [ref=e191]: Bright Gold Purse With Chain
+              - img "Rated 4.67 out of 5" [ref=e192]:
+                - text: sssss
+                - generic [ref=e193]:
+                  - text: SSSSS Rated
+                  - strong [ref=e194]: "4.67"
+                  - text: out of 5
+              - deletion [ref=e195]:
+                - generic [ref=e197]:
+                  - text: "85.00"
+                  - generic [ref=e198]: ₪
+              - insertion [ref=e199]:
+                - generic [ref=e201]:
+                  - text: "80.00"
+                  - generic [ref=e202]: ₪
+            - listitem [ref=e203]:
+              - link "Flamingo Tshirt" [ref=e204]:
+                - /url: https://atid.store/product/flamingo-tshirt/
+                - generic [ref=e205]: Flamingo Tshirt
+              - img "Rated 4.60 out of 5" [ref=e206]:
+                - text: sssss
+                - generic [ref=e207]:
+                  - text: SSSSS Rated
+                  - strong [ref=e208]: "4.60"
+                  - text: out of 5
+              - deletion [ref=e209]:
+                - generic [ref=e211]:
+                  - text: "150.00"
+                  - generic [ref=e212]: ₪
+              - insertion [ref=e213]:
+                - generic [ref=e215]:
+                  - text: "50.00"
+                  - generic [ref=e216]: ₪
+            - listitem [ref=e217]:
+              - link "Blue Hoodie" [ref=e218]:
+                - /url: https://atid.store/product/blue-hoodie/
+                - generic [ref=e219]: Blue Hoodie
+              - img "Rated 4.57 out of 5" [ref=e220]:
+                - text: sssss
+                - generic [ref=e221]:
+                  - text: SSSSS Rated
+                  - strong [ref=e222]: "4.57"
+                  - text: out of 5
+              - generic [ref=e224]:
+                - text: "150.00"
+                - generic [ref=e225]: ₪
+      - main [ref=e227]:
+        - generic [ref=e228]:
+          - navigation [ref=e229]:
+            - link "Home" [ref=e230]:
+              - /url: https://atid.store
+            - text: / Women
+          - generic [ref=e231]:
+            - heading "Women" [level=1] [ref=e232]
+            - paragraph [ref=e234]: Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed ut.
+          - paragraph [ref=e235]: Showing 1–12 of 17 results
+          - combobox "Shop order" [ref=e237]:
+            - option "Default sorting" [selected]
+            - option "Sort by popularity"
+            - option "Sort by average rating"
+            - option "Sort by latest"
+            - 'option "Sort by price: low to high"'
+            - 'option "Sort by price: high to low"'
+          - list [ref=e238]:
+            - listitem [ref=e239]:
+              - link [ref=e241]:
+                - /url: https://atid.store/product/anchor-bracelet/
+              - generic [ref=e242]:
+                - link "Anchor Bracelet" [ref=e243]:
+                  - /url: https://atid.store/product/anchor-bracelet/
+                  - heading "Anchor Bracelet" [level=2] [ref=e244]
+                - generic [ref=e245]: Accessories
+                - generic [ref=e248]:
+                  - text: "250.00"
+                  - generic [ref=e249]: ₪
+                - img "Rated 3.90 out of 5" [ref=e250]:
+                  - text: sssss
+                  - generic [ref=e251]:
+                    - text: SSSSS Rated
+                    - strong [ref=e252]: "3.90"
+                    - text: out of 5
+            - listitem [ref=e253]:
+              - generic [ref=e254]:
+                - generic [ref=e255]: Sale!
+                - link [ref=e256]:
+                  - /url: https://atid.store/product/atid-black-shoes/
+              - generic [ref=e257]:
+                - link "ATID Black Shoes" [ref=e258]:
+                  - /url: https://atid.store/product/atid-black-shoes/
+                  - heading "ATID Black Shoes" [level=2] [ref=e259]
+                - generic [ref=e260]: Women
+                - generic [ref=e261]:
+                  - deletion [ref=e262]:
+                    - generic [ref=e264]:
+                      - text: "71.00"
+                      - generic [ref=e265]: ₪
+                  - insertion [ref=e266]:
+                    - generic [ref=e268]:
+                      - text: "61.00"
+                      - generic [ref=e269]: ₪
+                - img "Rated 2.89 out of 5" [ref=e270]:
+                  - text: sssss
+                  - generic [ref=e271]:
+                    - text: SSSSS Rated
+                    - strong [ref=e272]: "2.89"
+                    - text: out of 5
+            - listitem [ref=e273]:
+              - link [ref=e275]:
+                - /url: https://atid.store/product/basic-gray-jeans/
+              - generic [ref=e276]:
+                - link "Basic Gray Jeans" [ref=e277]:
+                  - /url: https://atid.store/product/basic-gray-jeans/
+                  - heading "Basic Gray Jeans" [level=2] [ref=e278]
+                - generic [ref=e279]: Women
+                - generic [ref=e282]:
+                  - text: "100.00"
+                  - generic [ref=e283]: ₪
+                - img "Rated 4.00 out of 5" [ref=e284]:
+                  - text: sssss
+                  - generic [ref=e285]:
+                    - text: SSSSS Rated
+                    - strong [ref=e286]: "4.00"
+                    - text: out of 5
+            - listitem [ref=e287]:
+              - link [ref=e289]:
+                - /url: https://atid.store/product/black-over-the-shoulder-handbag/
+              - generic [ref=e290]:
+                - link "Black Over-the-shoulder Handbag" [ref=e291]:
+                  - /url: https://atid.store/product/black-over-the-shoulder-handbag/
+                  - heading "Black Over-the-shoulder Handbag" [level=2] [ref=e292]
+                - generic [ref=e293]: Accessories
+                - generic [ref=e296]:
+                  - text: "85.00"
+                  - generic [ref=e297]: ₪
+                - img "Rated 4.17 out of 5" [ref=e298]:
+                  - text: sssss
+                  - generic [ref=e299]:
+                    - text: SSSSS Rated
+                    - strong [ref=e300]: "4.17"
+                    - text: out of 5
+            - listitem [ref=e301]:
+              - link [ref=e303]:
+                - /url: https://atid.store/product/blue-denim-jeans/
+              - generic [ref=e304]:
+                - link "Blue Denim Jeans" [ref=e305]:
+                  - /url: https://atid.store/product/blue-denim-jeans/
+                  - heading "Blue Denim Jeans" [level=2] [ref=e306]
+                - generic [ref=e307]: Women
+                - generic [ref=e310]:
+                  - text: "150.00"
+                  - generic [ref=e311]: ₪
+                - generic [ref=e312]:
+                  - text: sssss
+                  - generic:
+                    - text: SSSSS Rated
+                    - strong: "0"
+                    - text: out of 5
+            - listitem [ref=e313]:
+              - generic [ref=e314]:
+                - generic [ref=e315]: Sale!
+                - link [ref=e316]:
+                  - /url: https://atid.store/product/blue-denim-shorts/
+              - generic [ref=e317]:
+                - link "Blue Denim Shorts" [ref=e318]:
+                  - /url: https://atid.store/product/blue-denim-shorts/
+                  - heading "Blue Denim Shorts" [level=2] [ref=e319]
+                - generic [ref=e320]: Women
+                - generic [ref=e321]:
+                  - deletion [ref=e322]:
+                    - generic [ref=e324]:
+                      - text: "150.00"
+                      - generic [ref=e325]: ₪
+                  - insertion [ref=e326]:
+                    - generic [ref=e328]:
+                      - text: "130.00"
+                      - generic [ref=e329]: ₪
+                - img "Rated 3.00 out of 5" [ref=e330]:
+                  - text: sssss
+                  - generic [ref=e331]:
+                    - text: SSSSS Rated
+                    - strong [ref=e332]: "3.00"
+                    - text: out of 5
+            - listitem [ref=e333]:
+              - link [ref=e335]:
+                - /url: https://atid.store/product/boho-bangle-bracelet/
+              - generic [ref=e336]:
+                - link "Boho Bangle Bracelet" [ref=e337]:
+                  - /url: https://atid.store/product/boho-bangle-bracelet/
+                  - heading "Boho Bangle Bracelet" [level=2] [ref=e338]
+                - generic [ref=e339]: Accessories
+                - generic [ref=e342]:
+                  - text: "45.00"
+                  - generic [ref=e343]: ₪
+                - img "Rated 5.00 out of 5" [ref=e344]:
+                  - text: sssss
+                  - generic [ref=e345]:
+                    - text: SSSSS Rated
+                    - strong [ref=e346]: "5.00"
+                    - text: out of 5
+            - listitem [ref=e347]:
+              - generic [ref=e348]:
+                - generic [ref=e349]: Sale!
+                - link [ref=e350]:
+                  - /url: https://atid.store/product/bright-gold-purse-with-chain/
+              - generic [ref=e351]:
+                - link "Bright Gold Purse With Chain" [ref=e352]:
+                  - /url: https://atid.store/product/bright-gold-purse-with-chain/
+                  - heading "Bright Gold Purse With Chain" [level=2] [ref=e353]
+                - generic [ref=e354]: Accessories
+                - generic [ref=e355]:
+                  - deletion [ref=e356]:
+                    - generic [ref=e358]:
+                      - text: "85.00"
+                      - generic [ref=e359]: ₪
+                  - insertion [ref=e360]:
+                    - generic [ref=e362]:
+                      - text: "80.00"
+                      - generic [ref=e363]: ₪
+                - img "Rated 4.67 out of 5" [ref=e364]:
+                  - text: sssss
+                  - generic [ref=e365]:
+                    - text: SSSSS Rated
+                    - strong [ref=e366]: "4.67"
+                    - text: out of 5
+            - listitem [ref=e367]:
+              - link [ref=e369]:
+                - /url: https://atid.store/product/bright-red-bag/
+              - generic [ref=e370]:
+                - link "Bright Red Bag" [ref=e371]:
+                  - /url: https://atid.store/product/bright-red-bag/
+                  - heading "Bright Red Bag" [level=2] [ref=e372]
+                - generic [ref=e373]: Accessories
+                - generic [ref=e376]:
+                  - text: "150.00"
+                  - generic [ref=e377]: ₪
+                - img "Rated 3.25 out of 5" [ref=e378]:
+                  - text: sssss
+                  - generic [ref=e379]:
+                    - text: SSSSS Rated
+                    - strong [ref=e380]: "3.25"
+                    - text: out of 5
+            - listitem [ref=e381]:
+              - generic [ref=e382]:
+                - generic [ref=e383]: Sale!
+                - link [ref=e384]:
+                  - /url: https://atid.store/product/buddha-bracelet/
+              - generic [ref=e385]:
+                - link "Buddha Bracelet" [ref=e386]:
+                  - /url: https://atid.store/product/buddha-bracelet/
+                  - heading "Buddha Bracelet" [level=2] [ref=e387]
+                - generic [ref=e388]: Accessories
+                - generic [ref=e389]:
+                  - deletion [ref=e390]:
+                    - generic [ref=e392]:
+                      - text: "45.00"
+                      - generic [ref=e393]: ₪
+                  - insertion [ref=e394]:
+                    - generic [ref=e396]:
+                      - text: "30.00"
+                      - generic [ref=e397]: ₪
+                - img "Rated 4.67 out of 5" [ref=e398]:
+                  - text: sssss
+                  - generic [ref=e399]:
+                    - text: SSSSS Rated
+                    - strong [ref=e400]: "4.67"
+                    - text: out of 5
+            - listitem [ref=e401]:
+              - generic [ref=e402]:
+                - generic [ref=e403]: Sale!
+                - link [ref=e404]:
+                  - /url: https://atid.store/product/flamingo-tshirt/
+              - generic [ref=e405]:
+                - link "Flamingo Tshirt" [ref=e406]:
+                  - /url: https://atid.store/product/flamingo-tshirt/
+                  - heading "Flamingo Tshirt" [level=2] [ref=e407]
+                - generic [ref=e408]: Women
+                - generic [ref=e409]:
+                  - deletion [ref=e410]:
+                    - generic [ref=e412]:
+                      - text: "150.00"
+                      - generic [ref=e413]: ₪
+                  - insertion [ref=e414]:
+                    - generic [ref=e416]:
+                      - text: "50.00"
+                      - generic [ref=e417]: ₪
+                - img "Rated 4.60 out of 5" [ref=e418]:
+                  - text: sssss
+                  - generic [ref=e419]:
+                    - text: SSSSS Rated
+                    - strong [ref=e420]: "4.60"
+                    - text: out of 5
+            - listitem [ref=e421]:
+              - generic [ref=e422]:
+                - generic [ref=e423]: Sale!
+                - link [ref=e424]:
+                  - /url: https://atid.store/product/gray-pattern-tshirt/
+              - generic [ref=e425]:
+                - link "Gray Pattern Tshirt" [ref=e426]:
+                  - /url: https://atid.store/product/gray-pattern-tshirt/
+                  - heading "Gray Pattern Tshirt" [level=2] [ref=e427]
+                - generic [ref=e428]: Women
+                - generic [ref=e429]:
+                  - deletion [ref=e430]:
+                    - generic [ref=e432]:
+                      - text: "150.00"
+                      - generic [ref=e433]: ₪
+                  - insertion [ref=e434]:
+                    - generic [ref=e436]:
+                      - text: "60.00"
+                      - generic [ref=e437]: ₪
+                - generic [ref=e438]:
+                  - text: sssss
+                  - generic:
+                    - text: SSSSS Rated
+                    - strong: "0"
+                    - text: out of 5
+          - navigation [ref=e439]:
+            - list [ref=e440]:
+              - listitem [ref=e441]:
+                - generic [ref=e442]: "1"
+              - listitem [ref=e443]:
+                - link "2" [ref=e444]:
+                  - /url: https://atid.store/product-category/women/page/2/
+              - listitem [ref=e445]:
+                - link "→" [ref=e446]:
+                  - /url: https://atid.store/product-category/women/page/2/
+    - contentinfo [ref=e447]:
+      - generic [ref=e450]:
+        - complementary "Footer Widget 1" [ref=e452]:
+          - generic [ref=e454]:
+            - heading "Quick Links" [level=2] [ref=e455]
+            - navigation "Quick Links" [ref=e456]:
+              - list [ref=e457]:
+                - listitem [ref=e458]:
+                  - link "Home" [ref=e459]:
+                    - /url: https://atid.store/
+                - listitem [ref=e460]:
+                  - link "About" [ref=e461]:
+                    - /url: https://atid.store/about/
+                - listitem [ref=e462]:
+                  - link "Cart" [ref=e463]:
+                    - /url: https://atid.store/cart-2/
+                - listitem [ref=e464]:
+                  - link "Contact Us" [ref=e465]:
+                    - /url: https://atid.store/contact-us/
+        - complementary "Footer Widget 2" [ref=e467]:
+          - generic [ref=e469]:
+            - heading "For Her" [level=2] [ref=e470]
+            - navigation "For Her" [ref=e471]:
+              - list [ref=e472]:
+                - listitem [ref=e473]:
+                  - link "Women Jeans" [ref=e474]:
+                    - /url: "#"
+                - listitem [ref=e475]:
+                  - link "Tops and Shirts" [ref=e476]:
+                    - /url: "#"
+                - listitem [ref=e477]:
+                  - link "Women Jackets" [ref=e478]:
+                    - /url: "#"
+                - listitem [ref=e479]:
+                  - link "Heels and Flats" [ref=e480]:
+                    - /url: "#"
+                - listitem [ref=e481]:
+                  - link "Women Accessories" [ref=e482]:
+                    - /url: "#"
+        - complementary "Footer Widget 3" [ref=e484]:
+          - generic [ref=e486]:
+            - heading "For Him" [level=2] [ref=e487]
+            - navigation "For Him" [ref=e488]:
+              - list [ref=e489]:
+                - listitem [ref=e490]:
+                  - link "Men Jeans" [ref=e491]:
+                    - /url: "#"
+                - listitem [ref=e492]:
+                  - link "Men Shirts" [ref=e493]:
+                    - /url: "#"
+                - listitem [ref=e494]:
+                  - link "Men Shoes" [ref=e495]:
+                    - /url: "#"
+                - listitem [ref=e496]:
+                  - link "Men Accessories" [ref=e497]:
+                    - /url: "#"
+                - listitem [ref=e498]:
+                  - link "Men Jackets" [ref=e499]:
+                    - /url: "#"
+        - complementary "Footer Widget 4" [ref=e501]
+      - generic [ref=e507]:
+        - paragraph [ref=e511]: Copyright © 2025 ATID Demo Store
+        - paragraph [ref=e516]: Powered by ATID College
+```
