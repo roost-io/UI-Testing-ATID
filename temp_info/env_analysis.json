@@ -1,0 +1,56 @@
+{
+  "LOGIN_TYPE": {
+    "key": "LOGIN_TYPE",
+    "value": "default",
+    "type": "string",
+    "confidence": 0.9,
+    "metadata": {
+      "description": "Defines the type of login mechanism used by the UI.",
+      "possible_values": [
+        "default",
+        "oauth",
+        "sso"
+      ],
+      "usage_context": "Likely used for application configuration during runtime."
+    },
+    "is_sensitive": false,
+    "suggestions": [
+      "Consider documenting acceptable values for this field.",
+      "Ensure that this value matches a supported login type in the application."
+    ]
+  },
+  "SITE_PASSWORD": {
+    "key": "SITE_PASSWORD",
+    "value": "",
+    "type": "string",
+    "confidence": 0.8,
+    "metadata": {
+      "description": "Represents the password for accessing the site or application.",
+      "usage_context": "Typically used for authentication during login.",
+      "validation": "Should be non-empty if authentication is required."
+    },
+    "is_sensitive": true,
+    "suggestions": [
+      "Ensure this variable is securely populated and stored.",
+      "Avoid committing sensitive values to version control.",
+      "Consider using a secrets management tool to store this value."
+    ]
+  },
+  "SITE_USERNAME": {
+    "key": "SITE_USERNAME",
+    "value": "",
+    "type": "string",
+    "confidence": 0.8,
+    "metadata": {
+      "description": "Represents the username for accessing the site or application.",
+      "usage_context": "Typically paired with a password for authentication.",
+      "validation": "Should be non-empty if authentication is required."
+    },
+    "is_sensitive": true,
+    "suggestions": [
+      "Ensure this variable is securely populated and stored.",
+      "Avoid committing sensitive values to version control.",
+      "Consider documenting the expected format or constraints for this value."
+    ]
+  }
+}

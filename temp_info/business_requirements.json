@@ -1,0 +1,14 @@
+{
+    "https://atid.store": {
+        "core_purpose": "The site provides an online platform for users to browse, select, and purchase fashion and lifestyle products, enabling a streamlined e-commerce shopping experience.",
+        "business_requirements": [
+            "Users must be able to browse product categories and view detailed product information, including images, descriptions, and pricing.",
+            "Users must be able to add selected items to a shopping cart and proceed to checkout with a streamlined process.",
+            "Users must be able to create an account or log in to save purchase history, shipping details, and payment preferences for future transactions.",
+            "Users must be able to apply discount codes or promotional offers during checkout to adjust the total purchase price.",
+            "The system must provide secure payment options, including credit cards and digital wallets, and ensure encryption of sensitive information.",
+            "Users must be able to track order statuses and view shipping updates after completing a purchase.",
+            "The site must offer a responsive design that is accessible and functional across desktop and mobile devices."
+        ]
+    }
+}
