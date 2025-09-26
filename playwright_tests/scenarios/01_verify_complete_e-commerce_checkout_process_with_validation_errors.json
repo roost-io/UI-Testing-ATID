@@ -1,0 +1,160 @@
+{
+  "test_name": "Verify Complete E-commerce Checkout Process with Validation Errors",
+  "description": "This scenario tests the complete e-commerce checkout process, including adding a product to the cart, selecting shipping options, filling in billing details, and validating error messages for missing and invalid fields.",
+  "type": "e-commerce",
+  "pages": [
+    "https://atid.store/",
+    "https://atid.store/product-category/women/",
+    "https://atid.store/product-category/women/page/2/",
+    "https://atid.store/product/blue-hoodie/",
+    "https://atid.store/product/red-hoodie/",
+    "https://atid.store/cart-2/",
+    "https://atid.store/checkout-2/"
+  ],
+  "steps": [
+    "Go to the e-commerce website atid.store.",
+    "Click on the 'SHOP NOW' button in the 'Latest Eyewear For You' category.",
+    "Verify navigation to the products page.",
+    "Navigate to page 2 by clicking on '2' or the next arrow.",
+    "Verify page 2 products are displayed.",
+    "Click on the 'Red Hoodie' product.",
+    "Verify navigation to the Red Hoodie product detail page.",
+    "Verify that the price is '150.00 \u20aa'.",
+    "Click on the 'ADD TO CART' button.",
+    "Verify confirmation message 'Red Hoodie has been added to your cart' is displayed.",
+    "Click on the 'VIEW CART' button.",
+    "Verify navigation to the cart page.",
+    "Select 'Local pickup' shipping option.",
+    "Select 'Delivery Express' shipping option.",
+    "Select 'Registered Mail' shipping option.",
+    "Click on the 'PROCEED TO CHECKOUT' button.",
+    "Verify navigation to the checkout page.",
+    "Fill in the billing details: first name, last name, company name, country/region, street address, town/city, phone, and email address.",
+    "Click on the 'PLACE ORDER' button.",
+    "Verify error message 'Billing Postcode / ZIP is a required field' is displayed.",
+    "Fill in the 'Postcode / ZIP' field with '316547'.",
+    "Click on the 'PLACE ORDER' button.",
+    "Verify error message 'Invalid payment method' is displayed."
+  ],
+  "selectors": [
+    {
+      "element_type": "a",
+      "selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > section > div > div:nth-of-type(1) > div > div:nth-of-type(3) > div > div > a.elementor-button-link.elementor-button.elementor-size-sm[href='https://atid.store/product-category/women/'][role='button']",
+      "text": "SHOP NOW",
+      "action": "click",
+      "url_on_page": "https://atid.store/"
+    },
+    {
+      "element_type": "a",
+      "selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div:nth-of-type(2) > main > div > nav:nth-of-type(2) > ul > li:nth-of-type(2) > a.page-numbers[href='https://atid.store/product-category/women/page/2/']",
+      "text": "2",
+      "action": "click",
+      "url_on_page": "https://atid.store/product-category/women/"
+    },
+    {
+      "element_type": "a",
+      "selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > div > div:nth-of-type(2) > section > ul > li:nth-of-type(3) > div:nth-of-type(2) > a.ast-loop-product__link[href='https://atid.store/product/red-hoodie/']",
+      "text": "Red Hoodie",
+      "action": "click",
+      "url_on_page": "https://atid.store/product/blue-hoodie/"
+    },
+    {
+      "element_type": "button",
+      "selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > div > div:nth-of-type(2) > div:nth-of-type(2) > form > button.single_add_to_cart_button.button.alt[type='submit'][name='add-to-cart']",
+      "text": "ADD TO CART",
+      "action": "click",
+      "url_on_page": "https://atid.store/product/red-hoodie/"
+    },
+    {
+      "element_type": "a",
+      "selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > div > div:nth-of-type(1) > div > a.button.wc-forward[href='https://atid.store/cart-2/']",
+      "text": "VIEW CART",
+      "action": "click",
+      "url_on_page": "https://atid.store/product/red-hoodie/"
+    },
+    {
+      "element_type": "input",
+      "selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > div:nth-of-type(2) > div > table > tbody > tr:nth-of-type(2) > td > ul > li:nth-of-type(1) > input.shipping_method[type='radio'][name='shipping_method[0]'][id='shipping_method_0_local_pickup1']",
+      "text": "",
+      "action": "select",
+      "url_on_page": "https://atid.store/cart-2/"
+    },
+    {
+      "element_type": "button",
+      "selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > div:nth-of-type(2) > div > div > a.checkout-button.button.alt.wc-forward[href='https://atid.store/checkout-2/']",
+      "text": "PROCEED TO CHECKOUT",
+      "action": "click",
+      "url_on_page": "https://atid.store/cart-2/"
+    },
+    {
+      "element_type": "input",
+      "selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > form:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div > p:nth-of-type(7) > span > input.input-text[type='text'][name='billing_postcode'][id='billing_postcode']",
+      "text": "",
+      "action": "type",
+      "url_on_page": "https://atid.store/checkout-2/"
+    },
+    {
+      "element_type": "button",
+      "selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > form:nth-of-type(3) > div:nth-of-type(3) > div > div > button.button.alt[type='submit'][name='woocommerce_checkout_place_order'][id='place_order']",
+      "text": "PLACE ORDER",
+      "action": "click",
+      "url_on_page": "https://atid.store/checkout-2/"
+    }
+  ],
+  "expected_results": [
+    "User is navigated to the products page after clicking 'SHOP NOW'.",
+    "Page 2 products are displayed after navigation.",
+    "Product detail page for 'Red Hoodie' is displayed with price '150.00 \u20aa'.",
+    "Confirmation message 'Red Hoodie has been added to your cart' is displayed.",
+    "User is navigated to the cart page.",
+    "Checkout page is displayed after proceeding from the cart.",
+    "Error message 'Billing Postcode / ZIP is a required field' is displayed when the field is missing.",
+    "Error message 'Invalid payment method' is displayed for invalid payment."
+  ],
+  "edge_cases": [
+    "Verify behavior when required fields are left blank.",
+    "Verify error handling for invalid or unsupported payment methods.",
+    "Test with invalid or incomplete shipping details."
+  ],
+  "data_requirements": [
+    "Billing details such as first name, last name, company name, country, address, phone, and email.",
+    "A valid product in the inventory (e.g., 'Red Hoodie')."
+  ],
+  "dependencies": [
+    "The website must be running and accessible.",
+    "The 'Red Hoodie' product must be available in the inventory."
+  ],
+  "complexity": "high",
+  "api_interactions": [
+    "Monitor API calls for adding the product to the cart.",
+    "Verify API interactions when calculating shipping costs."
+  ],
+  "performance_metrics": [
+    "Measure the time taken to load the checkout page.",
+    "Verify the response time for API calls during checkout."
+  ],
+  "accessibility_requirements": [
+    "Ensure all buttons and form fields are accessible via keyboard.",
+    "Verify screen reader compatibility for error messages."
+  ],
+  "additional_data": {},
+  "metadata": {
+    "uuid": "f7e5741b-2197-4290-9abd-9bd4ceb432f3",
+    "created_at": "2025-09-26T07:42:23.558559Z",
+    "complexity": "high",
+    "risk_level": "high",
+    "priority": "high",
+    "tags": [
+      "accessibility",
+      "api-integration",
+      "auto-generated",
+      "e-commerce",
+      "error-handling",
+      "payment-flow",
+      "performance",
+      "ui-test"
+    ],
+    "estimated_execution_time": 115,
+    "flakiness_potential": "medium"
+  }
+}

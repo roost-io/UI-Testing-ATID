@@ -1,0 +1,345 @@
+[
+  {
+    "url": "https://atid.store/",
+    "interacted_element": {
+      "ui_element": "a",
+      "action_taken": "click_element_by_index",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > section > div > div:nth-of-type(1) > div > div:nth-of-type(3) > div > div > a.elementor-button-link.elementor-button.elementor-size-sm[href=\"https://atid.store/product-category/women/\"][role=\"button\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/section/div/div[1]/div/div[3]/div/div/a"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/product-category/women/",
+    "interacted_element": {
+      "ui_element": "a",
+      "action_taken": "click_element_by_index",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div:nth-of-type(2) > main > div > nav:nth-of-type(2) > ul > li:nth-of-type(2) > a.page-numbers[href=\"https://atid.store/product-category/women/page/2/\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div[2]/main/div/nav[2]/ul/li[2]/a"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/product-category/women/page/2/",
+    "interacted_element": {
+      "ui_element": "a",
+      "action_taken": "click_element_by_index",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div:nth-of-type(1) > div > div:nth-of-type(4) > ul > li:nth-of-type(5) > a[href=\"https://atid.store/product/blue-hoodie/\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div[1]/div/div[4]/ul/li[5]/a"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/product/blue-hoodie/",
+    "interacted_element": {
+      "ui_element": "a",
+      "action_taken": "click_element_by_index",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > div > div:nth-of-type(2) > section > ul > li:nth-of-type(3) > div:nth-of-type(2) > a.ast-loop-product__link[href=\"https://atid.store/product/red-hoodie/\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/div/div[2]/section/ul/li[3]/div[2]/a"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/product/red-hoodie/",
+    "interacted_element": {
+      "ui_element": "Add to cart",
+      "action_taken": "click_element_by_index",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > div > div:nth-of-type(2) > div:nth-of-type(2) > form > button.single_add_to_cart_button.button.alt[type=\"submit\"][name=\"add-to-cart\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/div/div[2]/div[2]/form/button"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/product/red-hoodie/",
+    "interacted_element": {
+      "ui_element": "a",
+      "action_taken": "click_element_by_index",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > div > div:nth-of-type(1) > div > a.button.wc-forward[href=\"https://atid.store/cart-2/\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/div/div[1]/div/a"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/cart-2/",
+    "interacted_element": {
+      "ui_element": "input",
+      "action_taken": "select_dropdown_option",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > div:nth-of-type(2) > div > table > tbody > tr:nth-of-type(2) > td > ul > li:nth-of-type(1) > input.shipping_method[type=\"radio\"][name=\"shipping_method[0]\"][id=\"shipping_method_0_local_pickup1\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/div/div/div/div/div[2]/div/table/tbody/tr[2]/td/ul/li[1]/input"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/cart-2/",
+    "interacted_element": {
+      "ui_element": "input",
+      "action_taken": "select_dropdown_option",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > div:nth-of-type(2) > div > table > tbody > tr:nth-of-type(2) > td > ul > li:nth-of-type(2) > input.shipping_method[type=\"radio\"][name=\"shipping_method[0]\"][id=\"shipping_method_0_flat_rate3\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/div/div/div/div/div[2]/div/table/tbody/tr[2]/td/ul/li[2]/input"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/cart-2/",
+    "interacted_element": {
+      "ui_element": "input",
+      "action_taken": "select_dropdown_option",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > div:nth-of-type(2) > div > table > tbody > tr:nth-of-type(2) > td > ul > li:nth-of-type(3) > input.shipping_method[type=\"radio\"][name=\"shipping_method[0]\"][id=\"shipping_method_0_flat_rate4\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/div/div/div/div/div[2]/div/table/tbody/tr[2]/td/ul/li[3]/input"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/cart-2/",
+    "interacted_element": {
+      "ui_element": "a",
+      "action_taken": "click_element_by_index",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > div:nth-of-type(2) > div > div > a.checkout-button.button.alt.wc-forward[href=\"https://atid.store/checkout-2/\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/div/div/div/div/div[2]/div/div/a"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/checkout-2/",
+    "interacted_element": {
+      "ui_element": "input",
+      "action_taken": "input_text",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > form:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div > p:nth-of-type(1) > span > input.input-text[type=\"text\"][name=\"billing_first_name\"][id=\"billing_first_name\"][placeholder][autocomplete=\"given-name\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/div/div/div/div/form[3]/div[1]/div[1]/div[1]/div/p[1]/span/input"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/checkout-2/",
+    "interacted_element": {
+      "ui_element": "input",
+      "action_taken": "input_text",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > form:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div > p:nth-of-type(2) > span > input.input-text[type=\"text\"][name=\"billing_last_name\"][id=\"billing_last_name\"][placeholder][autocomplete=\"family-name\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/div/div/div/div/form[3]/div[1]/div[1]/div[1]/div/p[2]/span/input"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/checkout-2/",
+    "interacted_element": {
+      "ui_element": "input",
+      "action_taken": "input_text",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > form:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div > p:nth-of-type(3) > span > input.input-text[type=\"text\"][name=\"billing_company\"][id=\"billing_company\"][placeholder][autocomplete=\"organization\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/div/div/div/div/form[3]/div[1]/div[1]/div[1]/div/p[3]/span/input"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/checkout-2/",
+    "interacted_element": {
+      "ui_element": "Select a country / region…AfghanistanÅland IslandsAlbaniaAlgeriaAmerican SamoaAndorraAngolaAnguillaAntarcticaAntigua and BarbudaArgentinaArmeniaArubaAustraliaAustriaAzerbaijanBahamasBahrainBangladeshBarbadosBelarusBelauBelgiumBelizeBeninBermudaBhutanBoliviaBonaire, Saint Eustatius and SabaBosnia and HerzegovinaBotswanaBouvet IslandBrazilBritish Indian Ocean TerritoryBruneiBulgariaBurkina FasoBurundiCambodiaCameroonCanadaCape VerdeCayman IslandsCentral African RepublicChadChileChinaChristmas IslandCocos (Keeling) IslandsColombiaComorosCongo (Brazzaville)Congo (Kinshasa)Cook IslandsCosta RicaCroatiaCubaCuraçaoCyprusCzech RepublicDenmarkDjiboutiDominicaDominican RepublicEcuadorEgyptEl SalvadorEquatorial GuineaEritreaEstoniaEswatiniEthiopiaFalkland IslandsFaroe IslandsFijiFinlandFranceFrench GuianaFrench PolynesiaFrench Southern TerritoriesGabonGambiaGeorgiaGermanyGhanaGibraltarGreeceGreenlandGrenadaGuadeloupeGuamGuatemalaGuernseyGuineaGuinea-BissauGuyanaHaitiHeard Island and McDonald IslandsHondurasHong KongHungaryIcelandIndiaIndonesiaIranIraqIrelandIsle of ManIsraelItalyIvory CoastJamaicaJapanJerseyJordanKazakhstanKenyaKiribatiKuwaitKyrgyzstanLaosLatviaLebanonLesothoLiberiaLibyaLiechtensteinLithuaniaLuxembourgMacaoMadagascarMalawiMalaysiaMaldivesMaliMaltaMarshall IslandsMartiniqueMauritaniaMauritiusMayotteMexicoMicronesiaMoldovaMonacoMongoliaMontenegroMontserratMoroccoMozambiqueMyanmarNamibiaNauruNepalNetherlandsNew CaledoniaNew ZealandNicaraguaNigerNigeriaNiueNorfolk IslandNorth KoreaNorth MacedoniaNorthern Mariana IslandsNorwayOmanPakistanPalestinian TerritoryPanamaPapua New GuineaParaguayPeruPhilippinesPitcairnPolandPortugalPuerto RicoQatarReunionRomaniaRussiaRwandaSão Tomé and PríncipeSaint BarthélemySaint HelenaSaint Kitts and NevisSaint LuciaSaint Martin (Dutch part)Saint Martin (French part)Saint Pierre and MiquelonSaint Vincent and the GrenadinesSamoaSan MarinoSaudi ArabiaSenegalSerbiaSeychellesSierra LeoneSingaporeSlovakiaSloveniaSolomon IslandsSomaliaSouth AfricaSouth Georgia/Sandwich IslandsSouth KoreaSouth SudanSpainSri LankaSudanSurinameSvalbard and Jan MayenSwedenSwitzerlandSyriaTaiwanTajikistanTanzaniaThailandTimor-LesteTogoTokelauTongaTrinidad and TobagoTunisiaTurkeyTurkmenistanTurks and Caicos IslandsTuvaluUgandaUkraineUnited Arab EmiratesUnited Kingdom (UK)United States (US)United States (US) Minor Outlying IslandsUruguayUzbekistanVanuatuVaticanVenezuelaVietnamVirgin Islands (British)Virgin Islands (US)Wallis and FutunaWestern SaharaYemenZambiaZimbabwe",
+      "action_taken": "select_dropdown_option",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > form:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div > p:nth-of-type(4) > span > select.country_to_state.country_select.select2-hidden-accessible[name=\"billing_country\"][id=\"billing_country\"][autocomplete=\"country\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/div/div/div/div/form[3]/div[1]/div[1]/div[1]/div/p[4]/span/select"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/checkout-2/",
+    "interacted_element": {
+      "ui_element": "House number and street name",
+      "action_taken": "input_text",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > form:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div > p:nth-of-type(5) > span > input.input-text[type=\"text\"][name=\"billing_address_1\"][id=\"billing_address_1\"][placeholder=\"House number and street name\"][autocomplete=\"address-line1\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/div/div/div/div/form[3]/div[1]/div[1]/div[1]/div/p[5]/span/input"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/checkout-2/",
+    "interacted_element": {
+      "ui_element": "input",
+      "action_taken": "input_text",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > form:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div > p:nth-of-type(8) > span > input.input-text[type=\"text\"][name=\"billing_city\"][id=\"billing_city\"][placeholder][autocomplete=\"address-level2\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/div/div/div/div/form[3]/div[1]/div[1]/div[1]/div/p[8]/span/input"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/checkout-2/",
+    "interacted_element": {
+      "ui_element": "input",
+      "action_taken": "input_text",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > form:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div > p:nth-of-type(10) > span > input.input-text[type=\"tel\"][name=\"billing_phone\"][id=\"billing_phone\"][placeholder][autocomplete=\"tel\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/div/div/div/div/form[3]/div[1]/div[1]/div[1]/div/p[10]/span/input"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/checkout-2/",
+    "interacted_element": {
+      "ui_element": "input",
+      "action_taken": "input_text",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > form:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div > p:nth-of-type(11) > span > input.input-text[type=\"email\"][name=\"billing_email\"][id=\"billing_email\"][placeholder][autocomplete=\"email\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/div/div/div/div/form[3]/div[1]/div[1]/div[1]/div/p[11]/span/input"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/checkout-2/",
+    "interacted_element": {
+      "ui_element": "input",
+      "action_taken": "input_text",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > form:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div > p:nth-of-type(7) > span > input.input-text[type=\"text\"][name=\"billing_postcode\"][id=\"billing_postcode\"][placeholder][autocomplete=\"postal-code\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/div/div/div/div/form[3]/div[1]/div[1]/div[1]/div/p[7]/span/input"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/checkout-2/",
+    "interacted_element": {
+      "ui_element": "Place order",
+      "action_taken": "click_element_by_index",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > form:nth-of-type(3) > div:nth-of-type(2) > div > div > button.button.alt[type=\"submit\"][name=\"woocommerce_checkout_place_order\"][id=\"place_order\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/div/div/div/div/form[3]/div[2]/div/div/button"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/checkout-2/",
+    "interacted_element": {
+      "ui_element": "input",
+      "action_taken": "click_element_by_index",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > form:nth-of-type(3) > div:nth-of-type(3) > table > tfoot > tr:nth-of-type(2) > td > ul > li:nth-of-type(1) > input.shipping_method[type=\"radio\"][name=\"shipping_method[0]\"][id=\"shipping_method_0_local_pickup1\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/div/div/div/div/form[3]/div[3]/table/tfoot/tr[2]/td/ul/li[1]/input"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/checkout-2/",
+    "interacted_element": {
+      "ui_element": "input",
+      "action_taken": "click_element_by_index",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > form:nth-of-type(3) > div:nth-of-type(3) > table > tfoot > tr:nth-of-type(2) > td > ul > li:nth-of-type(2) > input.shipping_method[type=\"radio\"][name=\"shipping_method[0]\"][id=\"shipping_method_0_flat_rate3\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/div/div/div/div/form[3]/div[3]/table/tfoot/tr[2]/td/ul/li[2]/input"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/checkout-2/",
+    "interacted_element": {
+      "ui_element": "input",
+      "action_taken": "click_element_by_index",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > form:nth-of-type(3) > div:nth-of-type(3) > table > tfoot > tr:nth-of-type(2) > td > ul > li:nth-of-type(3) > input.shipping_method[type=\"radio\"][name=\"shipping_method[0]\"][id=\"shipping_method_0_flat_rate4\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/div/div/div/div/form[3]/div[3]/table/tfoot/tr[2]/td/ul/li[3]/input"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/checkout-2/",
+    "interacted_element": {
+      "ui_element": "Place order",
+      "action_taken": "click_element_by_index",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > form:nth-of-type(3) > div:nth-of-type(3) > div > div > button.button.alt[type=\"submit\"][name=\"woocommerce_checkout_place_order\"][id=\"place_order\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/div/div/div/div/form[3]/div[3]/div/div/button"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/checkout-2/",
+    "interacted_element": {
+      "ui_element": "privacy policy",
+      "action_taken": "click_element_by_index",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > form:nth-of-type(3) > div:nth-of-type(3) > div > div > div > div > p > a.woocommerce-privacy-policy-link[href=\"https://atid.store/?page_id=3\"][target=\"_blank\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/div/div/div/div/form[3]/div[3]/div/div/div/div/p/a"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/checkout-2/",
+    "interacted_element": {
+      "ui_element": "Place order",
+      "action_taken": "click_element_by_index",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > form:nth-of-type(3) > div:nth-of-type(3) > div > div > button.button.alt[type=\"submit\"][name=\"woocommerce_checkout_place_order\"][id=\"place_order\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/div/div/div/div/form[3]/div[3]/div/div/button"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/checkout-2/",
+    "interacted_element": {
+      "ui_element": "input",
+      "action_taken": "click_element_by_index",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > form:nth-of-type(3) > div:nth-of-type(3) > table > tfoot > tr:nth-of-type(2) > td > ul > li:nth-of-type(1) > input.shipping_method[type=\"radio\"][name=\"shipping_method[0]\"][id=\"shipping_method_0_local_pickup1\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/div/div/div/div/form[3]/div[3]/table/tfoot/tr[2]/td/ul/li[1]/input"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/checkout-2/",
+    "interacted_element": {
+      "ui_element": "input",
+      "action_taken": "click_element_by_index",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > form:nth-of-type(3) > div:nth-of-type(3) > table > tfoot > tr:nth-of-type(2) > td > ul > li:nth-of-type(2) > input.shipping_method[type=\"radio\"][name=\"shipping_method[0]\"][id=\"shipping_method_0_flat_rate3\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/div/div/div/div/form[3]/div[3]/table/tfoot/tr[2]/td/ul/li[2]/input"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/checkout-2/",
+    "interacted_element": {
+      "ui_element": "input",
+      "action_taken": "click_element_by_index",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > form:nth-of-type(3) > div:nth-of-type(3) > table > tfoot > tr:nth-of-type(2) > td > ul > li:nth-of-type(3) > input.shipping_method[type=\"radio\"][name=\"shipping_method[0]\"][id=\"shipping_method_0_flat_rate4\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/div/div/div/div/form[3]/div[3]/table/tfoot/tr[2]/td/ul/li[3]/input"
+      }
+    }
+  },
+  {
+    "url": "https://atid.store/checkout-2/",
+    "interacted_element": {
+      "ui_element": "Place order",
+      "action_taken": "click_element_by_index",
+      "selectors": {
+        "css_selector": "html > body > div:nth-of-type(1) > div:nth-of-type(1) > div > div > main > article > div > div > section:nth-of-type(2) > div > div > div > div > div > div > div > form:nth-of-type(3) > div:nth-of-type(3) > div > div > button.button.alt[type=\"submit\"][name=\"woocommerce_checkout_place_order\"][id=\"place_order\"]",
+        "xpath": "html/body/div[1]/div[1]/div/div/main/article/div/div/section[2]/div/div/div/div/div/div/div/form[3]/div[3]/div/div/button"
+      }
+    }
+  },
+  {
+    "type": "url_map",
+    "visited_urls": [
+      "about:blank",
+      "https://atid.store/",
+      "https://atid.store/product-category/women/",
+      "https://atid.store/product-category/women/page/2/",
+      "https://atid.store/product/blue-hoodie/",
+      "https://atid.store/product/red-hoodie/",
+      "https://atid.store/cart-2/",
+      "https://atid.store/checkout-2/"
+    ]
+  }
+]
