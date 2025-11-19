@@ -1,0 +1,1 @@
+# Error generating feature file: Read timeout on endpoint URL: "https://bedrock-runtime.eu-west-1.amazonaws.com/model/global.anthropic.claude-sonnet-4-5-20250929-v1%3A0/converse"
