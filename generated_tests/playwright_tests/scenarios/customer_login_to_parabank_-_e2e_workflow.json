@@ -1,0 +1,210 @@
+{
+  "site_url": "https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC",
+  "site_type": "unknown",
+  "site_category": "general",
+  "test_name": "customer_login_to_parabank_-_e2e_workflow",
+  "login_mechanisms": [
+    "general_interaction"
+  ],
+  "user_journeys": [],
+  "proposed_scenarios": [
+    {
+      "scenario_name": "Customer Login to ParaBank - E2E Workflow",
+      "description": "This scenario tests the complete customer login journey from the homepage to successful authentication. It validates that a registered customer can enter their credentials, submit the login form, and gain access to their account dashboard. This is a critical path that every user must complete to access banking services.",
+      "test_type": "e2e_workflow",
+      "priority": "critical",
+      "business_goal": "Ensure customers can securely access their banking accounts through proper authentication",
+      "user_story": "As a ParaBank customer, I want to log in to my account, so that I can access my banking information and perform transactions",
+      "detailed_steps": [
+        {
+          "step_number": 1,
+          "action": "Navigate to ParaBank homepage",
+          "action_type": "navigate",
+          "description": "Load the ParaBank homepage at https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC. Wait for the page to fully render including the login form, navigation menu, and welcome message. This establishes the starting point for customer authentication and provides access to the login form located on the left side of the page.",
+          "expected_page_url": "https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC",
+          "selector": null,
+          "all_selectors": [],
+          "selector_reference": {
+            "pool_index": null,
+            "confidence": null,
+            "selection_reason": "No selector needed for navigation actions - page.goto() doesn't require element selection",
+            "all_pool_matches": []
+          },
+          "input_value": null,
+          "wait_strategy": "Wait for the page to reach network idle state indicating all initial resources have loaded. Then wait an additional 1-2 seconds for any JavaScript-rendered content to appear. Verify the login form is visible before proceeding. Maximum total wait time should be 10 seconds.",
+          "verification_strategy": "Verify the browser URL matches https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC. Check the page title contains 'ParaBank' or 'Welcome to ParaBank'. Confirm the login form is visible with username and password fields and a login button. These verifications ensure the homepage loaded correctly and is in the expected initial state.",
+          "error_recovery": "If page fails to load within 10 seconds, retry navigation up to 3 additional times with 3 second delays between attempts. If all retries fail, check internet connectivity and verify the site is accessible. Fail the test with a descriptive error message including the attempted URL and any HTTP status codes received.",
+          "business_context": "Customer must access the ParaBank homepage to begin the authentication workflow",
+          "based_on_interaction": false,
+          "captured_from_url": "https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC"
+        },
+        {
+          "step_number": 2,
+          "action": "Enter username in login form",
+          "action_type": "input_text",
+          "description": "Locate the username input field in the customer login form on the left side of the page. The field is labeled 'Username' and is the first input field in the login form. Click to focus on this field and enter the customer's username. The field should accept text input immediately upon focus. After entering the username, verify the text has been properly entered before proceeding.",
+          "expected_page_url": "https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC",
+          "selector": null,
+          "all_selectors": [
+            {
+              "selector": "input[name='username']",
+              "confidence": 90,
+              "strategy": "attribute",
+              "is_unique": true,
+              "match_count": 1
+            },
+            {
+              "selector": "#loginPanel input:nth-of-type(1)",
+              "confidence": 85,
+              "strategy": "css",
+              "is_unique": true,
+              "match_count": 1
+            }
+          ],
+          "selector_reference": {
+            "pool_index": null,
+            "confidence": null,
+            "selection_reason": "No matching selector found in the pool. This step requires manual selector creation during test generation. Recommended selector would target the username input field in the login form.",
+            "all_pool_matches": []
+          },
+          "input_value": "john",
+          "wait_strategy": "Before interacting, verify the username input field is visible and enabled. After entering text, wait 500 milliseconds to allow the UI to process the input. Ensure the field retains focus and displays the entered username text before proceeding.",
+          "verification_strategy": "After entering the username, verify the input field's value property contains the exact text entered ('john'). Confirm the field still has focus and is ready for the tab key to move to the password field or for direct interaction with the password field.",
+          "error_recovery": "If the username field cannot be found within 5 seconds, check if the page structure has changed or if the login form is located in a different position. Verify that no overlays or modals are blocking access to the form. If the field is found but cannot accept input, check if it's disabled or read-only. If all checks fail, fail the test with a message: 'Could not locate or interact with username field on login form'.",
+          "business_context": "Customer must provide their unique username identifier to begin authentication",
+          "based_on_interaction": false,
+          "captured_from_url": "https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC"
+        },
+        {
+          "step_number": 3,
+          "action": "Enter password in login form",
+          "action_type": "input_text",
+          "description": "Locate the password input field in the customer login form, positioned directly below the username field. The field is labeled 'Password' and is the second input field in the login form. Click to focus on this field and enter the customer's password. The field should mask the input text for security. After entering the password, verify the text has been entered (though displayed as masked characters) before proceeding.",
+          "expected_page_url": "https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC",
+          "selector": null,
+          "all_selectors": [
+            {
+              "selector": "input[name='password']",
+              "confidence": 90,
+              "strategy": "attribute",
+              "is_unique": true,
+              "match_count": 1
+            },
+            {
+              "selector": "#loginPanel input[type='password']",
+              "confidence": 85,
+              "strategy": "css",
+              "is_unique": true,
+              "match_count": 1
+            }
+          ],
+          "selector_reference": {
+            "pool_index": null,
+            "confidence": null,
+            "selection_reason": "No matching selector found in the pool. This step requires manual selector creation during test generation. Recommended selector would target the password input field in the login form.",
+            "all_pool_matches": []
+          },
+          "input_value": "demo",
+          "wait_strategy": "Before interacting, verify the password input field is visible and enabled. After entering text, wait 500 milliseconds to allow the UI to process the input. Ensure the field displays masked characters representing the entered password before proceeding.",
+          "verification_strategy": "After entering the password, verify the input field contains characters (though they will be masked). The field should show the appropriate number of masked characters corresponding to the password length. Confirm the password field has accepted the input and is ready for form submission.",
+          "error_recovery": "If the password field cannot be found within 5 seconds, check if the page structure has changed or if the login form fields have been rearranged. If the field is found but cannot accept input, verify it's not disabled or read-only. If all checks fail, fail the test with a message: 'Could not locate or interact with password field on login form'.",
+          "business_context": "Customer must provide their secure password to complete authentication credentials",
+          "based_on_interaction": false,
+          "captured_from_url": "https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC"
+        },
+        {
+          "step_number": 4,
+          "action": "Click the Login button to submit credentials",
+          "action_type": "click",
+          "description": "Locate and click the 'Log In' button positioned at the bottom of the login form, below the password field. The button typically has green styling and contains the text 'Log In'. Clicking this button will submit the entered username and password credentials to the server for authentication and, if successful, navigate to the customer's account overview page.",
+          "expected_page_url": "https://parabank.parasoft.com/parabank/overview.htm",
+          "selector": null,
+          "all_selectors": [
+            {
+              "selector": "input[value='Log In']",
+              "confidence": 90,
+              "strategy": "attribute",
+              "is_unique": true,
+              "match_count": 1
+            },
+            {
+              "selector": "#loginPanel input[type='submit']",
+              "confidence": 85,
+              "strategy": "css",
+              "is_unique": true,
+              "match_count": 1
+            }
+          ],
+          "selector_reference": {
+            "pool_index": null,
+            "confidence": null,
+            "selection_reason": "No matching selector found in the pool. This step requires manual selector creation during test generation. Recommended selector would target the login button in the login form.",
+            "all_pool_matches": []
+          },
+          "input_value": null,
+          "wait_strategy": "After clicking the login button, wait for navigation to complete and the new page to load. This may take 2-5 seconds depending on server response time. Monitor for URL change from index.htm to overview.htm and for the appearance of account information elements that indicate successful login. Maximum wait time should be 10 seconds.",
+          "verification_strategy": "Verify the page URL has changed to include '/overview.htm' indicating successful navigation to the account overview page. Confirm the page contains customer-specific elements like account numbers, balance information, and a welcome message that includes the username. Also verify that login-related elements are no longer visible and have been replaced by authenticated user interface elements.",
+          "error_recovery": "If clicking the login button doesn't trigger navigation within 5 seconds, check if any error messages appear on the page (such as 'Invalid username/password'). If an error message appears, the test should fail with a descriptive message including the error text. If no error appears but navigation doesn't occur, try clicking the button again. If navigation still fails after a second attempt, fail the test with message: 'Authentication failed - could not navigate to account overview after login attempt'.",
+          "business_context": "Customer submits credentials to authenticate and gain access to their banking accounts",
+          "based_on_interaction": false,
+          "captured_from_url": "https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC"
+        },
+        {
+          "step_number": 5,
+          "action": "Verify successful login and account overview display",
+          "action_type": "verify",
+          "description": "Verify that the customer has successfully logged in by confirming they have been redirected to the account overview page. This page displays a welcome message with the customer's name, shows account summaries including account numbers and balances, and provides navigation options for various banking services. The login form should no longer be visible, replaced instead by authenticated user interface elements.",
+          "expected_page_url": "https://parabank.parasoft.com/parabank/overview.htm",
+          "selector": null,
+          "all_selectors": [],
+          "selector_reference": {
+            "pool_index": null,
+            "confidence": null,
+            "selection_reason": "No selector needed for this verification step as it's checking the overall page state rather than interacting with a specific element",
+            "all_pool_matches": []
+          },
+          "input_value": null,
+          "wait_strategy": "Allow the account overview page to fully load by waiting for network idle state. Then wait an additional 1-2 seconds for any JavaScript-rendered account information to appear. Verify key account elements are visible before proceeding with verifications. Maximum wait time should be 10 seconds.",
+          "verification_strategy": "Verify multiple elements to confirm successful login: 1) Check URL contains 'overview.htm', 2) Verify welcome message contains customer name 'John' or the username used for login, 3) Confirm account summary section is visible with at least one account listed, 4) Verify navigation menu shows authenticated options like 'Transfer Funds', 'Bill Pay', etc., 5) Confirm logout option is available, typically in the top right or within a user menu.",
+          "error_recovery": "If account overview elements are not found within 10 seconds, check for any error messages that might indicate authentication issues or system problems. If the page appears to load but doesn't contain expected account elements, check if the URL indicates an error or maintenance page. If login appeared successful but account data isn't visible, fail the test with message: 'Login succeeded but account overview data not displayed - possible system error or data availability issue'.",
+          "business_context": "Confirms the authentication system successfully verified credentials and provided access to customer's banking information",
+          "based_on_interaction": false,
+          "captured_from_url": "https://parabank.parasoft.com/parabank/overview.htm"
+        }
+      ],
+      "expected_results": [
+        "User successfully authenticates with valid credentials",
+        "System redirects to the account overview page after authentication",
+        "Account overview displays correct customer information and account details",
+        "Navigation options for authenticated users are accessible",
+        "Login form is replaced with authenticated user interface elements"
+      ],
+      "edge_cases_to_test": [
+        "Authentication with incorrect password should display appropriate error message",
+        "Authentication with non-existent username should display appropriate error message",
+        "Session timeout handling after period of inactivity",
+        "Browser back button navigation after login should maintain authenticated state",
+        "Multiple failed login attempts should handle account lockout policies if implemented"
+      ],
+      "data_requirements": [
+        "Valid username and password combination for existing customer account",
+        "Expected account numbers and types that should appear after login",
+        "Account balance ranges for verification (if applicable)"
+      ],
+      "prerequisites": [
+        "ParaBank demo site is accessible and functioning",
+        "Test account credentials are valid and active",
+        "Authentication services are operational",
+        "Account data is available for the test user"
+      ],
+      "auth_required": true,
+      "starting_url": "https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC"
+    }
+  ],
+  "login_completion_state": "successful",
+  "analysis_timestamp": "2025-11-19T05:23:19.057746",
+  "confidence_score": 0.5,
+  "captured_selectors": [],
+  "auth_required": true,
+  "starting_url": "https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC"
+}

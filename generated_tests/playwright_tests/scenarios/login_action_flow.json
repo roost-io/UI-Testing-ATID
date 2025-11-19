@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "total_steps": 4,
+    "sites_involved": [
+      "parabank.parasoft.com"
+    ],
+    "flow_type": "standard_login",
+    "generated_timestamp": "2025-11-19T05:21:38.668937"
+  },
+  "action_flow": [
+    {
+      "step": 1,
+      "site": "parabank.parasoft.com",
+      "action": "input_text",
+      "element": "<input> ''",
+      "selector": "page.locator(\".input\").nth(0)",
+      "description": "Enter data into <input> '' on parabank.parasoft.com",
+      "url": "https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC"
+    },
+    {
+      "step": 2,
+      "site": "parabank.parasoft.com",
+      "action": "input_text",
+      "element": "<input> ''",
+      "selector": "page.locator(\".input\").nth(1)",
+      "description": "Enter data into <input> '' on parabank.parasoft.com",
+      "url": "https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC"
+    },
+    {
+      "step": 3,
+      "site": "parabank.parasoft.com",
+      "action": "click",
+      "element": "<input> ''",
+      "selector": "page.locator(\".button\").nth(1)",
+      "description": "Click <input> '' on parabank.parasoft.com",
+      "url": "https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC"
+    },
+    {
+      "step": 4,
+      "site": "parabank.parasoft.com",
+      "action": "click_element_by_index",
+      "element": "<input> ''",
+      "selector": "page.locator(\".button\")",
+      "description": "click_element_by_index on <input> '' at parabank.parasoft.com",
+      "url": "https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC"
+    }
+  ],
+  "site_grouping": {
+    "parabank.parasoft.com": {
+      "purpose": "Initial authentication",
+      "steps": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "total_interactions": 4
+    }
+  }
+}
