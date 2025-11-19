@@ -1,0 +1,146 @@
+{
+  "site_url": "https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC",
+  "site_type": "login_workflow",
+  "site_category": "authentication",
+  "test_name": "login_analysis_happy_path",
+  "login_mechanisms": [
+    "form_login"
+  ],
+  "user_journeys": [],
+  "proposed_scenarios": [
+    {
+      "scenario_name": "login_analysis_happy_path",
+      "test_name": "login_analysis_happy_path",
+      "test_type": "e2e_authentication_workflow",
+      "auth_required": false,
+      "detailed_steps": [
+        {
+          "step_number": 1,
+          "action": "navigate",
+          "description": "Navigate to ParaBank login page",
+          "expected_page_url": "https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC",
+          "verification_point": "Page title is 'ParaBank | Welcome | Online Banking'",
+          "confidence": 90,
+          "based_on_interaction": true
+        },
+        {
+          "step_number": 2,
+          "action": "input_text",
+          "description": "Enter username in the username field",
+          "selector": "page.locator(\".input\").nth(0)",
+          "all_selectors": [
+            {
+              "selector": "page.locator(\".input\").nth(0)",
+              "confidence": 70,
+              "strategy": "css",
+              "is_unique": true,
+              "match_count": 1
+            }
+          ],
+          "text": "x_username",
+          "expected_page_url": "https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC",
+          "confidence": 70,
+          "based_on_interaction": true
+        },
+        {
+          "step_number": 3,
+          "action": "input_text",
+          "description": "Enter password in the password field",
+          "selector": "page.locator(\".input\").nth(1)",
+          "all_selectors": [
+            {
+              "selector": "page.locator(\".input\").nth(1)",
+              "confidence": 70,
+              "strategy": "css",
+              "is_unique": true,
+              "match_count": 1
+            }
+          ],
+          "text": "x_password",
+          "expected_page_url": "https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC",
+          "confidence": 70,
+          "based_on_interaction": true
+        },
+        {
+          "step_number": 4,
+          "action": "click",
+          "description": "Click login button to submit credentials",
+          "selector": "page.locator(\".button\").nth(1)",
+          "all_selectors": [
+            {
+              "selector": "page.locator(\".button\").nth(1)",
+              "confidence": 70,
+              "strategy": "css",
+              "is_unique": true,
+              "match_count": 1
+            },
+            {
+              "selector": "page.locator(\".button\")",
+              "confidence": 78,
+              "strategy": "css",
+              "is_unique": false,
+              "match_count": 2
+            }
+          ],
+          "expected_page_url": "https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC",
+          "confidence": 70,
+          "based_on_interaction": true
+        },
+        {
+          "step_number": 5,
+          "action": "verify",
+          "description": "Verify user is successfully logged in and redirected to accounts overview page",
+          "expected_page_url": "https://parabank.parasoft.com/parabank/overview.htm",
+          "verification_point": "Page URL changes to accounts overview page",
+          "confidence": 90,
+          "based_on_interaction": true
+        }
+      ]
+    }
+  ],
+  "login_completion_state": "successful",
+  "analysis_timestamp": "2025-11-19T05:21:59.226588",
+  "confidence_score": 1.0,
+  "flow_type": "happy_path_only",
+  "excluded_scenarios": [
+    "login_invalid_credentials"
+  ],
+  "scenario_count": 1,
+  "focus": "successful_authentication_only",
+  "generated_from": "login_analysis.json",
+  "generation_timestamp": "2025-11-19T05:21:59.229916",
+  "captured_selectors": [
+    {
+      "selector": "page.locator(\".input\").nth(0)",
+      "confidence": 70,
+      "action": "input_text",
+      "element": "<input> ''",
+      "url": "https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC",
+      "timestamp": "2025-11-19T05:19:02.311795"
+    },
+    {
+      "selector": "page.locator(\".input\").nth(1)",
+      "confidence": 70,
+      "action": "input_text",
+      "element": "<input> ''",
+      "url": "https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC",
+      "timestamp": "2025-11-19T05:19:30.787940"
+    },
+    {
+      "selector": "page.locator(\".button\").nth(1)",
+      "confidence": 70,
+      "action": "click",
+      "element": "<input> ''",
+      "url": "https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC",
+      "timestamp": "2025-11-19T05:19:56.792328"
+    },
+    {
+      "selector": "page.locator(\".button\")",
+      "confidence": 78,
+      "action": "click_element_by_index",
+      "element": "<input> ''",
+      "url": "https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC",
+      "timestamp": "2025-11-19T05:20:43.104751"
+    }
+  ]
+}
