@@ -1,0 +1,128 @@
+{
+  "site_url": "https://zbio.atlassian.net/",
+  "site_type": "login_workflow",
+  "site_category": "authentication",
+  "test_name": "login_analysis_happy_path",
+  "login_mechanisms": [
+    "form_login"
+  ],
+  "user_journeys": [],
+  "proposed_scenarios": [
+    {
+      "scenario_name": "login_analysis_happy_path",
+      "test_name": "login_analysis_happy_path",
+      "auth_required": false,
+      "description": "Complete successful authentication workflow using valid Atlassian credentials to access zbio Jira instance",
+      "test_type": "e2e_authentication_workflow",
+      "priority": "critical",
+      "business_goal": "Verify users can successfully authenticate with valid Atlassian credentials and access the Jira workspace",
+      "user_story": "As a registered team member, I want to log in with my Atlassian credentials so that I can access the zbio Jira workspace and manage projects",
+      "detailed_steps": [
+        {
+          "step_number": 1,
+          "action": "navigate",
+          "description": "Navigate to zbio.atlassian.net homepage which redirects to Atlassian ID login",
+          "selector": null,
+          "all_selectors": [],
+          "expected_page_url": "https://id.atlassian.com/login",
+          "verification_point": "Page redirects to Atlassian ID login portal with continue parameter for zbio.atlassian.net",
+          "business_impact": "User is directed to centralized Atlassian authentication",
+          "confidence": 90,
+          "based_on_interaction": false,
+          "manual_step": false
+        },
+        {
+          "step_number": 2,
+          "action": "pause",
+          "description": "Pause for manual entry of valid Atlassian email/username on login form",
+          "selector": null,
+          "all_selectors": [],
+          "expected_page_url": "https://id.atlassian.com/login",
+          "manual_step": true,
+          "pause_message": "⏸️ TEST PAUSED: Please enter your Atlassian email/username in the login form. Press Enter to continue...",
+          "verification_point": "Username field accepts valid email address format",
+          "business_impact": "User can identify their account for authentication",
+          "confidence": 85,
+          "based_on_interaction": false
+        },
+        {
+          "step_number": 3,
+          "action": "pause",
+          "description": "Pause for manual entry of valid password and form submission",
+          "selector": null,
+          "all_selectors": [],
+          "expected_page_url": "https://id.atlassian.com/login",
+          "manual_step": true,
+          "pause_message": "⏸️ TEST PAUSED: Please enter your password and click 'Continue' or press Enter to submit. Press Enter to continue test...",
+          "verification_point": "Password field masks input and login button is clickable",
+          "business_impact": "User can securely submit credentials",
+          "confidence": 85,
+          "based_on_interaction": false
+        },
+        {
+          "step_number": 4,
+          "action": "verify_navigation",
+          "description": "Verify successful authentication and redirect to zbio.atlassian.net Jira workspace",
+          "selector": null,
+          "all_selectors": [],
+          "expected_page_url": "https://zbio.atlassian.net",
+          "verification_point": "URL changes from id.atlassian.com to zbio.atlassian.net after successful authentication",
+          "business_impact": "User successfully authenticated and granted access to Jira workspace",
+          "confidence": 90,
+          "based_on_interaction": false,
+          "manual_step": false
+        },
+        {
+          "step_number": 5,
+          "action": "verify_navigation",
+          "description": "Verify authenticated state by confirming page title and URL stability",
+          "selector": null,
+          "all_selectors": [],
+          "expected_page_url": "https://zbio.atlassian.net",
+          "verification_point": "Page title indicates authenticated Jira workspace and URL remains on zbio.atlassian.net domain",
+          "business_impact": "User successfully reached authenticated area and can access Jira features",
+          "confidence": 85,
+          "based_on_interaction": false,
+          "manual_step": false
+        }
+      ],
+      "expected_results": [
+        "User successfully navigates to Atlassian ID login page",
+        "Login form accepts valid credentials without errors",
+        "Authentication processes successfully with valid credentials",
+        "User is redirected to zbio.atlassian.net Jira workspace after authentication",
+        "Authenticated session is established and page loads successfully",
+        "No security errors or authentication failures occur during the workflow"
+      ],
+      "edge_cases_to_test": [
+        "What happens if session expires during login process",
+        "How does system handle slow network during authentication redirect",
+        "What if user navigates back during authentication flow",
+        "How does login handle multiple concurrent login attempts"
+      ],
+      "data_requirements": [
+        "Valid Atlassian account credentials with access to zbio.atlassian.net",
+        "Active user account that has been granted Jira workspace permissions",
+        "Test account credentials stored in environment variables for security"
+      ],
+      "prerequisites": [
+        "zbio.atlassian.net Jira instance is accessible and operational",
+        "Atlassian ID authentication service (id.atlassian.com) is functional",
+        "Test user account exists and has active permissions for zbio workspace",
+        "Network allows access to Atlassian domains"
+      ]
+    }
+  ],
+  "login_completion_state": "successful",
+  "analysis_timestamp": "2025-11-19T11:55:29.271998",
+  "confidence_score": 1.0,
+  "flow_type": "happy_path_only",
+  "excluded_scenarios": [
+    "login_invalid_credentials"
+  ],
+  "scenario_count": 1,
+  "focus": "successful_authentication_only",
+  "generated_from": "login_analysis.json",
+  "generation_timestamp": "2025-11-19T11:55:29.275861",
+  "captured_selectors": []
+}
