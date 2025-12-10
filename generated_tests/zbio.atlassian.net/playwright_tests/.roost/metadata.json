@@ -1,0 +1,43 @@
+{
+  "metadata_version": "1.0",
+  "created_at": "2025-12-10T09:48:41.215786",
+  "last_updated": "2025-12-10T10:22:10.241120",
+  "Login_File": {
+    "name": "standard",
+    "path": "/var/tmp/Roost/RoostGPT/ui-test-zbio-atlassian/a20dd89c-cf0d-4aeb-8074-163efb200d95/ui-test-jira-login-scenario.md.txt",
+    "hash": "82945acf7d2b8569038b138589d6c59cabd963322b22fc9a9bf73c5c3192308c",
+    "agent_workflow_completed": false,
+    "agent_workflow_file_path": "/var/tmp/Roost/RoostGPT/ui-test-zbio-atlassian/a20dd89c-cf0d-4aeb-8074-163efb200d95/temp_info/zbio.atlassian.net/extracted_data/login_result_82945acf7d2b8569038b138589d6c59cabd963322b22fc9a9bf73c5c3192308c.json",
+    "agent_interaction_file_path": "/var/tmp/Roost/RoostGPT/ui-test-zbio-atlassian/a20dd89c-cf0d-4aeb-8074-163efb200d95/temp_info/zbio.atlassian.net/extracted_data/login_data_a8d874628c73e35697e1a14b0337ca67f500571bf979f41da1f40f333151abb0.json",
+    "scenario_name": "login_analysis_happy_path",
+    "scenario_file_path": "scenarios/login_analysis_happy_path.json",
+    "test_generated": true,
+    "test_name": "login_analysis_happy_path.spec.js",
+    "test_file_path": "tests/login_analysis_happy_path.spec.js",
+    "test_executed_success": false,
+    "test_error": [
+      "Test: Login Analysis - Documented Failure (Atlassian React SPA Incompatibility)",
+      "======================================================================",
+      "Main Error:",
+      "Error: Login failed - still on authentication page",
+      "",
+      "Detailed Errors:",
+      "",
+      "Error 1:",
+      "Error: Login failed - still on authentication page",
+      "",
+      "  298 |     ",
+      "  299 |     if (finalUrl.includes('id.atlassian.com')) {",
+      "> 300 |       throw new Error('Login failed - still on authentication page');",
+      "      |             ^",
+      "  301 |     }",
+      "  302 |     ",
+      "  303 |     console.log('✅ Login successful - redirected to application');",
+      "    at /var/tmp/Roost/RoostGPT/ui-test-zbio-atlassian/a20dd89c-cf0d-4aeb-8074-163efb200d95/source/UI-Testing-ATID/generated_tests/zbio.atlassian.net/playwright_tests/tests/login_analysis_happy_path.spec.js:300:13",
+      "  Location: /var/tmp/Roost/RoostGPT/ui-test-zbio-atlassian/a20dd89c-cf0d-4aeb-8074-163efb200d95/source/UI-Testing-ATID/generated_tests/zbio.atlassian.net/playwright_tests/tests/login_analysis_happy_path.spec.js:300:13",
+      "",
+      "Co"
+    ]
+  },
+  "User_Scenarios_File": []
+}

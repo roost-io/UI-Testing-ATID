@@ -1,0 +1,114 @@
+{
+  "site_url": "https://zbio.atlassian.net/",
+  "site_type": "login_workflow",
+  "site_category": "authentication",
+  "test_name": "login_analysis_happy_path",
+  "login_mechanisms": [
+    "form_login"
+  ],
+  "user_journeys": [],
+  "proposed_scenarios": [
+    {
+      "scenario_name": "login_analysis_happy_path",
+      "test_name": "login_analysis_happy_path",
+      "auth_required": false,
+      "description": "This scenario documents a failed login automation attempt. Despite 32+ navigation attempts and multiple JavaScript diagnostic strategies, the Atlassian login page exhibited persistent browser state indexing incompatibility. The login form content exists in the DOM (confirmed via JavaScript evaluation) but remains undetectable by the automation framework, preventing automated credential entry and form submission.",
+      "test_type": "e2e_authentication_workflow",
+      "priority": "critical",
+      "business_goal": "Document the login failure workflow and technical limitations encountered when attempting to automate Atlassian account authentication",
+      "user_story": "As a QA engineer, I need to understand why the Atlassian login automation failed so that I can document the technical limitations and inform stakeholders about automation compatibility issues with this specific React SPA implementation",
+      "detailed_steps": [
+        {
+          "step_number": 1,
+          "action": "navigate",
+          "description": "Navigate to JIRA Atlassian site (zbio.atlassian.net) which automatically redirects to Atlassian's centralized authentication page at id.atlassian.com",
+          "selector": null,
+          "all_selectors": [],
+          "expected_page_url": "https://id.atlassian.com/login",
+          "verification_point": "Page URL redirects from zbio.atlassian.net to id.atlassian.com/login, and page title contains 'Log in with Atlassian account'",
+          "business_impact": "User can access the centralized Atlassian login interface",
+          "confidence": 100,
+          "based_on_interaction": true,
+          "manual_step": false
+        },
+        {
+          "step_number": 2,
+          "action": "wait",
+          "description": "Wait for the Atlassian React SPA login page to fully render and load all interactive form elements",
+          "selector": null,
+          "all_selectors": [],
+          "expected_page_url": "https://id.atlassian.com/login",
+          "verification_point": "Login form becomes fully loaded with email input, password input, and Continue button visible",
+          "business_impact": "SPA completes client-side rendering of login form",
+          "confidence": 50,
+          "based_on_interaction": true,
+          "manual_step": false,
+          "wait_duration_seconds": 10,
+          "notes": "CRITICAL ISSUE: Browser state indexing consistently shows empty DOM despite page being visually loaded. JavaScript diagnostics in steps 12-14, 19-20, 29 confirmed form elements exist (email id='username-uid1', password id='password', Continue button) but automation framework cannot detect them."
+        },
+        {
+          "step_number": 3,
+          "action": "pause",
+          "description": "AUTOMATION FAILURE POINT: Login form elements exist in DOM but are undetectable by automation framework. Manual intervention required to complete login.",
+          "selector": null,
+          "all_selectors": [],
+          "expected_page_url": "https://id.atlassian.com/login",
+          "verification_point": "Login form is visually present but automation framework reports empty DOM",
+          "business_impact": "Technical limitation prevents automated login - manual login required",
+          "confidence": 100,
+          "based_on_interaction": true,
+          "manual_step": true,
+          "pause_message": "⏸️ AUTOMATION FAILURE: The Atlassian login page has loaded (confirmed by page title 'Log in with Atlassian account'), but the automation framework cannot detect the login form elements due to browser state indexing incompatibility with Atlassian's React SPA implementation. \n\nTECHNICAL DETAILS:\n- 32+ navigation attempts made\n- JavaScript evaluation confirmed form elements exist (email input id='username-uid1', password input id='password', Continue submit button)\n- All elements visible=true in actual DOM\n- Browser state indexing consistently returns empty DOM\n- 15+ JavaScript form submission attempts returned success=true but failed to authenticate\n\nThis is a documented technical limitation. Manual login is required to proceed.\n\nPress Enter after manually completing the login to continue documentation...",
+          "notes": "FAILED AUTOMATION ATTEMPT: This scenario represents a login workflow that could not be automated due to technical incompatibility between the browser automation framework and Atlassian's React Single Page Application. The login page loads successfully, but the automation system cannot extract or interact with the form elements despite multiple diagnostic and workaround strategies (direct navigation, extended waits up to 20 seconds, JavaScript DOM manipulation, React-specific event simulation, atomic operations)."
+        }
+      ],
+      "expected_results": [
+        "Navigation successfully redirects from zbio.atlassian.net to id.atlassian.com/login",
+        "Page title displays 'Log in with Atlassian account'",
+        "FAILURE: Login form elements remain undetectable by automation framework",
+        "FAILURE: Cannot complete automated credential entry and authentication",
+        "DOCUMENTED: Technical limitation with Atlassian React SPA and browser state indexing",
+        "OUTCOME: Manual intervention required to complete login workflow"
+      ],
+      "edge_cases_to_test": [
+        "Browser state indexing compatibility with React SPAs",
+        "Alternative automation frameworks (Selenium, Cypress) may have better compatibility",
+        "Headless vs headed browser mode impact on SPA rendering detection",
+        "Wait strategies for dynamic React component rendering",
+        "JavaScript execution context timing with React synthetic events"
+      ],
+      "data_requirements": [
+        "Valid Atlassian account credentials (UI_SITE_USERNAME, UI_SITE_PASSWORD)",
+        "Access to zbio.atlassian.net JIRA instance",
+        "Browser automation framework with React SPA support",
+        "Extended timeout configurations for SPA rendering"
+      ],
+      "prerequisites": [
+        "Atlassian authentication service (id.atlassian.com) is accessible",
+        "zbio.atlassian.net JIRA instance is online and redirecting properly",
+        "Test user account exists and has access to the JIRA instance",
+        "Browser automation framework is configured and functional"
+      ],
+      "automation_limitations": [
+        "CRITICAL: Browser state indexing incompatibility with Atlassian React SPA",
+        "Login form elements exist in DOM but are not detected by automation framework",
+        "32+ navigation attempts with various strategies all failed",
+        "JavaScript diagnostics confirmed elements exist (id='username-uid1', id='password') but remain undetectable",
+        "15+ JavaScript-based form submission attempts returned success=true but did not authenticate",
+        "Multiple workaround strategies failed: direct navigation, new tabs, extended waits (up to 20 seconds), JavaScript DOM manipulation, React event simulation, atomic operations",
+        "This specific Atlassian implementation requires manual login or alternative automation framework"
+      ],
+      "technical_notes": "This scenario documents a FAILED automation attempt, not a successful login flow. The login page loads correctly (verified by URL, title, and JavaScript DOM inspection), but the automation framework's browser state indexing system cannot extract interactive elements from Atlassian's React SPA. This prevents the standard capture_stable_selector workflow from functioning. The scenario serves as documentation of the technical limitation encountered during exploration of the zbio.atlassian.net JIRA login process."
+    }
+  ],
+  "login_completion_state": "failed",
+  "analysis_timestamp": "2025-12-10T10:14:36.470494",
+  "confidence_score": 0.5,
+  "flow_type": "happy_path_only",
+  "excluded_scenarios": [],
+  "scenario_count": 1,
+  "focus": "failed_authentication_documented",
+  "generated_from": "login_analysis.json",
+  "generation_timestamp": "2025-12-10T10:14:36.472065",
+  "captured_selectors": []
+}
