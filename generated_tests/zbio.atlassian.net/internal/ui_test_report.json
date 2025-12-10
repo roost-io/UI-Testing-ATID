@@ -1,0 +1,20 @@
+{
+    "login_scenario": "Skipped",
+    "workflow_completed": false,
+    "workflow_result": "FAIL",
+    "workflow_error": "",
+    "login_agent_activity_summary": "Not available",
+    "user_scenario_agent_activity_summary": "Not available",
+    "generated_files": {
+        "feature_files": [],
+        "json_files": []
+    },
+    "scenarios": {},
+    "login_analysis_happy_path": {
+        "testFilePath": "zbio.atlassian.net/playwright_tests/tests/login_analysis_happy_path.spec.js",
+        "auth_required": false,
+        "iterations_used": 3,
+        "final_status": "fail",
+        "error_summary": "Test: Login Analysis - Documented Failure (Atlassian React SPA Incompatibility)\n======================================================================\nMain Error:\nError: Login failed - still on authentication page\n\nDetailed Errors:\n\nError 1:\nError: Login failed - still on authentication page\n\n  298 |     \n  299 |     if (finalUrl.includes('id.atlassian.com')) {\n> 300 |       throw new Error('Login failed - still on authentication page');\n      |             ^\n  301 |     }\n  302 |     \n  303 |     console.log('\u2705 Login successful - redirected to application');\n    at /var/tmp/Roost/RoostGPT/ui-test-zbio-atlassian/a20dd89c-cf0d-4aeb-8074-163efb200d95/source/UI-Testing-ATID/generated_tests/zbio.atlassian.net/playwright_tests/tests/login_analysis_happy_path.spec.js:300:13\n  Location: /var/tmp/Roost/RoostGPT/ui-test-zbio-atlassian/a20dd89c-cf0d-4aeb-8074-163efb200d95/source/UI-Testing-ATID/generated_tests/zbio.atlassian.net/playwright_tests/tests/login_analysis_happy_path.spec.js:300:13\n\nCo"
+    }
+}
