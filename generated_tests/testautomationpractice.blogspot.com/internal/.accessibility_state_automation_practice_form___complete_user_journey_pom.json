@@ -1,0 +1,1477 @@
+{
+  "accessibility_tree": {
+    "role": "WebArea",
+    "name": "Automation Testing Practice",
+    "children": [
+      {
+        "role": "heading",
+        "name": "Automation Testing Practice",
+        "level": 1
+      },
+      {
+        "role": "text",
+        "name": "For Selenium, Cypress & Playwright"
+      },
+      {
+        "role": "link",
+        "name": "Home"
+      },
+      {
+        "role": "link",
+        "name": "Udemy Courses"
+      },
+      {
+        "role": "link",
+        "name": "Online Trainings"
+      },
+      {
+        "role": "link",
+        "name": "Blog"
+      },
+      {
+        "role": "link",
+        "name": "PlaywrightPractice"
+      },
+      {
+        "role": "link",
+        "name": "GUI Elements"
+      },
+      {
+        "role": "text",
+        "name": "Name:"
+      },
+      {
+        "role": "textbox",
+        "name": "Enter Name",
+        "required": true,
+        "value": "Roostai"
+      },
+      {
+        "role": "text",
+        "name": "Email:"
+      },
+      {
+        "role": "textbox",
+        "name": "Enter EMail",
+        "value": "roostai@zb.io"
+      },
+      {
+        "role": "text",
+        "name": "Phone:"
+      },
+      {
+        "role": "textbox",
+        "name": "Enter Phone",
+        "value": "9999999999"
+      },
+      {
+        "role": "text",
+        "name": "Address:"
+      },
+      {
+        "role": "textbox",
+        "name": "Address:",
+        "multiline": true,
+        "value": "Bangalore , India"
+      },
+      {
+        "role": "text",
+        "name": "Gender:"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "radio",
+        "name": "Male",
+        "checked": true
+      },
+      {
+        "role": "radio",
+        "name": "Female",
+        "checked": false
+      },
+      {
+        "role": "text",
+        "name": "Days:"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "checkbox",
+        "name": "Sunday",
+        "checked": false
+      },
+      {
+        "role": "checkbox",
+        "name": "Monday",
+        "checked": true
+      },
+      {
+        "role": "checkbox",
+        "name": "Tuesday",
+        "checked": true
+      },
+      {
+        "role": "checkbox",
+        "name": "Wednesday",
+        "checked": true
+      },
+      {
+        "role": "checkbox",
+        "name": "Thursday",
+        "checked": true
+      },
+      {
+        "role": "checkbox",
+        "name": "Friday",
+        "checked": true
+      },
+      {
+        "role": "checkbox",
+        "name": "Saturday",
+        "checked": false
+      },
+      {
+        "role": "text",
+        "name": "Country:"
+      },
+      {
+        "role": "combobox",
+        "name": "Country:",
+        "haspopup": "menu",
+        "children": [
+          {
+            "role": "option",
+            "name": "United States"
+          },
+          {
+            "role": "option",
+            "name": "Canada"
+          },
+          {
+            "role": "option",
+            "name": "United Kingdom"
+          },
+          {
+            "role": "option",
+            "name": "Germany"
+          },
+          {
+            "role": "option",
+            "name": "France"
+          },
+          {
+            "role": "option",
+            "name": "Australia"
+          },
+          {
+            "role": "option",
+            "name": "Japan"
+          },
+          {
+            "role": "option",
+            "name": "China"
+          },
+          {
+            "role": "option",
+            "name": "Brazil"
+          },
+          {
+            "role": "option",
+            "name": "India",
+            "selected": true
+          }
+        ],
+        "value": "India"
+      },
+      {
+        "role": "text",
+        "name": "Colors:"
+      },
+      {
+        "role": "listbox",
+        "name": "Colors:",
+        "multiselectable": true,
+        "orientation": "vertical",
+        "children": [
+          {
+            "role": "option",
+            "name": "Red"
+          },
+          {
+            "role": "option",
+            "name": "Blue"
+          },
+          {
+            "role": "option",
+            "name": "Green"
+          },
+          {
+            "role": "option",
+            "name": "Yellow",
+            "selected": true
+          },
+          {
+            "role": "option",
+            "name": "Red"
+          },
+          {
+            "role": "option",
+            "name": "White"
+          },
+          {
+            "role": "option",
+            "name": "Green"
+          }
+        ]
+      },
+      {
+        "role": "text",
+        "name": "Sorted List:"
+      },
+      {
+        "role": "listbox",
+        "name": "Sorted List:",
+        "multiselectable": true,
+        "orientation": "vertical",
+        "children": [
+          {
+            "role": "option",
+            "name": "Cat"
+          },
+          {
+            "role": "option",
+            "name": "Cheetah"
+          },
+          {
+            "role": "option",
+            "name": "Deer"
+          },
+          {
+            "role": "option",
+            "name": "Dog",
+            "selected": true
+          },
+          {
+            "role": "option",
+            "name": "Elephant"
+          },
+          {
+            "role": "option",
+            "name": "Fox"
+          },
+          {
+            "role": "option",
+            "name": "Giraffe"
+          },
+          {
+            "role": "option",
+            "name": "Lion"
+          },
+          {
+            "role": "option",
+            "name": "Rabbit"
+          },
+          {
+            "role": "option",
+            "name": "Zebra"
+          }
+        ]
+      },
+      {
+        "role": "text",
+        "name": "Date Picker 1 (mm/dd/yyyy): "
+      },
+      {
+        "role": "textbox",
+        "name": "",
+        "value": "17/02/2026"
+      },
+      {
+        "role": "text",
+        "name": "Date Picker 2 (dd/mm/yyyy) : "
+      },
+      {
+        "role": "textbox",
+        "name": "",
+        "value": "01/01/2026"
+      },
+      {
+        "role": "text",
+        "name": "Date Picker 3: (Select a Date Range)"
+      },
+      {
+        "role": "Date",
+        "name": "",
+        "children": [
+          {
+            "role": "spinbutton",
+            "name": "Month",
+            "valuetext": "",
+            "focused": true,
+            "valuemin": 1,
+            "valuemax": 12,
+            "value": 0
+          },
+          {
+            "role": "text",
+            "name": "/"
+          },
+          {
+            "role": "spinbutton",
+            "name": "Day",
+            "valuetext": "",
+            "valuemin": 1,
+            "valuemax": 31,
+            "value": 0
+          },
+          {
+            "role": "text",
+            "name": "/"
+          },
+          {
+            "role": "spinbutton",
+            "name": "Year",
+            "valuetext": "",
+            "valuemin": 1,
+            "valuemax": 275760,
+            "value": 0
+          },
+          {
+            "role": "button",
+            "name": "Show date picker",
+            "haspopup": "menu"
+          }
+        ]
+      },
+      {
+        "role": "text",
+        "name": "to"
+      },
+      {
+        "role": "Date",
+        "name": "",
+        "children": [
+          {
+            "role": "spinbutton",
+            "name": "Month",
+            "valuetext": "",
+            "valuemin": 1,
+            "valuemax": 12,
+            "value": 0
+          },
+          {
+            "role": "text",
+            "name": "/"
+          },
+          {
+            "role": "spinbutton",
+            "name": "Day",
+            "valuetext": "",
+            "valuemin": 1,
+            "valuemax": 31,
+            "value": 0
+          },
+          {
+            "role": "text",
+            "name": "/"
+          },
+          {
+            "role": "spinbutton",
+            "name": "Year",
+            "valuetext": "",
+            "valuemin": 1,
+            "valuemax": 275760,
+            "value": 0
+          },
+          {
+            "role": "button",
+            "name": "Show date picker",
+            "haspopup": "menu"
+          }
+        ]
+      },
+      {
+        "role": "button",
+        "name": "Submit"
+      },
+      {
+        "role": "link",
+        "name": "Home"
+      },
+      {
+        "role": "text",
+        "name": "Subscribe to: "
+      },
+      {
+        "role": "link",
+        "name": "Comments (Atom)"
+      },
+      {
+        "role": "heading",
+        "name": "Upload Files",
+        "level": 2
+      },
+      {
+        "role": "button",
+        "name": "Choose File",
+        "value": "No file chosen"
+      },
+      {
+        "role": "button",
+        "name": "Upload Single File"
+      },
+      {
+        "role": "button",
+        "name": "Choose Files",
+        "value": "No file chosen"
+      },
+      {
+        "role": "button",
+        "name": "Upload Multiple Files"
+      },
+      {
+        "role": "heading",
+        "name": "Static Web Table",
+        "level": 2
+      },
+      {
+        "role": "text",
+        "name": "BookName"
+      },
+      {
+        "role": "text",
+        "name": "Author"
+      },
+      {
+        "role": "text",
+        "name": "Subject"
+      },
+      {
+        "role": "text",
+        "name": "Price"
+      },
+      {
+        "role": "text",
+        "name": "Learn Selenium"
+      },
+      {
+        "role": "text",
+        "name": "Amit"
+      },
+      {
+        "role": "text",
+        "name": "Selenium"
+      },
+      {
+        "role": "text",
+        "name": "300"
+      },
+      {
+        "role": "text",
+        "name": "Learn Java"
+      },
+      {
+        "role": "text",
+        "name": "Mukesh"
+      },
+      {
+        "role": "text",
+        "name": "Java"
+      },
+      {
+        "role": "text",
+        "name": "500"
+      },
+      {
+        "role": "text",
+        "name": "Learn JS"
+      },
+      {
+        "role": "text",
+        "name": "Animesh"
+      },
+      {
+        "role": "text",
+        "name": "Javascript"
+      },
+      {
+        "role": "text",
+        "name": "300"
+      },
+      {
+        "role": "text",
+        "name": "Master In Selenium"
+      },
+      {
+        "role": "text",
+        "name": "Mukesh"
+      },
+      {
+        "role": "text",
+        "name": "Selenium"
+      },
+      {
+        "role": "text",
+        "name": "3000"
+      },
+      {
+        "role": "text",
+        "name": "Master In Java"
+      },
+      {
+        "role": "text",
+        "name": "Amod"
+      },
+      {
+        "role": "text",
+        "name": "JAVA"
+      },
+      {
+        "role": "text",
+        "name": "2000"
+      },
+      {
+        "role": "text",
+        "name": "Master In JS"
+      },
+      {
+        "role": "text",
+        "name": "Amit"
+      },
+      {
+        "role": "text",
+        "name": "Javascript"
+      },
+      {
+        "role": "text",
+        "name": "1000"
+      },
+      {
+        "role": "heading",
+        "name": "Dynamic Web Table",
+        "level": 2
+      },
+      {
+        "role": "text",
+        "name": "Name"
+      },
+      {
+        "role": "text",
+        "name": "CPU (%)"
+      },
+      {
+        "role": "text",
+        "name": "Memory (MB)"
+      },
+      {
+        "role": "text",
+        "name": "Disk (MB/s)"
+      },
+      {
+        "role": "text",
+        "name": "Network (Mbps)"
+      },
+      {
+        "role": "text",
+        "name": "Internet Explorer"
+      },
+      {
+        "role": "text",
+        "name": "1.0%"
+      },
+      {
+        "role": "text",
+        "name": "34.4 MB"
+      },
+      {
+        "role": "text",
+        "name": "0.18 MB/s"
+      },
+      {
+        "role": "text",
+        "name": "2.4 Mbps"
+      },
+      {
+        "role": "text",
+        "name": "Chrome"
+      },
+      {
+        "role": "text",
+        "name": "6.0%"
+      },
+      {
+        "role": "text",
+        "name": "70.5 MB"
+      },
+      {
+        "role": "text",
+        "name": "0.14 MB/s"
+      },
+      {
+        "role": "text",
+        "name": "8.8 Mbps"
+      },
+      {
+        "role": "text",
+        "name": "System"
+      },
+      {
+        "role": "text",
+        "name": "2.4%"
+      },
+      {
+        "role": "text",
+        "name": "64.8 MB"
+      },
+      {
+        "role": "text",
+        "name": "0.28 MB/s"
+      },
+      {
+        "role": "text",
+        "name": "6.0 Mbps"
+      },
+      {
+        "role": "text",
+        "name": "Firefox"
+      },
+      {
+        "role": "text",
+        "name": "3.5%"
+      },
+      {
+        "role": "text",
+        "name": "73.1 MB"
+      },
+      {
+        "role": "text",
+        "name": "0.52 MB/s"
+      },
+      {
+        "role": "text",
+        "name": "8.4 Mbps"
+      },
+      {
+        "role": "text",
+        "name": "CPU load of Chrome process: "
+      },
+      {
+        "role": "text",
+        "name": "6.0%"
+      },
+      {
+        "role": "text",
+        "name": "Memory Size of Firefox process: "
+      },
+      {
+        "role": "text",
+        "name": "73.1 MB"
+      },
+      {
+        "role": "text",
+        "name": "Network speed of Chrome process: "
+      },
+      {
+        "role": "text",
+        "name": "8.8 Mbps"
+      },
+      {
+        "role": "text",
+        "name": "Disk space of Firefox process: "
+      },
+      {
+        "role": "text",
+        "name": "0.52 MB/s"
+      },
+      {
+        "role": "heading",
+        "name": "Pagination Web Table",
+        "level": 2
+      },
+      {
+        "role": "text",
+        "name": "ID"
+      },
+      {
+        "role": "text",
+        "name": "Name"
+      },
+      {
+        "role": "text",
+        "name": "Price"
+      },
+      {
+        "role": "text",
+        "name": "Select"
+      },
+      {
+        "role": "text",
+        "name": "1"
+      },
+      {
+        "role": "text",
+        "name": "Smartphone"
+      },
+      {
+        "role": "text",
+        "name": "$10.99"
+      },
+      {
+        "role": "checkbox",
+        "name": "",
+        "checked": false
+      },
+      {
+        "role": "text",
+        "name": "2"
+      },
+      {
+        "role": "text",
+        "name": "Laptop"
+      },
+      {
+        "role": "text",
+        "name": "$19.99"
+      },
+      {
+        "role": "checkbox",
+        "name": "",
+        "checked": false
+      },
+      {
+        "role": "text",
+        "name": "3"
+      },
+      {
+        "role": "text",
+        "name": "Tablet"
+      },
+      {
+        "role": "text",
+        "name": "$5.99"
+      },
+      {
+        "role": "checkbox",
+        "name": "",
+        "checked": false
+      },
+      {
+        "role": "text",
+        "name": "4"
+      },
+      {
+        "role": "text",
+        "name": "Smartwatch"
+      },
+      {
+        "role": "text",
+        "name": "$7.99"
+      },
+      {
+        "role": "checkbox",
+        "name": "",
+        "checked": false
+      },
+      {
+        "role": "text",
+        "name": "5"
+      },
+      {
+        "role": "text",
+        "name": "Wireless Earbuds"
+      },
+      {
+        "role": "text",
+        "name": "$8.99"
+      },
+      {
+        "role": "checkbox",
+        "name": "",
+        "checked": false
+      },
+      {
+        "role": "link",
+        "name": "1"
+      },
+      {
+        "role": "link",
+        "name": "2"
+      },
+      {
+        "role": "link",
+        "name": "3"
+      },
+      {
+        "role": "link",
+        "name": "4"
+      },
+      {
+        "role": "heading",
+        "name": "Tabs",
+        "level": 2
+      },
+      {
+        "role": "link",
+        "name": ""
+      },
+      {
+        "role": "textbox",
+        "name": ""
+      },
+      {
+        "role": "button",
+        "name": "Submit"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "heading",
+        "name": "Dynamic Button",
+        "level": 2
+      },
+      {
+        "role": "button",
+        "name": "START"
+      },
+      {
+        "role": "heading",
+        "name": "Alerts & Popups",
+        "level": 2
+      },
+      {
+        "role": "button",
+        "name": "Simple Alert"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "button",
+        "name": "Confirmation Alert"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "button",
+        "name": "Prompt Alert"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "button",
+        "name": "New Tab"
+      },
+      {
+        "role": "button",
+        "name": "Popup Windows"
+      },
+      {
+        "role": "heading",
+        "name": "Mouse Hover",
+        "level": 2
+      },
+      {
+        "role": "text",
+        "name": "Move the mouse over the button to open the dropdown menu."
+      },
+      {
+        "role": "button",
+        "name": "Point Me"
+      },
+      {
+        "role": "heading",
+        "name": "Double Click",
+        "level": 2
+      },
+      {
+        "role": "text",
+        "name": "Field1: "
+      },
+      {
+        "role": "textbox",
+        "name": "",
+        "value": "Hello World!"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "text",
+        "name": "Field2: "
+      },
+      {
+        "role": "textbox",
+        "name": ""
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "button",
+        "name": "Copy Text"
+      },
+      {
+        "role": "text",
+        "name": "Double click on button, the text from Field1 will be copied into Field2."
+      },
+      {
+        "role": "heading",
+        "name": "Drag and Drop",
+        "level": 2
+      },
+      {
+        "role": "text",
+        "name": "Drag me to my target"
+      },
+      {
+        "role": "text",
+        "name": "Drop here"
+      },
+      {
+        "role": "heading",
+        "name": "Slider",
+        "level": 2
+      },
+      {
+        "role": "text",
+        "name": "Price range:"
+      },
+      {
+        "role": "textbox",
+        "name": "Price range:",
+        "readonly": true,
+        "value": "$75 - $300"
+      },
+      {
+        "role": "generic",
+        "name": ""
+      },
+      {
+        "role": "generic",
+        "name": ""
+      },
+      {
+        "role": "heading",
+        "name": "SVG Elements",
+        "level": 2
+      },
+      {
+        "role": "heading",
+        "name": "Scrolling DropDown",
+        "level": 2
+      },
+      {
+        "role": "textbox",
+        "name": "Select an item"
+      },
+      {
+        "role": "heading",
+        "name": "Labels And Links",
+        "level": 2
+      },
+      {
+        "role": "heading",
+        "name": "Mobile Labels",
+        "level": 4
+      },
+      {
+        "role": "text",
+        "name": "Samsung"
+      },
+      {
+        "role": "text",
+        "name": "Real Me"
+      },
+      {
+        "role": "text",
+        "name": "Moto"
+      },
+      {
+        "role": "heading",
+        "name": "Laptop Links",
+        "level": 4
+      },
+      {
+        "role": "link",
+        "name": "Apple"
+      },
+      {
+        "role": "link",
+        "name": "Lenovo"
+      },
+      {
+        "role": "link",
+        "name": "Dell"
+      },
+      {
+        "role": "heading",
+        "name": "Broken Links",
+        "level": 4
+      },
+      {
+        "role": "link",
+        "name": "Errorcode 400"
+      },
+      {
+        "role": "link",
+        "name": "Errorcode 401"
+      },
+      {
+        "role": "link",
+        "name": "Errorcode 403"
+      },
+      {
+        "role": "link",
+        "name": "Errorcode 404"
+      },
+      {
+        "role": "link",
+        "name": "Errorcode 408"
+      },
+      {
+        "role": "link",
+        "name": "Errorcode 500"
+      },
+      {
+        "role": "link",
+        "name": "Errorcode 502"
+      },
+      {
+        "role": "link",
+        "name": "Errorcode 503"
+      },
+      {
+        "role": "heading",
+        "name": "Visitors",
+        "level": 2
+      },
+      {
+        "role": "image",
+        "name": "A chart."
+      },
+      {
+        "role": "text",
+        "name": "0"
+      },
+      {
+        "role": "text",
+        "name": "39"
+      },
+      {
+        "role": "text",
+        "name": "1"
+      },
+      {
+        "role": "text",
+        "name": "64"
+      },
+      {
+        "role": "text",
+        "name": "2"
+      },
+      {
+        "role": "text",
+        "name": "74"
+      },
+      {
+        "role": "text",
+        "name": "3"
+      },
+      {
+        "role": "text",
+        "name": "74"
+      },
+      {
+        "role": "text",
+        "name": "4"
+      },
+      {
+        "role": "text",
+        "name": "87"
+      },
+      {
+        "role": "text",
+        "name": "5"
+      },
+      {
+        "role": "text",
+        "name": "100"
+      },
+      {
+        "role": "text",
+        "name": "6"
+      },
+      {
+        "role": "text",
+        "name": "55"
+      },
+      {
+        "role": "text",
+        "name": "7"
+      },
+      {
+        "role": "text",
+        "name": "42"
+      },
+      {
+        "role": "text",
+        "name": "8"
+      },
+      {
+        "role": "text",
+        "name": "77"
+      },
+      {
+        "role": "text",
+        "name": "9"
+      },
+      {
+        "role": "text",
+        "name": "82"
+      },
+      {
+        "role": "text",
+        "name": "10"
+      },
+      {
+        "role": "text",
+        "name": "94"
+      },
+      {
+        "role": "text",
+        "name": "11"
+      },
+      {
+        "role": "text",
+        "name": "85"
+      },
+      {
+        "role": "text",
+        "name": "12"
+      },
+      {
+        "role": "text",
+        "name": "64"
+      },
+      {
+        "role": "text",
+        "name": "13"
+      },
+      {
+        "role": "text",
+        "name": "49"
+      },
+      {
+        "role": "text",
+        "name": "14"
+      },
+      {
+        "role": "text",
+        "name": "56"
+      },
+      {
+        "role": "text",
+        "name": "15"
+      },
+      {
+        "role": "text",
+        "name": "96"
+      },
+      {
+        "role": "text",
+        "name": "16"
+      },
+      {
+        "role": "text",
+        "name": "71"
+      },
+      {
+        "role": "text",
+        "name": "17"
+      },
+      {
+        "role": "text",
+        "name": "85"
+      },
+      {
+        "role": "text",
+        "name": "18"
+      },
+      {
+        "role": "text",
+        "name": "80"
+      },
+      {
+        "role": "text",
+        "name": "19"
+      },
+      {
+        "role": "text",
+        "name": "60"
+      },
+      {
+        "role": "text",
+        "name": "20"
+      },
+      {
+        "role": "text",
+        "name": "45"
+      },
+      {
+        "role": "text",
+        "name": "21"
+      },
+      {
+        "role": "text",
+        "name": "40"
+      },
+      {
+        "role": "text",
+        "name": "22"
+      },
+      {
+        "role": "text",
+        "name": "69"
+      },
+      {
+        "role": "text",
+        "name": "23"
+      },
+      {
+        "role": "text",
+        "name": "75"
+      },
+      {
+        "role": "text",
+        "name": "24"
+      },
+      {
+        "role": "text",
+        "name": "84"
+      },
+      {
+        "role": "text",
+        "name": "25"
+      },
+      {
+        "role": "text",
+        "name": "99"
+      },
+      {
+        "role": "text",
+        "name": "26"
+      },
+      {
+        "role": "text",
+        "name": "84"
+      },
+      {
+        "role": "text",
+        "name": "27"
+      },
+      {
+        "role": "text",
+        "name": "47"
+      },
+      {
+        "role": "text",
+        "name": "28"
+      },
+      {
+        "role": "text",
+        "name": "45"
+      },
+      {
+        "role": "text",
+        "name": "29"
+      },
+      {
+        "role": "text",
+        "name": "48"
+      },
+      {
+        "role": "text",
+        "name": "6,701,572"
+      },
+      {
+        "role": "heading",
+        "name": "Form",
+        "level": 2
+      },
+      {
+        "role": "heading",
+        "name": "Section 1",
+        "level": 4
+      },
+      {
+        "role": "text",
+        "name": "This is a paragraph in Section 1."
+      },
+      {
+        "role": "textbox",
+        "name": ""
+      },
+      {
+        "role": "button",
+        "name": "Submit"
+      },
+      {
+        "role": "heading",
+        "name": "Section 2",
+        "level": 4
+      },
+      {
+        "role": "text",
+        "name": "This is a paragraph in Section 2."
+      },
+      {
+        "role": "textbox",
+        "name": ""
+      },
+      {
+        "role": "button",
+        "name": "Submit"
+      },
+      {
+        "role": "heading",
+        "name": "Section 3",
+        "level": 4
+      },
+      {
+        "role": "text",
+        "name": "This is a paragraph in Section 3."
+      },
+      {
+        "role": "textbox",
+        "name": ""
+      },
+      {
+        "role": "button",
+        "name": "Submit"
+      },
+      {
+        "role": "heading",
+        "name": "Footer Links",
+        "level": 2
+      },
+      {
+        "role": "link",
+        "name": "Home"
+      },
+      {
+        "role": "link",
+        "name": "Hidden Elements & AJAX"
+      },
+      {
+        "role": "link",
+        "name": "Download Files"
+      },
+      {
+        "role": "heading",
+        "name": "ShadowDOM",
+        "level": 2
+      },
+      {
+        "role": "text",
+        "name": "Mobiles"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "text",
+        "name": "Laptops"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "link",
+        "name": "Blog"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "textbox",
+        "name": ""
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "checkbox",
+        "name": "",
+        "checked": false
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "button",
+        "name": "Choose File",
+        "value": "No file chosen"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "link",
+        "name": "Youtube"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "text",
+        "name": "Theme images by "
+      },
+      {
+        "role": "link",
+        "name": "merrymoonmary"
+      },
+      {
+        "role": "text",
+        "name": ". Powered by "
+      },
+      {
+        "role": "link",
+        "name": "Blogger"
+      },
+      {
+        "role": "text",
+        "name": "."
+      }
+    ]
+  },
+  "url": "https://testautomationpractice.blogspot.com/"
+}
