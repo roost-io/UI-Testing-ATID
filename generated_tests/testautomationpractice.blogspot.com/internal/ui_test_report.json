@@ -1,0 +1,117 @@
+{
+  "login_scenario": "Skipped",
+  "workflow_completed": true,
+  "workflow_result": "PASS",
+  "workflow_error": "",
+  "login_agent_activity_summary": "Not available",
+  "user_scenario_agent_activity_summary": [
+    "Agent navigated to the Automation Testing Practice homepage and systematically interacted with the GUI Elements section. The agent entered valid data into the Name, Email, Phone, and Address fields, selected 'Male' for Gender, checked all specified weekdays, and chose 'India' from the Country dropdown. The agent proceeded to select 'Yellow' from the Colors list and 'Dog' from the Sorted List. Date Picker fields were populated with the required dates and ranges. The agent then clicked the Submit button to submit the form. After submission, the agent attempted to capture visible confirmation messages but found none."
+  ],
+  "generated_files": {
+    "feature_files": [],
+    "json_files": []
+  },
+  "scenarios": {},
+  "token_usage": {
+    "total": {
+      "input": 777484,
+      "output": 33080,
+      "total": 810564,
+      "cost": 1.0871279999999999,
+      "cached_input": 488320
+    },
+    "sessions": {
+      "main_execution": {
+        "type": "root",
+        "input": 0,
+        "output": 0,
+        "total": 0,
+        "cost": 0.0,
+        "cached_input": 0,
+        "call_count": 0,
+        "start_time": 1773663190.9903395,
+        "end_time": 1773664636.996747,
+        "duration": 1446.0064074993134
+      },
+      "extraction_agent": {
+        "type": "auto_created",
+        "input": 513045,
+        "output": 10686,
+        "total": 523731,
+        "cost": 0.652314,
+        "cached_input": 306176,
+        "call_count": 25,
+        "start_time": 1773663228.5369792,
+        "end_time": null,
+        "duration": null
+      },
+      "scenario_llm": {
+        "type": "auto_created",
+        "input": 12003,
+        "output": 7174,
+        "total": 19177,
+        "cost": 0.081398,
+        "cached_input": 0,
+        "call_count": 1,
+        "start_time": 1773664247.4087706,
+        "end_time": null,
+        "duration": null
+      },
+      "pom_gen_standalone_analyzer": {
+        "type": "test_generation",
+        "input": 50133,
+        "output": 3692,
+        "total": 53825,
+        "cost": 0.072202,
+        "cached_input": 38400,
+        "call_count": 4,
+        "start_time": 1773664247.4880528,
+        "end_time": null,
+        "duration": null
+      },
+      "llm_call": {
+        "type": "auto_created",
+        "input": 15852,
+        "output": 1471,
+        "total": 17323,
+        "cost": 0.043472,
+        "cached_input": 0,
+        "call_count": 2,
+        "start_time": 1773664325.6359432,
+        "end_time": null,
+        "duration": null
+      },
+      "test_gen_pom_automation_practice_form___complete_user_journey": {
+        "type": "test_generation",
+        "input": 50145,
+        "output": 1352,
+        "total": 51497,
+        "cost": 0.056962,
+        "cached_input": 36096,
+        "call_count": 4,
+        "start_time": 1773664331.6511939,
+        "end_time": null,
+        "duration": null
+      },
+      "code_repair_automation_practice_form___complete_user_journey_pom.noauth.spec.js": {
+        "type": "code_repair",
+        "input": 136306,
+        "output": 8705,
+        "total": 145011,
+        "cost": 0.18078,
+        "cached_input": 107648,
+        "call_count": 8,
+        "start_time": 1773664441.3235667,
+        "end_time": 1773664636.9542391,
+        "duration": 195.63067245483398
+      }
+    },
+    "provider": "azure_open_ai",
+    "model": "gpt-4.1",
+    "timestamp": "2026-03-16T12:37:16.997195",
+    "cache_statistics": {
+      "total_cached_tokens": 488320,
+      "cache_hit_rate_percent": 62.8
+    }
+  }
+}
