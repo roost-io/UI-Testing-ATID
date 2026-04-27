@@ -1,0 +1,207 @@
+{
+  "metadata_version": "1.0",
+  "created_at": "2026-04-27T06:56:24.447919",
+  "last_updated": "2026-04-27T07:05:45.481947",
+  "output_dir": "RoostGPT/ui-test_leumi/be2bf4ce-8e7c-4d7f-a31b-ceb4abbe131f/source/UI-Testing-ATID/generated_tests/www.mortgage.leumi.co.il/playwright_tests/www.mortgage.leumi.co.il/playwright_tests",
+  "site_url": "https://www.mortgage.leumi.co.il",
+  "pom_files": [
+    {
+      "url": "",
+      "file_name": "HomePage.js",
+      "file_path": "pom_tests/pom/HomePage.js"
+    },
+    {
+      "url": "",
+      "file_name": "MortgageStartPage.js",
+      "file_path": "pom_tests/pom/MortgageStartPage.js"
+    },
+    {
+      "url": "",
+      "file_name": "MortgageWorkflowPage.js",
+      "file_path": "pom_tests/pom/MortgageWorkflowPage.js"
+    }
+  ],
+  "Login_File": {
+    "name": null,
+    "path": null,
+    "hash": null,
+    "agent_workflow_completed": false,
+    "agent_workflow_file_path": null,
+    "agent_interaction_file_path": null,
+    "agent_activity_summary": null,
+    "agent_activity_error": null,
+    "agent_activity_outcome": null,
+    "agent_recommendation": null,
+    "agent_completion_level": null,
+    "agent_steps_completed": null,
+    "execution_flow_file_path": null,
+    "systematic_selectors_file_path": null,
+    "scenario_name": null,
+    "scenario_file_path": null,
+    "test_generated": false,
+    "test_generation_error": null,
+    "test_file_path": null,
+    "test_executed_success": null,
+    "test_execution_error": null,
+    "pom_test_name": null,
+    "pom_test_file_path": null,
+    "pom_test_executed_success": null,
+    "pom_test_execution_error": null,
+    "pom_files": null
+  },
+  "Workflows": [
+    {
+      "workflow_id": "WF001",
+      "title": "Primary Business Workflow",
+      "goal": "Verify users can reliably initiate the mortgage workflow from the homepage",
+      "feature_area": "Mortgage application and information portal",
+      "priority": "high",
+      "starting_hint": "",
+      "discovery_source": "user_scenario",
+      "source_file": "/var/tmp/Roost/RoostGPT/ui-test_leumi/be2bf4ce-8e7c-4d7f-a31b-ceb4abbe131f/mortgage (1).txt",
+      "source_file_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "worker_completed": true,
+      "worker_result": "success",
+      "linked_scenario_name": "w01_mortgage_1",
+      "error": null,
+      "scenario_name": "w01_mortgage_1",
+      "scenario_file_path": "generated_tests/www.mortgage.leumi.co.il/playwright_tests/www.mortgage.leumi.co.il/playwright_tests/scenarios/WF001_mortgage_1.json",
+      "scenario_summary_file_path": "generated_tests/www.mortgage.leumi.co.il/playwright_tests/www.mortgage.leumi.co.il/playwright_tests/scenarios/summaries/WF001_mortgage_1.md",
+      "report_pdf_file_path": "generated_tests/www.mortgage.leumi.co.il/playwright_tests/www.mortgage.leumi.co.il/playwright_tests/scenarios/reports/WF001_mortgage_1.pdf",
+      "feature_file_path": null,
+      "feature_file_name": null,
+      "agent_workflow_file_path": "/var/tmp/Roost/RoostGPT/ui-test_leumi/be2bf4ce-8e7c-4d7f-a31b-ceb4abbe131f/temp_info/www.mortgage.leumi.co.il/extracted_data/execution_flow_WF001_mortgage_1.json",
+      "agent_workflow_completed": true,
+      "scenario_analysis_result_file_path": null,
+      "agent_activity_summary": [
+        "Agent initiated the mortgage workflow by navigating to https://www.mortgage.leumi.co.il. The agent successfully identified and interacted with the 'בואו נתחיל' (Let's Start) button twice, ensuring stable selector capture and workflow initiation. After each click, the agent was redirected to https://mortgage.leumi.co.il/minisite/mortgage. The agent performed a fresh navigation to the starting page to validate content loading and repeated the workflow initiation. The scenario concluded with the agent documenting the completed steps and reporting a hard blocker as per QA instructions."
+      ],
+      "agent_activity_error": [
+        "During execution, the agent encountered a workflow loop: after clicking 'בואו נתחיל', the agent was redirected to the mortgage minisite but returned to the starting page for a fresh attempt. This detour did not prevent progress, as the agent successfully repeated the workflow initiation. No unrecoverable errors occurred; all actions were completed as intended."
+      ],
+      "agent_activity_outcome": [
+        "The agent achieved the scenario goal by successfully initiating the mortgage workflow and interacting with the required elements. All critical steps were completed, and the workflow was properly documented."
+      ],
+      "agent_recommendation": "Review the workflow for potential loop or redirection issues that may impact user experience. Ensure that subsequent steps beyond the initial workflow initiation are accessible and stable for end-to-end testing.",
+      "agent_completion_level": "complete",
+      "agent_steps_completed": 5,
+      "visited_urls": [
+        "https://www.mortgage.leumi.co.il/",
+        "https://mortgage.leumi.co.il/minisite/mortgage",
+        "https://www.mortgage.leumi.co.il"
+      ],
+      "execution_flow_file_path": null,
+      "test_generated": true,
+      "test_generation_error": null,
+      "test_name": "w01_mortgage_1",
+      "test_file_path": "generated_tests/www.mortgage.leumi.co.il/playwright_tests/www.mortgage.leumi.co.il/playwright_tests/pom_tests/w01_mortgage_1_pom.noauth.spec.js",
+      "test_executed_success": true,
+      "test_execution_error": null,
+      "pom_test_name": "w01_mortgage_1_pom.noauth.spec.js",
+      "pom_test_file_path": "generated_tests/www.mortgage.leumi.co.il/playwright_tests/www.mortgage.leumi.co.il/playwright_tests/pom_tests/w01_mortgage_1_pom.noauth.spec.js",
+      "pom_test_executed_success": true,
+      "pom_test_execution_error": null,
+      "pom_files": [
+        {
+          "url": "",
+          "file_name": "HomePage.js",
+          "file_path": "pom_tests/pom/HomePage.js"
+        },
+        {
+          "url": "",
+          "file_name": "MortgageStartPage.js",
+          "file_path": "pom_tests/pom/MortgageStartPage.js"
+        },
+        {
+          "url": "",
+          "file_name": "MortgageWorkflowPage.js",
+          "file_path": "pom_tests/pom/MortgageWorkflowPage.js"
+        }
+      ],
+      "test_steps": [
+        "Load homepage",
+        "Click the 'בואו נתחיל' (Let's Start) button to initiate mortgage workflow",
+        "Navigate to mortgage workflow page after button click",
+        "Return to homepage for fresh start",
+        "Repeat click on 'בואו נתחיל' (Let's Start) button to confirm selector stability",
+        "Navigate to mortgage workflow page after repeated button click"
+      ],
+      "video_recording_path": "/var/tmp/Roost/RoostGPT/ui-test_leumi/be2bf4ce-8e7c-4d7f-a31b-ceb4abbe131f/temp_info/www.mortgage.leumi.co.il/extracted_data/recordings/WF001_a2/069ef08d-1794-7653-8000-d387a8a87ae4.mp4"
+    }
+  ],
+  "explore_focus_areas": [],
+  "Imported_Test_Coverage": null,
+  "Token_Usage": {
+    "cumulative": {
+      "input_tokens": 1004188,
+      "output_tokens": 25096,
+      "cached_input_tokens": 0,
+      "total_tokens": 1029284,
+      "total_cost_usd": 0.899128
+    },
+    "runs": [
+      {
+        "run_type": "generate",
+        "timestamp": "2026-04-27T07:05:45.480090",
+        "provider": "azure_open_ai",
+        "model": "gpt-4.1",
+        "input_tokens": 1004188,
+        "output_tokens": 25096,
+        "total_tokens": 1029284,
+        "cost_usd": 0.899128,
+        "sessions": {
+          "main_execution": {
+            "input": 0,
+            "output": 0,
+            "cost": 0.0
+          },
+          "worker_supervisor_WF001": {
+            "input": 4282,
+            "output": 324,
+            "cost": 0.0077
+          },
+          "explore_worker_WF001_a1": {
+            "input": 45314,
+            "output": 1379,
+            "cost": 0.065372
+          },
+          "explore_worker_WF001_a2": {
+            "input": 36658,
+            "output": 1197,
+            "cost": 0.05102
+          },
+          "explore_synthesize_single_workflow": {
+            "input": 2532,
+            "output": 1877,
+            "cost": 0.02008
+          },
+          "report_curation_WF001": {
+            "input": 5290,
+            "output": 203,
+            "cost": 0.012204
+          },
+          "post_explore_testgen": {
+            "input": 0,
+            "output": 0,
+            "cost": 0.0
+          },
+          "pom_gen_w01_mortgage_1": {
+            "input": 46513,
+            "output": 1573,
+            "cost": 0.045514
+          },
+          "test_gen_pom_w01_mortgage_1": {
+            "input": 56074,
+            "output": 1439,
+            "cost": 0.050316
+          },
+          "code_repair_w01_mortgage_1_pom.noauth.spec.js": {
+            "input": 807525,
+            "output": 17104,
+            "cost": 0.646922
+          }
+        }
+      }
+    ]
+  }
+}
