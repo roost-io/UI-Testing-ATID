@@ -1,0 +1,178 @@
+{
+  "site_type": "ecommerce",
+  "site_category": "Online fashion and accessories retail store",
+  "confidence_score": 0.95,
+  "user_journeys": [
+    {
+      "journey_name": "Primary Business Workflow",
+      "description": "Main user flow",
+      "business_value": "Enables users to browse and purchase products",
+      "user_persona": "Fashion-conscious shopper",
+      "frequency": "daily",
+      "complexity": "low"
+    }
+  ],
+  "proposed_scenarios": [
+    {
+      "scenario_name": "Discovered Workflow: partial_flow -- Partial User Journey",
+      "description": "Covers the user journey up to adding a product to the cart. Blocked by HTTP ERROR 429 before checkout.",
+      "workflow_narrative": "A user visits the homepage, starts shopping, selects a product, and adds it to the cart. The flow is interrupted by a server error before checkout.",
+      "playwright_implementation_guidance": [
+        "Use waitForSelector for navigation transitions.",
+        "Validate that 'Add to cart' triggers the expected UI change or error.",
+        "Handle HTTP 429 gracefully in test assertions."
+      ],
+      "test_type": "partial_flow",
+      "priority": "high",
+      "business_goal": "Verify users can browse and add products to the cart",
+      "user_story": "As a shopper, I want to add a product to my cart so that I can proceed to checkout.",
+      "detailed_steps": [
+        {
+          "step_number": 1,
+          "action": "Navigate to homepage",
+          "component": "Navigation",
+          "description": "Load homepage",
+          "expected_page_url": "https://atid.store",
+          "verification_point": "Page loaded",
+          "business_impact": "Site accessibility",
+          "selector": "page.goto('https://atid.store', { waitUntil: 'domcontentloaded' })",
+          "confidence": 100,
+          "based_on_interaction": true,
+          "all_selectors": []
+        },
+        {
+          "step_number": 2,
+          "action": "click",
+          "component": "Shop Now Button",
+          "description": "Click the 'Shop Now' button to begin shopping",
+          "expected_page_url": "https://atid.store/",
+          "verification_point": "'Shop Now' button is clickable and leads to store page",
+          "business_impact": "Enables product browsing",
+          "selector": "page.getByRole('button', { name: 'Shop Now' }).first()",
+          "all_selectors": [
+            {
+              "selector": "page.locator('#post-2888').getByRole('button', { name: 'SHOP NOW' })",
+              "strategy": "parent_id_role",
+              "confidence": 72,
+              "is_unique": false
+            },
+            {
+              "selector": "page.locator('a.elementor-button-link.elementor-button')",
+              "strategy": "css_combined_classes",
+              "confidence": 65,
+              "is_unique": false
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "web_component_parent": null,
+          "page_context": {
+            "suggested_page_class": "HomePage",
+            "page_url_pattern": "/"
+          },
+          "method_context": {
+            "suggested_method_name": "clickShopNow",
+            "action_type": "click"
+          }
+        },
+        {
+          "step_number": 3,
+          "action": "click",
+          "component": "Product Link",
+          "description": "Select the first product 'Boho Bangle Bracelet'",
+          "expected_page_url": "https://atid.store/store/",
+          "verification_point": "Product detail page is loaded",
+          "business_impact": "Product selection",
+          "selector": "page.getByRole('link', { name: 'Boho Bangle Bracelet' })",
+          "all_selectors": [
+            {
+              "selector": "page.getByRole('link', { name: /Boho Bangle Bracelet/ })",
+              "strategy": "role_name_regex",
+              "confidence": 95,
+              "is_unique": true
+            },
+            {
+              "selector": "page.getByText('Boho Bangle Bracelet')",
+              "strategy": "text",
+              "confidence": 88,
+              "is_unique": true
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "web_component_parent": null,
+          "page_context": {
+            "suggested_page_class": "StorePage",
+            "page_url_pattern": "/store/"
+          },
+          "method_context": {
+            "suggested_method_name": "selectFirstProduct",
+            "action_type": "click"
+          }
+        },
+        {
+          "step_number": 4,
+          "action": "click",
+          "component": "Add to Cart Button",
+          "description": "Click 'Add to cart' to add the product to the shopping cart",
+          "expected_page_url": "https://atid.store/product/boho-bangle-bracelet/",
+          "verification_point": "Product is added to cart or error is displayed",
+          "business_impact": "Cart population",
+          "selector": "page.getByRole('button', { name: 'Add to cart' })",
+          "all_selectors": [
+            {
+              "selector": "page.locator('button[value=\"169\"]')",
+              "strategy": "css_tag_value",
+              "confidence": 89,
+              "is_unique": true
+            },
+            {
+              "selector": "page.getByText('Add to cart')",
+              "strategy": "text",
+              "confidence": 88,
+              "is_unique": true
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "web_component_parent": null,
+          "page_context": {
+            "suggested_page_class": "ProductPage",
+            "page_url_pattern": "/product/boho-bangle-bracelet/"
+          },
+          "method_context": {
+            "suggested_method_name": "addToCart",
+            "action_type": "click"
+          }
+        }
+      ],
+      "expected_results": [
+        "User can add a product to the cart",
+        "No errors up to cart addition",
+        "Handles HTTP 429 error gracefully"
+      ],
+      "edge_cases_to_test": [
+        "HTTP 429 Too Many Requests error",
+        "Slow network",
+        "Button not clickable"
+      ],
+      "data_requirements": [
+        "At least one product available",
+        "Site not rate-limited"
+      ],
+      "prerequisites": [
+        "Site accessible"
+      ]
+    }
+  ],
+  "site_url": "https://atid.store",
+  "test_name": "w01_user_scenario",
+  "login_mechanisms": [
+    "general_interaction"
+  ],
+  "login_completion_state": "successful",
+  "analysis_timestamp": "2026-04-27T06:23:46.613553",
+  "auth_required": false,
+  "starting_url": null,
+  "workflow_id": "WF001"
+}
