@@ -1,0 +1,134 @@
+{
+  "login_scenario": "Skipped",
+  "workflow_completed": false,
+  "workflow_result": "FAIL",
+  "workflow_error": "",
+  "login_agent_activity_summary": "Not available",
+  "user_scenario_agent_activity_summary": "Not available",
+  "generated_files": {
+    "feature_files": [],
+    "json_files": []
+  },
+  "scenarios": {
+    "w01_user_scenario": {
+      "test_name": "w01_user_scenario",
+      "description": "Scenario run is working",
+      "testFilePath": "",
+      "extracted_data": "atid.store/extracted_data/captured_ui_data.json"
+    }
+  },
+  "token_usage": {
+    "total": {
+      "input": 149675,
+      "output": 6342,
+      "total": 156017,
+      "cost": 0.179782,
+      "cached_input": 113536
+    },
+    "sessions": {
+      "main_execution": {
+        "type": "root",
+        "input": 0,
+        "output": 0,
+        "total": 0,
+        "cost": 0.0,
+        "cached_input": 0,
+        "call_count": 0,
+        "start_time": 1777270952.20837,
+        "end_time": 1777271086.5760722,
+        "duration": 134.36770224571228
+      },
+      "worker_supervisor_WF001": {
+        "type": "worker_supervisor",
+        "input": 2452,
+        "output": 134,
+        "total": 2586,
+        "cost": 0.005976,
+        "cached_input": 0,
+        "call_count": 2,
+        "start_time": 1777270952.4555576,
+        "end_time": 1777271000.3758807,
+        "duration": 47.92032313346863
+      },
+      "explore_worker_WF001_a1": {
+        "type": "auto_created",
+        "input": 45525,
+        "output": 1388,
+        "total": 46913,
+        "cost": 0.053962,
+        "cached_input": 32128,
+        "call_count": 4,
+        "start_time": 1777270966.1107945,
+        "end_time": null,
+        "duration": null
+      },
+      "explore_synthesize_single_workflow": {
+        "type": "auto_created",
+        "input": 2604,
+        "output": 1432,
+        "total": 4036,
+        "cost": 0.016663999999999998,
+        "cached_input": 0,
+        "call_count": 1,
+        "start_time": 1777271026.6131449,
+        "end_time": null,
+        "duration": null
+      },
+      "report_curation_WF001": {
+        "type": "auto_created",
+        "input": 5125,
+        "output": 334,
+        "total": 5459,
+        "cost": 0.012922,
+        "cached_input": 0,
+        "call_count": 1,
+        "start_time": 1777271032.704436,
+        "end_time": null,
+        "duration": null
+      },
+      "post_explore_testgen": {
+        "type": "root",
+        "input": 0,
+        "output": 0,
+        "total": 0,
+        "cost": 0.0,
+        "cached_input": 0,
+        "call_count": 0,
+        "start_time": 1777271033.672196,
+        "end_time": 1777271086.5752094,
+        "duration": 52.903013467788696
+      },
+      "pom_gen_w01_user_scenario": {
+        "type": "test_generation",
+        "input": 42610,
+        "output": 1558,
+        "total": 44168,
+        "cost": 0.04257999999999999,
+        "cached_input": 36736,
+        "call_count": 7,
+        "start_time": 1777271033.6740382,
+        "end_time": null,
+        "duration": null
+      },
+      "test_gen_pom_w01_user_scenario": {
+        "type": "test_generation",
+        "input": 51359,
+        "output": 1496,
+        "total": 52855,
+        "cost": 0.047678000000000005,
+        "cached_input": 44672,
+        "call_count": 7,
+        "start_time": 1777271045.8120985,
+        "end_time": null,
+        "duration": null
+      }
+    },
+    "provider": "azure_open_ai",
+    "model": "gpt-4.1",
+    "timestamp": "2026-04-27T06:24:46.576453",
+    "cache_statistics": {
+      "total_cached_tokens": 113536,
+      "cache_hit_rate_percent": 75.9
+    }
+  }
+}
