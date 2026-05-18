@@ -1,0 +1,700 @@
+{
+  "site_type": "general_website",
+  "site_category": "Demo site for UI automation practice and testing",
+  "confidence_score": 0.95,
+  "user_journeys": [
+    {
+      "journey_name": "Primary Business Workflow",
+      "description": "Main user flow",
+      "business_value": "Demonstrates and verifies UI automation scenarios for form submission",
+      "user_persona": "QA automation engineer",
+      "frequency": "daily",
+      "complexity": "medium"
+    }
+  ],
+  "proposed_scenarios": [
+    {
+      "scenario_name": "Discovered Workflow: e2e_business_workflow - Complete User Journey",
+      "description": "Comprehensive test covering the user journey",
+      "workflow_narrative": "A QA automation engineer visits the testautomationpractice site, fills out all fields in the GUI Elements form using valid data, selects various options, submits the form, and verifies that the workflow completes without errors or confirmation messages.",
+      "playwright_implementation_guidance": [
+        "Use waitForSelector for each field before interacting.",
+        "Use exact selectors from the database for each field.",
+        "Check for absence of confirmation message after submission.",
+        "Ensure all checkboxes and radio buttons are selected as per the flow.",
+        "Validate that no errors are thrown after form submission."
+      ],
+      "test_type": "e2e_business_workflow",
+      "priority": "high",
+      "business_goal": "Verify users can complete the workflow",
+      "user_story": "As a QA automation engineer, I want to fill and submit the GUI Elements form so that I can validate the automation flow and UI element interactions.",
+      "detailed_steps": [
+        {
+          "step_number": 1,
+          "action": "Navigate to homepage",
+          "component": "Navigation",
+          "description": "Load homepage",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/",
+          "verification_point": "Page loaded",
+          "business_impact": "Site accessibility",
+          "selector": "page.goto('https://testautomationpractice.blogspot.com', { waitUntil: 'domcontentloaded' })",
+          "confidence": 100,
+          "based_on_interaction": true,
+          "all_selectors": []
+        },
+        {
+          "step_number": 2,
+          "action": "Fill",
+          "component": "Name input",
+          "description": "Enter 'Roostai' in the Name field",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/",
+          "verification_point": "Name field contains 'Roostai'",
+          "business_impact": "Form data entry",
+          "selector": "page.getByRole('textbox', { name: 'Enter Name' })",
+          "all_selectors": [
+            {
+              "selector": "page.getByPlaceholder('Enter Name')",
+              "strategy": "placeholder",
+              "confidence": 85,
+              "is_unique": true
+            },
+            {
+              "selector": "page.getByRole('heading', { name: 'GUI Elements' }).locator('..').getByPlaceholder('Enter Name')",
+              "strategy": "heading_context_placeholder",
+              "confidence": 84,
+              "is_unique": true
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "page_context": {
+            "suggested_page_class": "HomePage",
+            "page_url_pattern": "/"
+          },
+          "method_context": {
+            "suggested_method_name": "fillName",
+            "action_type": "fill"
+          }
+        },
+        {
+          "step_number": 3,
+          "action": "Fill",
+          "component": "Email input",
+          "description": "Enter 'roostai@zb.io' in the Email field",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/",
+          "verification_point": "Email field contains 'roostai@zb.io'",
+          "business_impact": "Form data entry",
+          "selector": "page.getByRole('textbox', { name: 'Enter EMail' })",
+          "all_selectors": [
+            {
+              "selector": "page.getByPlaceholder('Enter EMail')",
+              "strategy": "placeholder",
+              "confidence": 85,
+              "is_unique": true
+            },
+            {
+              "selector": "page.getByRole('heading', { name: 'GUI Elements' }).locator('..').getByPlaceholder('Enter EMail')",
+              "strategy": "heading_context_placeholder",
+              "confidence": 84,
+              "is_unique": true
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "page_context": {
+            "suggested_page_class": "HomePage",
+            "page_url_pattern": "/"
+          },
+          "method_context": {
+            "suggested_method_name": "fillEmail",
+            "action_type": "fill"
+          }
+        },
+        {
+          "step_number": 4,
+          "action": "Fill",
+          "component": "Phone input",
+          "description": "Enter '9999999999' in the Phone field",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/",
+          "verification_point": "Phone field contains '9999999999'",
+          "business_impact": "Form data entry",
+          "selector": "page.getByRole('textbox', { name: 'Enter Phone' })",
+          "all_selectors": [
+            {
+              "selector": "page.getByPlaceholder('Enter Phone')",
+              "strategy": "placeholder",
+              "confidence": 85,
+              "is_unique": true
+            },
+            {
+              "selector": "page.getByRole('heading', { name: 'GUI Elements' }).locator('..').getByPlaceholder('Enter Phone')",
+              "strategy": "heading_context_placeholder",
+              "confidence": 84,
+              "is_unique": true
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "page_context": {
+            "suggested_page_class": "HomePage",
+            "page_url_pattern": "/"
+          },
+          "method_context": {
+            "suggested_method_name": "fillPhone",
+            "action_type": "fill"
+          }
+        },
+        {
+          "step_number": 5,
+          "action": "Fill",
+          "component": "Address input",
+          "description": "Enter 'Bangalore , India' in the Address field",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/",
+          "verification_point": "Address field contains 'Bangalore , India'",
+          "business_impact": "Form data entry",
+          "selector": "page.getByRole('textbox', { name: 'Address:' })",
+          "all_selectors": [
+            {
+              "selector": "page.getByRole('textbox', { name: /Address:/ })",
+              "strategy": "role_name_regex",
+              "confidence": 95,
+              "is_unique": true
+            },
+            {
+              "selector": "page.getByLabel('Address:')",
+              "strategy": "label_text",
+              "confidence": 93,
+              "is_unique": true
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "page_context": {
+            "suggested_page_class": "HomePage",
+            "page_url_pattern": "/"
+          },
+          "method_context": {
+            "suggested_method_name": "fillAddress",
+            "action_type": "fill"
+          }
+        },
+        {
+          "step_number": 6,
+          "action": "Click",
+          "component": "Gender radio button",
+          "description": "Select 'Male' gender",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/",
+          "verification_point": "'Male' radio button is selected",
+          "business_impact": "Form data entry",
+          "selector": "page.getByRole('radio', { name: 'Male', exact: true })",
+          "all_selectors": [
+            {
+              "selector": "page.getByRole('radio', { name: 'Male' })",
+              "strategy": "role_name",
+              "confidence": 95,
+              "is_unique": false
+            },
+            {
+              "selector": "page.getByLabel('Male')",
+              "strategy": "label_text",
+              "confidence": 93,
+              "is_unique": false
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "page_context": {
+            "suggested_page_class": "HomePage",
+            "page_url_pattern": "/"
+          },
+          "method_context": {
+            "suggested_method_name": "selectGenderMale",
+            "action_type": "click"
+          }
+        },
+        {
+          "step_number": 7,
+          "action": "Click",
+          "component": "Days checkboxes",
+          "description": "Check 'Monday', 'Tuesday', 'Wednesday', 'Thursday', and 'Friday'",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/",
+          "verification_point": "All specified days are checked",
+          "business_impact": "Form data entry",
+          "selector": "page.getByRole('checkbox', { name: 'Monday' })",
+          "all_selectors": [
+            {
+              "selector": "page.getByLabel('Monday')",
+              "strategy": "label_text",
+              "confidence": 93,
+              "is_unique": true
+            },
+            {
+              "selector": "page.getByLabel('Monday', { exact: true })",
+              "strategy": "label_text_exact",
+              "confidence": 92,
+              "is_unique": true
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "page_context": {
+            "suggested_page_class": "HomePage",
+            "page_url_pattern": "/"
+          },
+          "method_context": {
+            "suggested_method_name": "checkMonday",
+            "action_type": "click"
+          }
+        },
+        {
+          "step_number": 8,
+          "action": "Click",
+          "component": "Days checkboxes",
+          "description": "Check 'Tuesday'",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/",
+          "verification_point": "'Tuesday' is checked",
+          "business_impact": "Form data entry",
+          "selector": "page.getByRole('checkbox', { name: 'Tuesday' })",
+          "all_selectors": [
+            {
+              "selector": "page.getByLabel('Tuesday')",
+              "strategy": "label_text",
+              "confidence": 93,
+              "is_unique": true
+            },
+            {
+              "selector": "page.getByLabel('Tuesday', { exact: true })",
+              "strategy": "label_text_exact",
+              "confidence": 92,
+              "is_unique": true
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "page_context": {
+            "suggested_page_class": "HomePage",
+            "page_url_pattern": "/"
+          },
+          "method_context": {
+            "suggested_method_name": "checkTuesday",
+            "action_type": "click"
+          }
+        },
+        {
+          "step_number": 9,
+          "action": "Click",
+          "component": "Days checkboxes",
+          "description": "Check 'Wednesday'",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/",
+          "verification_point": "'Wednesday' is checked",
+          "business_impact": "Form data entry",
+          "selector": "page.getByRole('checkbox', { name: 'Wednesday' })",
+          "all_selectors": [
+            {
+              "selector": "page.getByLabel('Wednesday')",
+              "strategy": "label_text",
+              "confidence": 93,
+              "is_unique": true
+            },
+            {
+              "selector": "page.getByLabel('Wednesday', { exact: true })",
+              "strategy": "label_text_exact",
+              "confidence": 92,
+              "is_unique": true
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "page_context": {
+            "suggested_page_class": "HomePage",
+            "page_url_pattern": "/"
+          },
+          "method_context": {
+            "suggested_method_name": "checkWednesday",
+            "action_type": "click"
+          }
+        },
+        {
+          "step_number": 10,
+          "action": "Click",
+          "component": "Days checkboxes",
+          "description": "Check 'Thursday'",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/",
+          "verification_point": "'Thursday' is checked",
+          "business_impact": "Form data entry",
+          "selector": "page.getByRole('checkbox', { name: 'Thursday' })",
+          "all_selectors": [
+            {
+              "selector": "page.getByLabel('Thursday')",
+              "strategy": "label_text",
+              "confidence": 93,
+              "is_unique": true
+            },
+            {
+              "selector": "page.getByLabel('Thursday', { exact: true })",
+              "strategy": "label_text_exact",
+              "confidence": 92,
+              "is_unique": true
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "page_context": {
+            "suggested_page_class": "HomePage",
+            "page_url_pattern": "/"
+          },
+          "method_context": {
+            "suggested_method_name": "checkThursday",
+            "action_type": "click"
+          }
+        },
+        {
+          "step_number": 11,
+          "action": "Click",
+          "component": "Days checkboxes",
+          "description": "Check 'Friday'",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/",
+          "verification_point": "'Friday' is checked",
+          "business_impact": "Form data entry",
+          "selector": "page.getByRole('checkbox', { name: 'Friday' })",
+          "all_selectors": [
+            {
+              "selector": "page.getByLabel('Friday')",
+              "strategy": "label_text",
+              "confidence": 93,
+              "is_unique": true
+            },
+            {
+              "selector": "page.getByLabel('Friday', { exact: true })",
+              "strategy": "label_text_exact",
+              "confidence": 92,
+              "is_unique": true
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "page_context": {
+            "suggested_page_class": "HomePage",
+            "page_url_pattern": "/"
+          },
+          "method_context": {
+            "suggested_method_name": "checkFriday",
+            "action_type": "click"
+          }
+        },
+        {
+          "step_number": 12,
+          "action": "Select",
+          "component": "Country dropdown",
+          "description": "Select 'India' from Country dropdown",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/",
+          "verification_point": "'India' is selected",
+          "business_impact": "Form data entry",
+          "selector": "page.getByLabel('Country:')",
+          "all_selectors": [
+            {
+              "selector": "page.getByRole('combobox', { name: /Country:/ })",
+              "strategy": "role_name_regex",
+              "confidence": 95,
+              "is_unique": true
+            },
+            {
+              "selector": "page.getByRole('heading', { name: 'GUI Elements' }).locator('..').getByLabel('Country:')",
+              "strategy": "heading_context_label",
+              "confidence": 83,
+              "is_unique": true
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "page_context": {
+            "suggested_page_class": "HomePage",
+            "page_url_pattern": "/"
+          },
+          "method_context": {
+            "suggested_method_name": "selectCountryIndia",
+            "action_type": "select"
+          }
+        },
+        {
+          "step_number": 13,
+          "action": "Select",
+          "component": "Colors list",
+          "description": "Select 'Yellow' from Colors list",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/",
+          "verification_point": "'Yellow' is selected",
+          "business_impact": "Form data entry",
+          "selector": "page.getByLabel('Colors:')",
+          "all_selectors": [
+            {
+              "selector": "page.getByRole('heading', { name: 'GUI Elements' }).locator('..').getByLabel('Colors:')",
+              "strategy": "heading_context_label",
+              "confidence": 83,
+              "is_unique": true
+            },
+            {
+              "selector": "page.locator('select.form-control')",
+              "strategy": "css_stable_class",
+              "confidence": 78,
+              "is_unique": false
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "page_context": {
+            "suggested_page_class": "HomePage",
+            "page_url_pattern": "/"
+          },
+          "method_context": {
+            "suggested_method_name": "selectColorYellow",
+            "action_type": "select"
+          }
+        },
+        {
+          "step_number": 14,
+          "action": "Select",
+          "component": "Sorted List",
+          "description": "Select 'Dog' from Sorted List",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/",
+          "verification_point": "'Dog' is selected",
+          "business_impact": "Form data entry",
+          "selector": "page.getByLabel('Sorted List:')",
+          "all_selectors": [
+            {
+              "selector": "page.locator('select[name=\"animals\"]')",
+              "strategy": "name_attribute",
+              "confidence": 87,
+              "is_unique": true
+            },
+            {
+              "selector": "page.getByRole('heading', { name: 'GUI Elements' }).locator('..').getByLabel('Sorted List:')",
+              "strategy": "heading_context_label",
+              "confidence": 83,
+              "is_unique": true
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "page_context": {
+            "suggested_page_class": "HomePage",
+            "page_url_pattern": "/"
+          },
+          "method_context": {
+            "suggested_method_name": "selectSortedListDog",
+            "action_type": "select"
+          }
+        },
+        {
+          "step_number": 15,
+          "action": "Fill",
+          "component": "Date Picker 1",
+          "description": "Enter '17/02/2026' in Date Picker 1",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/",
+          "verification_point": "Date Picker 1 contains '17/02/2026'",
+          "business_impact": "Form data entry",
+          "selector": "page.locator('#datepicker')",
+          "all_selectors": [
+            {
+              "selector": "page.locator('xpath=html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[1]/div/div/div[1]/div[1]/div/div/div/div/div[2]/p[1]/input')",
+              "strategy": "xpath",
+              "confidence": 50,
+              "is_unique": true
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "page_context": {
+            "suggested_page_class": "HomePage",
+            "page_url_pattern": "/"
+          },
+          "method_context": {
+            "suggested_method_name": "fillDatePicker1",
+            "action_type": "fill"
+          }
+        },
+        {
+          "step_number": 16,
+          "action": "Fill",
+          "component": "Date Picker 2",
+          "description": "Enter '01/01/2026' in Date Picker 2",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/",
+          "verification_point": "Date Picker 2 contains '01/01/2026'",
+          "business_impact": "Form data entry",
+          "selector": "page.locator('#txtDate')",
+          "all_selectors": [
+            {
+              "selector": "page.locator('input[type=\"text\"][name=\"SelectedDate\"]')",
+              "strategy": "css_combined",
+              "confidence": 89,
+              "is_unique": true
+            },
+            {
+              "selector": "page.locator('input[name=\"SelectedDate\"]')",
+              "strategy": "name_attribute",
+              "confidence": 87,
+              "is_unique": true
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "page_context": {
+            "suggested_page_class": "HomePage",
+            "page_url_pattern": "/"
+          },
+          "method_context": {
+            "suggested_method_name": "fillDatePicker2",
+            "action_type": "fill"
+          }
+        },
+        {
+          "step_number": 17,
+          "action": "Fill",
+          "component": "Date Picker 3 (Start)",
+          "description": "Enter '2026-10-01' in Date Picker 3 Start",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/",
+          "verification_point": "Date Picker 3 Start contains '2026-10-01'",
+          "business_impact": "Form data entry",
+          "selector": "page.getByPlaceholder('Start Date')",
+          "all_selectors": [
+            {
+              "selector": "page.locator('input[type=\"date\"]')",
+              "strategy": "input_type",
+              "confidence": 88,
+              "is_unique": false
+            },
+            {
+              "selector": "page.getByRole('heading', { name: 'GUI Elements' }).locator('..').getByPlaceholder('Start Date')",
+              "strategy": "heading_context_placeholder",
+              "confidence": 84,
+              "is_unique": true
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "page_context": {
+            "suggested_page_class": "HomePage",
+            "page_url_pattern": "/"
+          },
+          "method_context": {
+            "suggested_method_name": "fillDatePicker3Start",
+            "action_type": "fill"
+          }
+        },
+        {
+          "step_number": 18,
+          "action": "Fill",
+          "component": "Date Picker 3 (End)",
+          "description": "Enter '2026-10-03' in Date Picker 3 End",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/",
+          "verification_point": "Date Picker 3 End contains '2026-10-03'",
+          "business_impact": "Form data entry",
+          "selector": "page.getByPlaceholder('End Date')",
+          "all_selectors": [
+            {
+              "selector": "page.locator('input[type=\"date\"]')",
+              "strategy": "input_type",
+              "confidence": 88,
+              "is_unique": false
+            },
+            {
+              "selector": "page.getByRole('heading', { name: 'GUI Elements' }).locator('..').getByPlaceholder('End Date')",
+              "strategy": "heading_context_placeholder",
+              "confidence": 84,
+              "is_unique": true
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "page_context": {
+            "suggested_page_class": "HomePage",
+            "page_url_pattern": "/"
+          },
+          "method_context": {
+            "suggested_method_name": "fillDatePicker3End",
+            "action_type": "fill"
+          }
+        },
+        {
+          "step_number": 19,
+          "action": "Click",
+          "component": "Submit button",
+          "description": "Submit the form",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/",
+          "verification_point": "Form is submitted",
+          "business_impact": "Form submission",
+          "selector": "page.locator('#post-body-1307673142697428135').getByRole('button', { name: 'Submit' })",
+          "all_selectors": [
+            {
+              "selector": "page.getByRole('button', { name: 'Submit' })",
+              "strategy": "role_name",
+              "confidence": 85,
+              "is_unique": false
+            },
+            {
+              "selector": "page.getByText('Submit')",
+              "strategy": "text",
+              "confidence": 78,
+              "is_unique": false
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "page_context": {
+            "suggested_page_class": "HomePage",
+            "page_url_pattern": "/"
+          },
+          "method_context": {
+            "suggested_method_name": "submitForm",
+            "action_type": "click"
+          }
+        },
+        {
+          "step_number": 20,
+          "action": "Capture",
+          "component": "GUI Elements section",
+          "description": "Check for confirmation or validation message after submission",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/",
+          "verification_point": "No confirmation or validation message is displayed",
+          "business_impact": "Feedback to user",
+          "selector": "page.getByRole('heading', { name: 'GUI Elements' })",
+          "all_selectors": [],
+          "confidence": 95,
+          "based_on_interaction": true,
+          "page_context": {
+            "suggested_page_class": "HomePage",
+            "page_url_pattern": "/"
+          },
+          "method_context": {
+            "suggested_method_name": "verifyNoConfirmationMessage",
+            "action_type": "assert"
+          }
+        }
+      ],
+      "expected_results": [
+        "User completes workflow",
+        "No errors"
+      ],
+      "edge_cases_to_test": [
+        "Slow network",
+        "Interruptions"
+      ],
+      "data_requirements": [
+        "Test accounts",
+        "Valid inputs"
+      ],
+      "prerequisites": [
+        "Site accessible"
+      ]
+    }
+  ],
+  "site_url": "https://testautomationpractice.blogspot.com",
+  "test_name": "w01_testautomations_user_scenario",
+  "login_mechanisms": [
+    "general_interaction"
+  ],
+  "login_completion_state": "successful",
+  "analysis_timestamp": "2026-05-18T09:39:42.019904",
+  "auth_required": false,
+  "starting_url": null,
+  "workflow_id": "WF001"
+}
