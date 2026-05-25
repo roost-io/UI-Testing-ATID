@@ -1,0 +1,1187 @@
+{
+  "accessibility_tree": {
+    "role": "WebArea",
+    "name": "Automation Testing Practice: Download Files",
+    "children": [
+      {
+        "role": "link",
+        "name": "Automation Testing Practice"
+      },
+      {
+        "role": "text",
+        "name": "For Selenium, Cypress & Playwright"
+      },
+      {
+        "role": "link",
+        "name": "Home"
+      },
+      {
+        "role": "link",
+        "name": "Udemy Courses"
+      },
+      {
+        "role": "link",
+        "name": "Online Trainings"
+      },
+      {
+        "role": "link",
+        "name": "Blog"
+      },
+      {
+        "role": "link",
+        "name": "PlaywrightPractice"
+      },
+      {
+        "role": "heading",
+        "name": "Download Files",
+        "level": 3
+      },
+      {
+        "role": "heading",
+        "name": "Download a Text or PDF File",
+        "level": 2
+      },
+      {
+        "role": "text",
+        "name": "Enter Text:"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "textbox",
+        "name": "Enter Text:",
+        "multiline": true,
+        "value": "Test file content"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "button",
+        "name": "Generate and Download Text File"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "button",
+        "name": "Generate and Download PDF File"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "heading",
+        "name": "PDF File with the Browser",
+        "level": 2
+      },
+      {
+        "role": "button",
+        "name": "Download PDF File",
+        "focused": true
+      },
+      {
+        "role": "link",
+        "name": "Home"
+      },
+      {
+        "role": "text",
+        "name": "Subscribe to: "
+      },
+      {
+        "role": "link",
+        "name": "Posts (Atom)"
+      },
+      {
+        "role": "heading",
+        "name": "Upload Files",
+        "level": 2
+      },
+      {
+        "role": "button",
+        "name": "Choose File",
+        "value": "No file chosen"
+      },
+      {
+        "role": "button",
+        "name": "Upload Single File"
+      },
+      {
+        "role": "button",
+        "name": "Choose Files",
+        "value": "No file chosen"
+      },
+      {
+        "role": "button",
+        "name": "Upload Multiple Files"
+      },
+      {
+        "role": "heading",
+        "name": "Static Web Table",
+        "level": 2
+      },
+      {
+        "role": "text",
+        "name": "BookName"
+      },
+      {
+        "role": "text",
+        "name": "Author"
+      },
+      {
+        "role": "text",
+        "name": "Subject"
+      },
+      {
+        "role": "text",
+        "name": "Price"
+      },
+      {
+        "role": "text",
+        "name": "Learn Selenium"
+      },
+      {
+        "role": "text",
+        "name": "Amit"
+      },
+      {
+        "role": "text",
+        "name": "Selenium"
+      },
+      {
+        "role": "text",
+        "name": "300"
+      },
+      {
+        "role": "text",
+        "name": "Learn Java"
+      },
+      {
+        "role": "text",
+        "name": "Mukesh"
+      },
+      {
+        "role": "text",
+        "name": "Java"
+      },
+      {
+        "role": "text",
+        "name": "500"
+      },
+      {
+        "role": "text",
+        "name": "Learn JS"
+      },
+      {
+        "role": "text",
+        "name": "Animesh"
+      },
+      {
+        "role": "text",
+        "name": "Javascript"
+      },
+      {
+        "role": "text",
+        "name": "300"
+      },
+      {
+        "role": "text",
+        "name": "Master In Selenium"
+      },
+      {
+        "role": "text",
+        "name": "Mukesh"
+      },
+      {
+        "role": "text",
+        "name": "Selenium"
+      },
+      {
+        "role": "text",
+        "name": "3000"
+      },
+      {
+        "role": "text",
+        "name": "Master In Java"
+      },
+      {
+        "role": "text",
+        "name": "Amod"
+      },
+      {
+        "role": "text",
+        "name": "JAVA"
+      },
+      {
+        "role": "text",
+        "name": "2000"
+      },
+      {
+        "role": "text",
+        "name": "Master In JS"
+      },
+      {
+        "role": "text",
+        "name": "Amit"
+      },
+      {
+        "role": "text",
+        "name": "Javascript"
+      },
+      {
+        "role": "text",
+        "name": "1000"
+      },
+      {
+        "role": "heading",
+        "name": "Dynamic Web Table",
+        "level": 2
+      },
+      {
+        "role": "text",
+        "name": "Name"
+      },
+      {
+        "role": "text",
+        "name": "Network (Mbps)"
+      },
+      {
+        "role": "text",
+        "name": "Disk (MB/s)"
+      },
+      {
+        "role": "text",
+        "name": "Memory (MB)"
+      },
+      {
+        "role": "text",
+        "name": "CPU (%)"
+      },
+      {
+        "role": "text",
+        "name": "Chrome"
+      },
+      {
+        "role": "text",
+        "name": "0.4 Mbps"
+      },
+      {
+        "role": "text",
+        "name": "0.55 MB/s"
+      },
+      {
+        "role": "text",
+        "name": "70.0 MB"
+      },
+      {
+        "role": "text",
+        "name": "2.2%"
+      },
+      {
+        "role": "text",
+        "name": "System"
+      },
+      {
+        "role": "text",
+        "name": "8.0 Mbps"
+      },
+      {
+        "role": "text",
+        "name": "0.10 MB/s"
+      },
+      {
+        "role": "text",
+        "name": "83.5 MB"
+      },
+      {
+        "role": "text",
+        "name": "0.8%"
+      },
+      {
+        "role": "text",
+        "name": "Firefox"
+      },
+      {
+        "role": "text",
+        "name": "9.1 Mbps"
+      },
+      {
+        "role": "text",
+        "name": "0.95 MB/s"
+      },
+      {
+        "role": "text",
+        "name": "73.7 MB"
+      },
+      {
+        "role": "text",
+        "name": "1.0%"
+      },
+      {
+        "role": "text",
+        "name": "Internet Explorer"
+      },
+      {
+        "role": "text",
+        "name": "5.8 Mbps"
+      },
+      {
+        "role": "text",
+        "name": "0.65 MB/s"
+      },
+      {
+        "role": "text",
+        "name": "90.8 MB"
+      },
+      {
+        "role": "text",
+        "name": "5.0%"
+      },
+      {
+        "role": "text",
+        "name": "CPU load of Chrome process: "
+      },
+      {
+        "role": "text",
+        "name": "2.2%"
+      },
+      {
+        "role": "text",
+        "name": "Memory Size of Firefox process: "
+      },
+      {
+        "role": "text",
+        "name": "73.7 MB"
+      },
+      {
+        "role": "text",
+        "name": "Network speed of Chrome process: "
+      },
+      {
+        "role": "text",
+        "name": "0.4 Mbps"
+      },
+      {
+        "role": "text",
+        "name": "Disk space of Firefox process: "
+      },
+      {
+        "role": "text",
+        "name": "0.95 MB/s"
+      },
+      {
+        "role": "heading",
+        "name": "Pagination Web Table",
+        "level": 2
+      },
+      {
+        "role": "text",
+        "name": "ID"
+      },
+      {
+        "role": "text",
+        "name": "Name"
+      },
+      {
+        "role": "text",
+        "name": "Price"
+      },
+      {
+        "role": "text",
+        "name": "Select"
+      },
+      {
+        "role": "text",
+        "name": "1"
+      },
+      {
+        "role": "text",
+        "name": "Smartphone"
+      },
+      {
+        "role": "text",
+        "name": "$10.99"
+      },
+      {
+        "role": "checkbox",
+        "name": "",
+        "checked": false
+      },
+      {
+        "role": "text",
+        "name": "2"
+      },
+      {
+        "role": "text",
+        "name": "Laptop"
+      },
+      {
+        "role": "text",
+        "name": "$19.99"
+      },
+      {
+        "role": "checkbox",
+        "name": "",
+        "checked": false
+      },
+      {
+        "role": "text",
+        "name": "3"
+      },
+      {
+        "role": "text",
+        "name": "Tablet"
+      },
+      {
+        "role": "text",
+        "name": "$5.99"
+      },
+      {
+        "role": "checkbox",
+        "name": "",
+        "checked": false
+      },
+      {
+        "role": "text",
+        "name": "4"
+      },
+      {
+        "role": "text",
+        "name": "Smartwatch"
+      },
+      {
+        "role": "text",
+        "name": "$7.99"
+      },
+      {
+        "role": "checkbox",
+        "name": "",
+        "checked": false
+      },
+      {
+        "role": "text",
+        "name": "5"
+      },
+      {
+        "role": "text",
+        "name": "Wireless Earbuds"
+      },
+      {
+        "role": "text",
+        "name": "$8.99"
+      },
+      {
+        "role": "checkbox",
+        "name": "",
+        "checked": false
+      },
+      {
+        "role": "link",
+        "name": "1"
+      },
+      {
+        "role": "link",
+        "name": "2"
+      },
+      {
+        "role": "link",
+        "name": "3"
+      },
+      {
+        "role": "link",
+        "name": "4"
+      },
+      {
+        "role": "heading",
+        "name": "Tabs",
+        "level": 2
+      },
+      {
+        "role": "link",
+        "name": ""
+      },
+      {
+        "role": "textbox",
+        "name": ""
+      },
+      {
+        "role": "button",
+        "name": "Submit"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "heading",
+        "name": "Dynamic Button",
+        "level": 2
+      },
+      {
+        "role": "button",
+        "name": "START"
+      },
+      {
+        "role": "heading",
+        "name": "Alerts & Popups",
+        "level": 2
+      },
+      {
+        "role": "button",
+        "name": "Simple Alert"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "button",
+        "name": "Confirmation Alert"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "button",
+        "name": "Prompt Alert"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "button",
+        "name": "New Tab"
+      },
+      {
+        "role": "button",
+        "name": "Popup Windows"
+      },
+      {
+        "role": "heading",
+        "name": "Mouse Hover",
+        "level": 2
+      },
+      {
+        "role": "text",
+        "name": "Move the mouse over the button to open the dropdown menu."
+      },
+      {
+        "role": "button",
+        "name": "Point Me"
+      },
+      {
+        "role": "heading",
+        "name": "Double Click",
+        "level": 2
+      },
+      {
+        "role": "text",
+        "name": "Field1: "
+      },
+      {
+        "role": "textbox",
+        "name": "",
+        "value": "Hello World!"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "text",
+        "name": "Field2: "
+      },
+      {
+        "role": "textbox",
+        "name": ""
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "button",
+        "name": "Copy Text"
+      },
+      {
+        "role": "text",
+        "name": "Double click on button, the text from Field1 will be copied into Field2."
+      },
+      {
+        "role": "heading",
+        "name": "Drag and Drop",
+        "level": 2
+      },
+      {
+        "role": "text",
+        "name": "Drag me to my target"
+      },
+      {
+        "role": "text",
+        "name": "Drop here"
+      },
+      {
+        "role": "heading",
+        "name": "Slider",
+        "level": 2
+      },
+      {
+        "role": "text",
+        "name": "Price range:"
+      },
+      {
+        "role": "textbox",
+        "name": "Price range:",
+        "readonly": true,
+        "value": "$75 - $300"
+      },
+      {
+        "role": "generic",
+        "name": ""
+      },
+      {
+        "role": "generic",
+        "name": ""
+      },
+      {
+        "role": "heading",
+        "name": "SVG Elements",
+        "level": 2
+      },
+      {
+        "role": "heading",
+        "name": "Scrolling DropDown",
+        "level": 2
+      },
+      {
+        "role": "textbox",
+        "name": "Select an item"
+      },
+      {
+        "role": "heading",
+        "name": "Labels And Links",
+        "level": 2
+      },
+      {
+        "role": "heading",
+        "name": "Mobile Labels",
+        "level": 4
+      },
+      {
+        "role": "text",
+        "name": "Samsung"
+      },
+      {
+        "role": "text",
+        "name": "Real Me"
+      },
+      {
+        "role": "text",
+        "name": "Moto"
+      },
+      {
+        "role": "heading",
+        "name": "Laptop Links",
+        "level": 4
+      },
+      {
+        "role": "link",
+        "name": "Apple"
+      },
+      {
+        "role": "link",
+        "name": "Lenovo"
+      },
+      {
+        "role": "link",
+        "name": "Dell"
+      },
+      {
+        "role": "heading",
+        "name": "Broken Links",
+        "level": 4
+      },
+      {
+        "role": "link",
+        "name": "Errorcode 400"
+      },
+      {
+        "role": "link",
+        "name": "Errorcode 401"
+      },
+      {
+        "role": "link",
+        "name": "Errorcode 403"
+      },
+      {
+        "role": "link",
+        "name": "Errorcode 404"
+      },
+      {
+        "role": "link",
+        "name": "Errorcode 408"
+      },
+      {
+        "role": "link",
+        "name": "Errorcode 500"
+      },
+      {
+        "role": "link",
+        "name": "Errorcode 502"
+      },
+      {
+        "role": "link",
+        "name": "Errorcode 503"
+      },
+      {
+        "role": "heading",
+        "name": "Visitors",
+        "level": 2
+      },
+      {
+        "role": "image",
+        "name": "A chart."
+      },
+      {
+        "role": "text",
+        "name": "0"
+      },
+      {
+        "role": "text",
+        "name": "55"
+      },
+      {
+        "role": "text",
+        "name": "1"
+      },
+      {
+        "role": "text",
+        "name": "93"
+      },
+      {
+        "role": "text",
+        "name": "2"
+      },
+      {
+        "role": "text",
+        "name": "98"
+      },
+      {
+        "role": "text",
+        "name": "3"
+      },
+      {
+        "role": "text",
+        "name": "100"
+      },
+      {
+        "role": "text",
+        "name": "4"
+      },
+      {
+        "role": "text",
+        "name": "81"
+      },
+      {
+        "role": "text",
+        "name": "5"
+      },
+      {
+        "role": "text",
+        "name": "60"
+      },
+      {
+        "role": "text",
+        "name": "6"
+      },
+      {
+        "role": "text",
+        "name": "60"
+      },
+      {
+        "role": "text",
+        "name": "7"
+      },
+      {
+        "role": "text",
+        "name": "54"
+      },
+      {
+        "role": "text",
+        "name": "8"
+      },
+      {
+        "role": "text",
+        "name": "76"
+      },
+      {
+        "role": "text",
+        "name": "9"
+      },
+      {
+        "role": "text",
+        "name": "83"
+      },
+      {
+        "role": "text",
+        "name": "10"
+      },
+      {
+        "role": "text",
+        "name": "89"
+      },
+      {
+        "role": "text",
+        "name": "11"
+      },
+      {
+        "role": "text",
+        "name": "94"
+      },
+      {
+        "role": "text",
+        "name": "12"
+      },
+      {
+        "role": "text",
+        "name": "76"
+      },
+      {
+        "role": "text",
+        "name": "13"
+      },
+      {
+        "role": "text",
+        "name": "54"
+      },
+      {
+        "role": "text",
+        "name": "14"
+      },
+      {
+        "role": "text",
+        "name": "49"
+      },
+      {
+        "role": "text",
+        "name": "15"
+      },
+      {
+        "role": "text",
+        "name": "75"
+      },
+      {
+        "role": "text",
+        "name": "16"
+      },
+      {
+        "role": "text",
+        "name": "85"
+      },
+      {
+        "role": "text",
+        "name": "17"
+      },
+      {
+        "role": "text",
+        "name": "84"
+      },
+      {
+        "role": "text",
+        "name": "18"
+      },
+      {
+        "role": "text",
+        "name": "84"
+      },
+      {
+        "role": "text",
+        "name": "19"
+      },
+      {
+        "role": "text",
+        "name": "76"
+      },
+      {
+        "role": "text",
+        "name": "20"
+      },
+      {
+        "role": "text",
+        "name": "65"
+      },
+      {
+        "role": "text",
+        "name": "21"
+      },
+      {
+        "role": "text",
+        "name": "53"
+      },
+      {
+        "role": "text",
+        "name": "22"
+      },
+      {
+        "role": "text",
+        "name": "77"
+      },
+      {
+        "role": "text",
+        "name": "23"
+      },
+      {
+        "role": "text",
+        "name": "92"
+      },
+      {
+        "role": "text",
+        "name": "24"
+      },
+      {
+        "role": "text",
+        "name": "90"
+      },
+      {
+        "role": "text",
+        "name": "25"
+      },
+      {
+        "role": "text",
+        "name": "82"
+      },
+      {
+        "role": "text",
+        "name": "26"
+      },
+      {
+        "role": "text",
+        "name": "77"
+      },
+      {
+        "role": "text",
+        "name": "27"
+      },
+      {
+        "role": "text",
+        "name": "59"
+      },
+      {
+        "role": "text",
+        "name": "28"
+      },
+      {
+        "role": "text",
+        "name": "50"
+      },
+      {
+        "role": "text",
+        "name": "29"
+      },
+      {
+        "role": "text",
+        "name": "21"
+      },
+      {
+        "role": "text",
+        "name": "7,513,020"
+      },
+      {
+        "role": "heading",
+        "name": "Form",
+        "level": 2
+      },
+      {
+        "role": "heading",
+        "name": "Section 1",
+        "level": 4
+      },
+      {
+        "role": "text",
+        "name": "This is a paragraph in Section 1."
+      },
+      {
+        "role": "textbox",
+        "name": ""
+      },
+      {
+        "role": "button",
+        "name": "Submit"
+      },
+      {
+        "role": "heading",
+        "name": "Section 2",
+        "level": 4
+      },
+      {
+        "role": "text",
+        "name": "This is a paragraph in Section 2."
+      },
+      {
+        "role": "textbox",
+        "name": ""
+      },
+      {
+        "role": "button",
+        "name": "Submit"
+      },
+      {
+        "role": "heading",
+        "name": "Section 3",
+        "level": 4
+      },
+      {
+        "role": "text",
+        "name": "This is a paragraph in Section 3."
+      },
+      {
+        "role": "textbox",
+        "name": ""
+      },
+      {
+        "role": "button",
+        "name": "Submit"
+      },
+      {
+        "role": "heading",
+        "name": "Footer Links",
+        "level": 2
+      },
+      {
+        "role": "link",
+        "name": "Home"
+      },
+      {
+        "role": "link",
+        "name": "Hidden Elements & AJAX"
+      },
+      {
+        "role": "link",
+        "name": "Download Files"
+      },
+      {
+        "role": "heading",
+        "name": "ShadowDOM",
+        "level": 2
+      },
+      {
+        "role": "text",
+        "name": "Mobiles"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "text",
+        "name": "Laptops"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "link",
+        "name": "Blog"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "textbox",
+        "name": ""
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "checkbox",
+        "name": "",
+        "checked": false
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "button",
+        "name": "Choose File",
+        "value": "No file chosen"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "link",
+        "name": "Youtube"
+      },
+      {
+        "role": "LineBreak",
+        "name": "\n"
+      },
+      {
+        "role": "text",
+        "name": "Theme images by "
+      },
+      {
+        "role": "link",
+        "name": "merrymoonmary"
+      },
+      {
+        "role": "text",
+        "name": ". Powered by "
+      },
+      {
+        "role": "link",
+        "name": "Blogger"
+      },
+      {
+        "role": "text",
+        "name": "."
+      }
+    ]
+  },
+  "url": "https://testautomationpractice.blogspot.com/p/download-files_25.html",
+  "all_page_urls": [
+    "https://testautomationpractice.blogspot.com/p/download-files_25.html",
+    "blob:https://testautomationpractice.blogspot.com/1e0c5c4e-1124-4b6d-bd3a-90eb122d7d9a"
+  ]
+}
