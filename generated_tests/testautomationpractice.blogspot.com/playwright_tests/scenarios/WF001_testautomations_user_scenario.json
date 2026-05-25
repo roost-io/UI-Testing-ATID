@@ -1,0 +1,313 @@
+{
+  "site_type": "blog",
+  "site_category": "Test automation practice site for UI and download workflows",
+  "confidence_score": 0.95,
+  "user_journeys": [
+    {
+      "journey_name": "Primary Business Workflow",
+      "description": "Main user flow",
+      "business_value": "Ensures download functionality works for end users",
+      "user_persona": "QA engineer, automation tester",
+      "frequency": "daily",
+      "complexity": "medium"
+    }
+  ],
+  "proposed_scenarios": [
+    {
+      "scenario_name": "Discovered Workflow: e2e_business_workflow - Complete User Journey",
+      "description": "Comprehensive test covering the download file workflow from homepage navigation to download verification.",
+      "workflow_narrative": "A QA engineer navigates from the homepage to the GUI Elements section, accesses the Download Files area, generates and downloads both text and PDF files, and verifies download completion. All steps are mapped to actual agent execution and selectors.",
+      "playwright_implementation_guidance": [
+        "Use waitForSelector for each navigation and download initiation.",
+        "Verify download completion by checking for blob URL and file presence.",
+        "Handle tab switch for download verification.",
+        "Ensure all selectors are used as captured, including alternatives."
+      ],
+      "test_type": "e2e_business_workflow",
+      "priority": "high",
+      "business_goal": "Verify users can complete the download workflow without errors.",
+      "user_story": "As a QA engineer, I want to generate and download files from the site so that I can validate download functionality for end users.",
+      "detailed_steps": [
+        {
+          "step_number": 1,
+          "action": "Navigate to homepage",
+          "component": "Navigation",
+          "description": "Load homepage",
+          "expected_page_url": "https://testautomationpractice.blogspot.com",
+          "verification_point": "Page loaded",
+          "business_impact": "Site accessibility",
+          "selector": "page.goto('https://testautomationpractice.blogspot.com', { waitUntil: 'domcontentloaded' })",
+          "confidence": 100,
+          "based_on_interaction": true,
+          "all_selectors": [],
+          "web_component_parent": null,
+          "page_context": {
+            "suggested_page_class": "HomePage",
+            "page_url_pattern": "/"
+          },
+          "method_context": {
+            "suggested_method_name": "navigateToHomePage",
+            "action_type": "navigate"
+          }
+        },
+        {
+          "step_number": 2,
+          "action": "Click",
+          "component": "GUI Elements navigation link",
+          "description": "Navigate to GUI Elements section",
+          "expected_page_url": "https://testautomationpractice.blogspot.com",
+          "verification_point": "GUI Elements link visible and clickable",
+          "business_impact": "Access to feature area",
+          "selector": "page.getByRole('link', { name: 'GUI Elements' })",
+          "all_selectors": [
+            {
+              "selector": "page.getByRole('link', { name: /GUI Elements/ })",
+              "strategy": "role_name_regex",
+              "confidence": 95,
+              "is_unique": true
+            },
+            {
+              "selector": "page.getByText('GUI Elements')",
+              "strategy": "text",
+              "confidence": 88,
+              "is_unique": true
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "web_component_parent": null,
+          "page_context": {
+            "suggested_page_class": "HomePage",
+            "page_url_pattern": "/"
+          },
+          "method_context": {
+            "suggested_method_name": "clickGuiElementsLink",
+            "action_type": "click"
+          }
+        },
+        {
+          "step_number": 3,
+          "action": "Click",
+          "component": "Download Files link",
+          "description": "Access Download Files section",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/2018/09/automation-form.html",
+          "verification_point": "Download Files link visible and clickable",
+          "business_impact": "Access to download workflow",
+          "selector": "page.getByRole('link', { name: 'Download Files' })",
+          "all_selectors": [
+            {
+              "selector": "page.getByRole('link', { name: /Download Files/ })",
+              "strategy": "role_name_regex",
+              "confidence": 95,
+              "is_unique": true
+            },
+            {
+              "selector": "page.getByText('Download Files')",
+              "strategy": "text",
+              "confidence": 88,
+              "is_unique": true
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "web_component_parent": null,
+          "page_context": {
+            "suggested_page_class": "GuiElementsPage",
+            "page_url_pattern": "/2018/09/automation-form.html"
+          },
+          "method_context": {
+            "suggested_method_name": "clickDownloadFilesLink",
+            "action_type": "click"
+          }
+        },
+        {
+          "step_number": 4,
+          "action": "Click",
+          "component": "Generate and Download Text button",
+          "description": "Generate and download text file",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/p/download-files_25.html",
+          "verification_point": "Text file generation initiated",
+          "business_impact": "File generation",
+          "selector": "page.getByRole('button', { name: 'Generate and Download Text' })",
+          "all_selectors": [
+            {
+              "selector": "page.getByRole('button', { name: /Generate and Download Text File/ })",
+              "strategy": "role_name_regex",
+              "confidence": 95,
+              "is_unique": true
+            },
+            {
+              "selector": "page.getByText('Generate and Download Text File')",
+              "strategy": "text",
+              "confidence": 88,
+              "is_unique": true
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "web_component_parent": null,
+          "page_context": {
+            "suggested_page_class": "DownloadFilesPage",
+            "page_url_pattern": "/p/download-files_25.html"
+          },
+          "method_context": {
+            "suggested_method_name": "generateAndDownloadTextFile",
+            "action_type": "click"
+          }
+        },
+        {
+          "step_number": 5,
+          "action": "Click",
+          "component": "Download Text File link",
+          "description": "Initiate text file download",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/p/download-files_25.html",
+          "verification_point": "Text file download initiated",
+          "business_impact": "File download",
+          "selector": "page.getByRole('link', { name: 'Download Text File' })",
+          "all_selectors": [
+            {
+              "selector": "page.getByRole('link', { name: /Download Text File/ })",
+              "strategy": "role_name_regex",
+              "confidence": 95,
+              "is_unique": true
+            },
+            {
+              "selector": "page.getByText('Download Text File')",
+              "strategy": "text",
+              "confidence": 88,
+              "is_unique": false
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "web_component_parent": null,
+          "page_context": {
+            "suggested_page_class": "DownloadFilesPage",
+            "page_url_pattern": "/p/download-files_25.html"
+          },
+          "method_context": {
+            "suggested_method_name": "downloadTextFile",
+            "action_type": "click"
+          }
+        },
+        {
+          "step_number": 6,
+          "action": "Click",
+          "component": "Generate and Download PDF File button",
+          "description": "Generate and download PDF file",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/p/download-files_25.html",
+          "verification_point": "PDF file generation initiated",
+          "business_impact": "File generation",
+          "selector": "page.getByRole('button', { name: 'Generate and Download PDF File' })",
+          "all_selectors": [
+            {
+              "selector": "page.getByRole('button', { name: /Generate and Download PDF File/ })",
+              "strategy": "role_name_regex",
+              "confidence": 95,
+              "is_unique": true
+            },
+            {
+              "selector": "page.getByText('Generate and Download PDF File')",
+              "strategy": "text",
+              "confidence": 88,
+              "is_unique": true
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "web_component_parent": null,
+          "page_context": {
+            "suggested_page_class": "DownloadFilesPage",
+            "page_url_pattern": "/p/download-files_25.html"
+          },
+          "method_context": {
+            "suggested_method_name": "generateAndDownloadPdfFile",
+            "action_type": "click"
+          }
+        },
+        {
+          "step_number": 7,
+          "action": "Click",
+          "component": "Download PDF File button",
+          "description": "Initiate PDF file download",
+          "expected_page_url": "https://testautomationpractice.blogspot.com/p/download-files_25.html",
+          "verification_point": "PDF file download initiated",
+          "business_impact": "File download",
+          "selector": "page.getByRole('button', { name: 'Download PDF File', exact: true })",
+          "all_selectors": [
+            {
+              "selector": "page.getByRole('button', { name: /Download PDF File/ })",
+              "strategy": "role_name_regex",
+              "confidence": 95,
+              "is_unique": false
+            },
+            {
+              "selector": "page.getByText('Download PDF File')",
+              "strategy": "text",
+              "confidence": 88,
+              "is_unique": false
+            }
+          ],
+          "confidence": 99,
+          "based_on_interaction": true,
+          "web_component_parent": null,
+          "page_context": {
+            "suggested_page_class": "DownloadFilesPage",
+            "page_url_pattern": "/p/download-files_25.html"
+          },
+          "method_context": {
+            "suggested_method_name": "downloadPdfFile",
+            "action_type": "click"
+          }
+        },
+        {
+          "step_number": 8,
+          "action": "Tab switch and verification",
+          "component": "Download confirmation/content",
+          "description": "Verify download completion",
+          "expected_page_url": "blob:https://testautomationpractice.blogspot.com/889f54fc-bdb8-4a88-928a-19aa0dbe7410",
+          "verification_point": "Download workflow confirmed",
+          "business_impact": "Workflow completion",
+          "selector": null,
+          "all_selectors": [],
+          "confidence": 90,
+          "based_on_interaction": true,
+          "web_component_parent": null,
+          "page_context": {
+            "suggested_page_class": "DownloadConfirmationPage",
+            "page_url_pattern": "/blob"
+          },
+          "method_context": {
+            "suggested_method_name": "verifyDownloadCompletion",
+            "action_type": "verify"
+          }
+        }
+      ],
+      "expected_results": [
+        "User completes workflow",
+        "No errors"
+      ],
+      "edge_cases_to_test": [
+        "Slow network",
+        "Interruptions"
+      ],
+      "data_requirements": [
+        "Test accounts",
+        "Valid inputs"
+      ],
+      "prerequisites": [
+        "Site accessible"
+      ]
+    }
+  ],
+  "site_url": "https://testautomationpractice.blogspot.com",
+  "test_name": "w01_testautomations_user_scenario",
+  "login_mechanisms": [
+    "general_interaction"
+  ],
+  "login_completion_state": "successful",
+  "analysis_timestamp": "2026-05-25T12:14:37.261082",
+  "auth_required": false,
+  "starting_url": null,
+  "workflow_id": "WF001"
+}
