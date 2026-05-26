@@ -1,0 +1,20 @@
+{
+  "workflow_id": "WF001",
+  "title": "Testautomations User Scenario",
+  "goal": "Testautomations User Scenario",
+  "synthesis_status": "failed",
+  "captured_selectors": [],
+  "proposed_scenarios": [],
+  "note": "Synthesis LLM returned unparseable output. Selectors saved for manual review.",
+  "site_url": "https://testautomationpractice.blogspot.com",
+  "site_type": "unknown",
+  "site_category": "unknown",
+  "test_name": "testautomations_user_scenario_01_1779801867",
+  "login_mechanisms": [],
+  "user_journeys": [],
+  "login_completion_state": "failed",
+  "analysis_timestamp": "2026-05-26T18:54:27.020958",
+  "confidence_score": 0.0,
+  "auth_required": false,
+  "starting_url": null
+}
