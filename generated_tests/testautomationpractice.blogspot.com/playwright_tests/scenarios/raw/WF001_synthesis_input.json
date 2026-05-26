@@ -1,0 +1,19 @@
+{
+  "workflow_id": "WF001",
+  "workflow_desc": {
+    "workflow_id": "WF001",
+    "title": "Testautomations User Scenario",
+    "goal": "Testautomations User Scenario",
+    "feature_area": "Downloads",
+    "priority": "high",
+    "starting_hint": "",
+    "source_file": "C:\\Users\\user\\Downloads\\testautomations user scenario.docx",
+    "source_file_hash": "77dd1069b11b2f9a2340eba5c990219437554398b9ebfb40d9892bd3792aff96",
+    "source_type": "user_scenario",
+    "scenario_summary_file_path": "C:\\var\\tmp\\Roost\\RoostGPT\\ui-test-test\\1779801686\\source\\UI-Testing-ATID\\generated_tests\\testautomationpractice.blogspot.com\\playwright_tests\\scenarios\\summaries\\WF001_testautomations_user_scenario.md"
+  },
+  "history_text": "Step 1:\nURL: https://testautomationpractice.blogspot.com\nThought/Goal: thinking=None evaluation_previous_goal='Start' memory='' next_goal='Initial navigation'\nAction: {'navigate': {'url': 'https://testautomationpractice.blogspot.com', 'new_tab': False}, 'interacted_element': None}\n\n\nStep 2:\nURL: https://testautomationpractice.blogspot.com/\n\n\nStep 3:\nURL: https://testautomationpractice.blogspot.com/\n\n\nStep 4:\nURL: https://testautomationpractice.blogspot.com/\n\n\nStep 5:\nURL: https://testautomationpractice.blogspot.com/\n",
+  "captured_selectors": [],
+  "target_url": "https://testautomationpractice.blogspot.com",
+  "failure_time": "2026-05-26T18:54:27.019753"
+}
